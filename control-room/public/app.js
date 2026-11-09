@@ -1,0 +1,324 @@
+/* Local-only operator workspace with public reference data. No automatic outreach or cloud writes. */
+'use strict';
+(() => {
+  const M = window.CampaignModel;
+  const key = 'redlands-explorer-v1';
+  const $ = s => document.querySelector(s);
+  const esc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const link = (url, label) => /^https:\/\//.test(url || '') ? `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)} ↗</a>` : '';
+  const button = (action, label, attrs = '', secondary = true) => `<button type="button" class="button${secondary ? ' secondary' : ''}" data-action="${action}" ${attrs}>${esc(label)}</button>`;
+  const context = {id: () => crypto.randomUUID(), now: () => new Date().toISOString()};
+  let state = M.fresh(), media = [], projects = [], campaign = {}, local = false, csrf = '', current = 'overview', toastTimer;
+  const views = {overview:'Command centre','new-media':'Local podcasts and creators','national-podcasts':'National political podcasts','women-media':'Women-focused media',music:'Music shows and podcasts',university:'University networks',unions:'Workers’ unions','community-networks':'Community networks',media:'Media and commentators',plan:'My possibilities',calendar:'Dates I choose',outreach:'Outreach desk',publishing:'Drafts',inbox:'Enquiries',projects:'Source library',agents:'Explore with AI',budget:'Resources',activity:'My trail',settings:'Storage'};
+  const collections = {plan:'tasks',outreach:'contacts',publishing:'publications',inbox:'enquiries',budget:'expenses'};
+  const labels = {title:'Title',owner:'Who, if anyone',dueDate:'Optional date',status:'State',evidenceUrl:'Source link',notes:'Notes',name:'Name',email:'Reply email',organisation:'Organisation',channel:'Connection type',consent:'Update permission',consentScope:'Permission scope',consentEvidence:'Permission evidence',consentDate:'Permission date',reviewDate:'Optional review date',sourceId:'Directory source',contactUrl:'Public contact route',stage:'Outreach stage',subject:'Subject',message:'Message draft',lastContactDate:'Last contacted, if applicable',contactId:'Contact record',receivedDate:'Received on',deadline:'Optional response date',sourceUrl:'Source link',format:'Format',assetPath:'File reference',reviewer:'Reviewed by',reviewedDate:'Reviewed on',authorisation:'Authorisation wording',publishedUrl:'Published link',description:'Description',date:'Record date',amount:'Amount (AUD)',currency:'Currency',category:'Category',payee:'Payee',receiptReference:'Receipt reference',paymentReference:'Payment reference'};
+  const choiceLabel = (collection, field, value) => collection === 'tasks' && field === 'status' ? ({planned:'Possibility',active:'Exploring',blocked:'Parked',done:'Finished / set aside'}[value] || value) : value.replaceAll('-', ' ');
+  function toast(message, error = false) { clearTimeout(toastTimer); $('#toast').textContent = message; $('#toast').className = `visible${error ? ' error' : ''}`; toastTimer = setTimeout(() => { $('#toast').className = ''; $('#toast').textContent = ''; }, 6500); }
+  async function api(path, body) {
+    const response = await fetch(`api/${path}`, {credentials:'same-origin', ...(body === undefined ? {} : {method:'POST', headers:{'Content-Type':'application/json','X-CSRF-Token':csrf}, body:JSON.stringify(body)})});
+    const data = await response.json(); if (!response.ok) throw new Error(data.error || 'The local service could not save this record.'); return data;
+  }
+  function validateState(value) {
+    if (!value || value.version !== 1 || !Number.isSafeInteger(value.revision) || value.revision < 0) throw new Error('This is not a supported workspace backup.');
+    for (const collection of Object.keys(M.fields)) {
+      if (!Array.isArray(value[collection])) throw new Error(`Missing ${collection} records.`);
+      const ids = new Set();
+      for (const record of value[collection]) {
+        if (!record || typeof record.id !== 'string' || !/^[A-Za-z0-9_-]{1,200}$/.test(record.id) || ids.has(record.id)) throw new Error('Invalid or duplicate record identifier.');
+        ids.add(record.id);
+        M.validate(collection, Object.fromEntries(Object.keys(M.fields[collection]).filter(k => k in record).map(k => [k,record[k]])));
+      }
+    }
+    if (!Array.isArray(value.audit) || !Array.isArray(value.suppression)) throw new Error('Missing workspace history.');
+    return value;
+  }
+  function browserState() { const raw = localStorage.getItem(key); return raw ? validateState(JSON.parse(raw)) : M.fresh(); }
+  async function save(collection, record, id, expectedRevision) {
+    if (local) { state = (await api(`records/${collection}`, {record,...(id ? {id} : {})})).state; }
+    else {
+      const write = () => {
+        const latest = browserState();
+        if (latest.revision !== expectedRevision) { state = latest; throw new Error('Another tab changed the workspace. Copy any unsaved notes, then close this form and reopen the latest record before editing.'); }
+        const next = structuredClone(state); M.save(next,collection,record,id,context);
+        localStorage.setItem(key,JSON.stringify(next)); state = next;
+      };
+      if (navigator.locks) await navigator.locks.request(key,write); else write();
+    }
+  }
+  const intro = (title, text) => `<div class="view-intro"><h2>${esc(title)}</h2><p>${esc(text)}</p></div>`;
+  const empty = (title, text) => `<div class="empty-state"><h3>${esc(title)}</h3><p>${esc(text)}</p></div>`;
+  const verified = item => item.verification === 'election-coverage-verified';
+  const formatLabels = {podcast:'Podcast',radio:'Radio',video:'Video',social:'Social publishing',newsletter:'Newsletter',article:'Article'};
+  const formatsOf = item => Array.isArray(item.formats) && item.formats.length ? item.formats : ({podcast:['podcast'],radio:['radio']}[item.kind.toLowerCase()] || []);
+  const sourceCategories = {'new-media':'Local podcasts and creators','national-podcasts':'National political podcasts','women-focused':'Women-focused media',music:'Music shows and podcasts',university:'University networks',unions:'Workers’ unions','community-networks':'Community networks',radio:'Radio stations',traditional:'Newspapers and broadcasters',digital:'Digital publications and podcasts',people:'Journalists and commentators',civic:'Official sources and public forums',other:'Other public sources'};
+  function primaryCategory(item) {
+    // Specialist groups take priority. A generic local source can also belong
+    // to a specialist view without creating another catalogue record.
+    if(item.discoveryGroup && item.discoveryGroup!=='new-media' && sourceCategories[item.discoveryGroup])return item.discoveryGroup;
+    if(item.tags.includes('university'))return 'university';
+    if(item.tags.includes('women-focused'))return 'women-focused';
+    if(item.discoveryGroup==='new-media')return 'new-media';
+    const kind=item.kind.toLowerCase();
+    if(kind==='radio')return 'radio';
+    if(['traditional-media','magazine-and-online'].includes(kind))return 'traditional';
+    if(['journalist','commentator','civic-commentary'].includes(kind))return 'people';
+    if(['official source','public forum','organisation','organization'].includes(kind))return 'civic';
+    if(['online-media','podcast','podcast-and-publication','music-publication'].includes(kind))return 'digital';
+    return 'other';
+  }
+  const sourceTypeLabel = kind => kind.replaceAll('-',' ').replace(/^./,letter=>letter.toUpperCase());
+  const mediaPageSize = 12;
+  let mediaPage = 1;
+  const newMedia = () => media.filter(item => item.discoveryGroup === 'new-media');
+  const mediaPool = view => view === 'new-media' ? newMedia() : view === 'national-podcasts' ? media.filter(item => item.discoveryGroup === 'national-podcasts') : view === 'women-media' ? media.filter(item => item.discoveryGroup === 'women-focused' || item.tags.includes('women-focused')) : view === 'music' ? media.filter(item => item.discoveryGroup === 'music') : view === 'university' ? media.filter(item => item.discoveryGroup === 'university' || item.tags.includes('university')) : view === 'unions' ? media.filter(item => item.discoveryGroup === 'unions') : view === 'community-networks' ? media.filter(item=>item.discoveryGroup==='community-networks') : media.filter(item=>!['community-networks','unions','university','civic'].includes(primaryCategory(item)));
+  const sourceArea = item => item.region || item.area;
+  const topicLabel = tag => ({edm:'EDM','r-and-b':'R&B','hip-hop':'Hip hop'}[tag] || tag.replaceAll('-',' ').replace(/^./,letter=>letter.toUpperCase()));
+  const directoryTopics = pool => [...new Set(pool.flatMap(item=>item.tags))].filter(tag=>!['women-focused','podcast','radio','video','social','newsletter','article','national','australia','australian','queensland','brisbane','music'].includes(tag)).sort((a,b)=>topicLabel(a).localeCompare(topicLabel(b)));
+  function sourceIcon(item) {
+    const format=formatsOf(item)[0];
+    const drawing=item.discoveryGroup==='music' ? '<path d="M9 18V5l12-3v13M9 9l12-3"/><ellipse cx="6" cy="18" rx="3" ry="3"/><ellipse cx="18" cy="15" rx="3" ry="3"/>' : format==='podcast' ? '<rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 10v2a7 7 0 0 0 14 0v-2M12 19v3M8 22h8"/>' : format==='video' ? '<rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9 5 3-5 3Z"/>' : format==='social' ? '<path d="M21 11a8 8 0 0 1-8 8H7l-4 3V11a9 9 0 0 1 18 0Z"/><path d="M7 10h10M7 14h6"/>' : '<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h5"/>';
+    return `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${drawing}</svg>`;
+  }
+  const stageLabels = {exploring:'Exploring',drafting:'Drafting',contacted:'Contacted',replied:'Replied',parked:'Parked'};
+  const outreachStage = record => record.stage || 'exploring';
+  function mediaCard(item) {
+    const community = item.discoveryGroup === 'community-networks', union = item.discoveryGroup === 'unions', music = item.discoveryGroup === 'music', university = item.discoveryGroup === 'university' || item.tags.includes('university'), women = current === 'women-media';
+    const saved = state.tasks.some(t => t.evidenceUrl === (item.coverageUrl || item.website));
+    return `<article class="project-card media-card" id="source-${esc(item.id)}"><div class="source-top"><span class="source-symbol">${sourceIcon(item)}</span><div><p class="source-category">${esc(current === 'media' ? sourceCategories[primaryCategory(item)] : sourceArea(item))}</p><div class="tags"><span class="badge format-badge">${esc(formatLabels[formatsOf(item)[0]] || sourceTypeLabel(item.kind))}</span><span class="badge ${verified(item) ? 'success' : ''}">${verified(item) ? 'Election source found' : community ? 'Group verified' : 'Source verified'}</span></div></div></div><h3>${esc(item.name)}</h3><p class="small muted">${esc(item.area)}</p><div class="actions source-primary-action">${button('prepare-outreach','Prepare outreach',`data-id="${esc(item.id)}"`,false)}</div><p>${esc(item.description)}</p><div class="tags">${item.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div>${item.coverageUrl ? `<p class="coverage-link">${link(item.coverageUrl,item.coverageTitle || 'Read election source')}<small class="muted">${item.coverageDate ? ` · ${esc(item.coverageDate)}` : ''}</small></p>` : community || union || music || university || women ? '' : '<p class="small muted">Current Redland election coverage has not been verified.</p>'}${item.sampleUrl ? `<div class="sample-work"><p class="eyebrow">Example work</p>${link(item.sampleUrl,item.sampleTitle || 'Open an example')}${item.sampleDate ? `<p class="small muted">${esc(item.sampleDate)}</p>` : ''}<p class="small muted">${community || union ? 'An example of this organisation’s public activities or publication.' : university ? 'An example of this university network’s public work or activities.' : music ? 'An example of the show’s music or conversations.' : women ? 'An example of the show’s or publication’s work.' : 'Broader published work, separate from verified Redland election coverage.'}</p></div>` : ''}<div class="actions">${link(item.website,'Website')}${link(item.contactUrl,'Public contact route')}</div>${Array.isArray(item.publicChannels) && item.publicChannels.length ? `<div class="public-channels"><p class="small muted">${music ? 'Listen and submission information' : university ? 'Public pages and publications' : 'Public newsletters and pages'}</p><div class="actions">${item.publicChannels.map(channel=>link(channel.url,channel.label)).join('')}</div></div>` : ''}${music && (item.submissionNotes || item.aiPolicy) ? `<div class="music-submissions">${item.submissionNotes ? `<h4>Submission route</h4><p>${esc(item.submissionNotes)}</p>` : ''}${item.aiPolicy ? `<h4>Generative AI policy</h4><p>${esc(item.aiPolicy)}</p>` : ''}</div>` : ''}<details><summary>Evidence and research notes</summary><p>${esc(item.notes)}</p>${item.participationNotes ? `<p>${esc(item.participationNotes)}</p>` : ''}<ul>${item.sourceUrls.map(url=>`<li>${link(url,new URL(url).hostname)}</li>`).join('')}</ul><p class="small muted">Checked ${esc(item.checkedOn)}. Verify again before relying on details.</p></details><div class="actions">${button('save-source',saved ? 'Save another thought' : 'Save a possibility',`data-id="${esc(item.id)}"`)}${button('research-source','Explore with AI',`data-id="${esc(item.id)}"`)}</div></article>`;
+  }
+  function commandActions() {
+    const actions = [
+      ['new-media','Browse SEQ','Local podcasts and creators'],
+      ['national-podcasts','National interviews','Political podcasts across Australia'],
+      ['women-media','Women-focused media','Banter, relationships and current events'],
+      ['music','Music shows and podcasts','Recorded music, interviews and submissions'],
+      ['university','University networks','Student publications, societies and groups'],
+      ['unions','Workers’ unions','Queensland branches, industries and public contacts'],
+      ['community-networks','Community networks','Centres, neighbourhoods and public pages'],
+      ['media','Media and commentators','Radio, publishers, podcasts and public voices'],
+      ['outreach','Outreach desk','Contacts, messages and conversations'],
+      ['publishing','Drafts','Open your saved publication work']
+    ];
+    return `<section class="command-actions" aria-labelledby="command-actions-title"><div class="panel-head"><div><h2 id="command-actions-title">Your workspace</h2><p>Open a directory or pick up your own work.</p></div></div><div class="command-grid">${actions.map(([view,title,description])=>`<button type="button" class="command-action" data-action="view" data-view-target="${view}"><span><strong>${title}</strong><small>${description}</small></span><span class="command-arrow" aria-hidden="true">↗</span></button>`).join('')}</div></section>`;
+  }
+  function recentRecords(items) {
+    return [...items].sort((a,b)=>(b.updatedAt || b.createdAt || '').localeCompare(a.updatedAt || a.createdAt || '')).slice(0,3);
+  }
+  function savedWork() {
+    const drafts = state.publications.filter(item=>['draft','review'].includes(item.status));
+    const panels = [
+      ['contacts','Recent outreach',state.contacts,'outreach','No outreach saved yet. Choose Prepare outreach on a source card when you want to start.'],
+      ['publications','Saved drafts',drafts,'publishing','Your saved drafts will appear here.'],
+      ['tasks','Your possibilities',state.tasks,'plan','Your saved possibilities will appear here.']
+    ];
+    return `<section class="resume-grid" aria-label="Resume saved work">${panels.map(([collection,title,items,view,emptyText])=>`<div class="panel resume-panel"><div class="panel-head"><h2>${title}</h2><span class="badge">${items.length}</span></div>${items.length ? recentRecords(items).map(record=>`<div class="resume-row"><div><h3>${esc(record.name || record.title)}</h3><p>${esc(collection==='contacts' ? stageLabels[outreachStage(record)] : choiceLabel(collection,'status',record.status))}</p></div>${button(collection==='contacts' ? 'edit-outreach' : 'edit','Open',`data-collection="${collection}" data-id="${esc(record.id)}"`)}</div>`).join('') : `<p class="resume-empty">${emptyText}</p>`}<div class="actions">${button('view',collection==='contacts' ? 'Open outreach desk' : collection==='publications' ? 'Open drafts' : 'Open possibilities',`data-view-target="${view}"`)}</div></div>`).join('')}</section>`;
+  }
+  function overview() {
+    const featured = newMedia().filter(item=>formatsOf(item).includes('podcast')).slice(0,3);
+    return `<section class="dashboard-hero"><img src="https://auraofintelligence.github.io/redlands-mayoral-campaign/assets/photos/point-lookout-main-beach-1280.jpg" alt="Main Beach viewed from Point Lookout on Minjerribah, photographed in 2014" width="1280" height="853"><p class="eyebrow">Your workspace · Your pace</p><h2>Your Redlands<br>command centre.</h2><p>Choose a source, prepare outreach, and keep your drafts and conversations together. Work at your own pace.</p><div class="actions hero-actions">${button('view','Open outreach desk','data-view-target="outreach"',false)}${button('view','Browse media','data-view-target="media"')}</div></section><p class="photo-credit">${link('https://commons.wikimedia.org/wiki/File:View_of_Main_Beach_from_Point_Lookout_(North_Stradbroke_Island).JPG','Main Beach, Point Lookout')} · S. Newrick · 2014 · ${link('https://creativecommons.org/licenses/by-sa/4.0/','CC BY-SA 4.0')} · Presentation crop and purple overlay.</p><div class="content">${commandActions()}${savedWork()}<div class="metrics"><div class="metric"><span>Directory sources</span><strong>${media.length}</strong><small>Research available to explore</small></div><div class="metric"><span>Saved outreach</span><strong>${state.contacts.length}</strong><small>Your contact and message records</small></div><div class="metric"><span>Your possibilities</span><strong>${state.tasks.length}</strong><small>Only what you choose to save</small></div><div class="metric"><span>Saved publications</span><strong>${state.publications.length}</strong><small>Your drafts and publication records</small></div></div><div class="panel-head"><div><h2>Local podcasts and creators</h2><p>Independent voices and digital publishing across South East Queensland.</p></div><div class="actions">${button('view','Browse local new media','data-view-target="new-media"')}${button('surprise','Show other creators')}</div></div><div class="project-grid" id="discovery-cards">${featured.length ? featured.map(mediaCard).join('') : empty('Local source research is being added','Browse the media directory while the local podcast and creator register is prepared.')}</div><p class="workspace-storage-note">${local ? 'Working records are stored in the private folder on this computer.' : 'Saved work stays in this browser on this device. It is not shared with other visitors. Use Storage to export a copy.'}</p></div>`;
+  }
+  function mediaPagination(suffix = '') {
+    return `<nav class="media-pagination" aria-label="Directory results${suffix ? ' below cards' : ''}">${button('previous-results','Previous results',`id="media-previous${suffix}" disabled`)}<p class="small muted" id="media-range${suffix}"></p>${button('next-results','Next results',`id="media-next${suffix}" disabled`)}</nav>`;
+  }
+  function publicReferences() {
+    const references=media.filter(item=>primaryCategory(item)==='civic');
+    if(!references.length)return '';
+    return `<section class="panel public-references" aria-labelledby="public-references-title"><h2 id="public-references-title">Public references</h2><p class="small muted">Official information and public forums, separate from the media directory.</p><ul>${references.map(item=>`<li>${link(item.coverageUrl || item.website,item.name)}<p class="small muted">${esc(item.description)}</p></li>`).join('')}</ul></section>`;
+  }
+  function mediaView(scope = 'media') {
+    const localCreators = scope === 'new-media', nationalPodcasts = scope === 'national-podcasts', womenMedia = scope === 'women-media', communityNetworks = scope === 'community-networks', music = scope === 'music', university = scope === 'university', unions = scope === 'unions', mediaDirectory = scope === 'media';
+    const pool = mediaPool(scope);
+    const regions = [...new Set(pool.map(sourceArea).filter(Boolean))].sort();
+    const topics = womenMedia || music ? directoryTopics(pool) : [];
+    const categoryCounts = new Map();
+    for(const item of pool){const category=primaryCategory(item);categoryCounts.set(category,(categoryCounts.get(category) || 0)+1);}
+    const categoryFilter = mediaDirectory ? `<label class="field category-field" for="media-category">Category<select id="media-category"><option value="">Every media category (${pool.length})</option>${Object.entries(sourceCategories).filter(([key])=>categoryCounts.has(key)).map(([key,label])=>`<option value="${key}">${esc(label)} (${categoryCounts.get(key)})</option>`).join('')}</select></label>` : '';
+    const heading = views[scope];
+    const description = localCreators ? 'South East Queensland podcasts, independent voices and digital publishers. Choose an area or format to explore.' : nationalPodcasts ? 'Political podcasts and guest interviews from around Australia. Browse example conversations and public contact routes.' : womenMedia ? 'Australian podcasts and publications covering banter, relationships, pop culture, current events and women’s lives. Browse by topic, format or area.' : music ? 'Australian and Queensland music programmes, podcasts and public submission routes. Explore recorded music and conversation opportunities by genre, format or area.' : university ? 'Student publications, societies and public networks across South East Queensland.' : unions ? 'Queensland unions, the industries they cover, and their public news, membership information and contact routes.' : communityNetworks ? 'Find groups around Redlands and open their newsletters, public pages and contact routes.' : 'Browse radio stations, newspapers, broadcasters, podcasts, digital publications and public commentators by category. Community groups, universities and workers’ unions have their own directories.';
+    const musicContext = music ? '<section class="panel music-project" aria-labelledby="music-project-title"><p class="eyebrow">Your music</p><h3 id="music-project-title">A Protopian Gambit</h3><p>You have four albums, and A Protopian Gambit is complete. You wrote the lyrics and used generative AI to create the music. You do not currently perform it live.</p><p class="small muted">EDM and house · pop · rock · cultural · reggae · coastal</p></section>' : '';
+    return `<div class="content">${intro(heading,description)}${musicContext}${localCreators || nationalPodcasts ? '<p class="notice">Example work and verified election coverage are labelled separately.</p>' : ''}${mediaDirectory ? '<p class="small muted">Each source has one primary category here. Relevant media can also appear in a specialist directory.</p>' : ''}<div class="toolbar media-toolbar"><label class="field" for="media-search">Search<input id="media-search" type="search" placeholder="Name, place or topic"></label>${categoryFilter}<label class="field" for="media-kind">Type<select id="media-kind"><option value="">Every type</option>${[...new Set(pool.map(m=>m.kind))].sort((a,b)=>sourceTypeLabel(a).localeCompare(sourceTypeLabel(b))).map(k=>`<option value="${esc(k)}">${esc(sourceTypeLabel(k))}</option>`).join('')}</select></label><label class="field" for="media-format">Format<select id="media-format"><option value="">Every format</option>${Object.entries(formatLabels).map(([value,label])=>`<option value="${value}">${label}</option>`).join('')}</select></label>${(mediaDirectory || localCreators || womenMedia || music || university || unions || communityNetworks) && regions.length ? `<label class="field" for="media-region">Area<select id="media-region"><option value="">${localCreators ? 'All local areas' : 'All areas'}</option>${regions.map(region=>`<option>${esc(region)}</option>`).join('')}</select></label>` : ''}${topics.length ? `<label class="field" for="media-topic">${music ? 'Genre or topic' : 'Topic'}<select id="media-topic"><option value="">${music ? 'Every genre or topic' : 'Every topic'}</option>${topics.map(topic=>`<option value="${esc(topic)}">${esc(topicLabel(topic))}</option>`).join('')}</select></label>` : ''}<label class="field" for="media-evidence"${communityNetworks || music || university || unions || womenMedia ? ' hidden' : ''}>Evidence<select id="media-evidence"><option value="">Any evidence status</option><option value="coverage">Election source found</option><option value="outlet">Current election coverage unverified</option></select></label>${button('reset-media','Reset')}</div><p class="small muted" id="media-count" tabindex="-1"></p>${mediaPagination()}<div class="project-grid" id="media-results"></div>${mediaPagination('-bottom')}<p class="small muted">${communityNetworks || unions ? 'Checked 8 November 2026. Follow each group’s public page for current activities and contact details.' : university ? 'Checked 8 November 2026. Follow the linked organisation for membership, contribution and participation details.' : music ? 'Checked 8 November 2026. Submission requirements and programme activity can change. A listed route does not establish acceptance of AI-generated music, airplay or an interview booking.' : 'Checked 8 November 2026. People and their outlets can appear separately and share the same coverage. Listed sources do not imply support, willingness to engage, or permission to contact. Public contact routes are provided for you to inspect.'}</p>${mediaDirectory ? publicReferences() : ''}</div>`;
+  }
+  function filterMedia(resetPage = true) {
+    if(resetPage)mediaPage=1;
+    const pool = mediaPool(current);
+    const query = ($('#media-search')?.value || '').toLowerCase(), category = $('#media-category')?.value, kind = $('#media-kind')?.value, format = $('#media-format')?.value, region = $('#media-region')?.value, topic = $('#media-topic')?.value, evidence = $('#media-evidence')?.value;
+    const matches = pool.filter(m=>(!query || [m.name,m.area,m.region || '',m.description,m.notes,m.submissionNotes || '',m.aiPolicy || '',m.sampleTitle || '',...m.tags].join(' ').toLowerCase().includes(query)) && (!category || primaryCategory(m)===category) && (!kind || m.kind===kind) && (!format || formatsOf(m).includes(format)) && (!region || sourceArea(m)===region) && (!topic || m.tags.includes(topic)) && (!evidence || (evidence==='coverage' ? verified(m) : !verified(m))));
+    const pageCount=Math.max(1,Math.ceil(matches.length/mediaPageSize));
+    mediaPage=Math.max(1,Math.min(mediaPage,pageCount));
+    const start=(mediaPage-1)*mediaPageSize,end=Math.min(start+mediaPageSize,matches.length);
+    $('#media-count').textContent = `${matches.length} of ${pool.length} ${current === 'new-media' ? 'local podcast and creator entries' : current === 'national-podcasts' ? 'national political podcast entries' : current === 'women-media' ? 'women-focused media entries' : current === 'music' ? 'music show and podcast entries' : current === 'university' ? 'university network entries' : current === 'unions' ? 'workers’ union entries' : current === 'community-networks' ? 'community network entries' : 'media and commentator entries'}`;
+    $('#media-results').innerHTML = matches.length ? matches.slice(start,end).map(mediaCard).join('') : empty('No matching sources','Try another word or reset the filters.');
+    for(const suffix of ['', '-bottom']){
+      $(`#media-range${suffix}`).textContent=matches.length ? `Showing ${start+1} to ${end} of ${matches.length} · Page ${mediaPage} of ${pageCount}` : 'No results';
+      $(`#media-previous${suffix}`).disabled=mediaPage===1;
+      $(`#media-next${suffix}`).disabled=mediaPage===pageCount;
+    }
+  }
+  function draftText(record) {
+    return [record.subject ? `Subject: ${record.subject}` : '',record.message || ''].filter(Boolean).join('\n\n');
+  }
+  function outreachRows(items) {
+    return items.map(record=>`<article class="outreach-row"><div class="outreach-row-heading"><div><h3>${esc(record.name)}</h3>${record.organisation ? `<p class="small muted">${esc(record.organisation)}</p>` : ''}</div><span class="badge stage-${outreachStage(record)}">${esc(stageLabels[outreachStage(record)])}</span></div>${record.subject ? `<p class="outreach-subject">${esc(record.subject)}</p>` : ''}${record.message ? `<p class="outreach-excerpt">${esc(record.message.slice(0,180))}${record.message.length>180 ? '…' : ''}</p>` : '<p class="small muted">No message draft saved.</p>'}${record.lastContactDate ? `<p class="small muted">Last contacted: ${esc(record.lastContactDate)}</p>` : ''}<div class="actions">${button('edit-outreach','Edit outreach',`data-id="${esc(record.id)}"`,false)}${link(record.contactUrl,'Open contact route')}${link(record.sourceUrl,'View source')}${button('copy-outreach','Copy draft',`data-id="${esc(record.id)}"${draftText(record) ? '' : ' disabled'}`)}</div></article>`).join('');
+  }
+  function outreachView() {
+    return `<div class="content">${intro('Outreach desk','Keep contacts, prepare messages and record conversations when they happen.')}<div class="toolbar"><div class="actions">${button('add','New outreach','data-collection="contacts"',false)}${button('view','Browse sources','data-view-target="media"')}</div>${button('csv','Export contacts','data-collection="contacts"')}</div><div class="toolbar outreach-filters"><label class="field" for="outreach-search">Search outreach<input id="outreach-search" type="search" placeholder="Name, organisation or draft"></label><label class="field" for="outreach-stage">Stage<select id="outreach-stage"><option value="">Every stage</option>${Object.entries(stageLabels).map(([value,label])=>`<option value="${value}">${label}</option>`).join('')}</select></label>${button('reset-outreach','Reset')}</div><p class="small muted" id="outreach-count"></p><div id="outreach-results"></div></div>`;
+  }
+  function filterOutreach() {
+    const query=($('#outreach-search')?.value || '').toLowerCase(),stage=$('#outreach-stage')?.value;
+    const matches=state.contacts.filter(record=>(!stage || outreachStage(record)===stage) && (!query || [record.name,record.organisation,record.subject,record.message,record.notes].filter(Boolean).join(' ').toLowerCase().includes(query)));
+    $('#outreach-count').textContent=`${matches.length} of ${state.contacts.length} saved outreach records`;
+    $('#outreach-results').innerHTML=matches.length ? outreachRows(matches) : state.contacts.length ? empty('No matching outreach','Try another search or reset the filters.') : `<div class="empty-state"><h3>Your outreach desk is ready</h3><p>Browse a source and choose Prepare outreach, or add a contact you already know.</p><div class="actions">${button('view','Browse SEQ','data-view-target="new-media"')}${button('view','National interviews','data-view-target="national-podcasts"')}${button('view','Women-focused media','data-view-target="women-media"')}${button('view','Music shows','data-view-target="music"')}${button('view','Browse media','data-view-target="media"')}</div></div>`;
+  }
+  function prepareOutreach(id) {
+    const item=media.find(source=>source.id===id);
+    if(!item)throw new Error('Source not found. Reload the directory and try again.');
+    const existing=state.contacts.find(contact=>contact.sourceId===id);
+    if(existing){openEditor('contacts',existing.id);return;}
+    const traditional=formatsOf(item).includes('radio') || ['traditional-media','journalist','radio','magazine-and-online'].includes(item.kind.toLowerCase());
+    const organisation=item.organisation || (['journalist','commentator'].includes(item.kind.toLowerCase()) ? '' : item.name);
+    openEditor('contacts',null,{name:item.name,organisation,sourceId:item.id,sourceUrl:item.website,contactUrl:item.contactUrl || '',channel:['community-networks','university','unions'].includes(item.discoveryGroup) ? 'other' : traditional ? 'traditional-media' : 'new-media',consent:'unknown',stage:'exploring'});
+  }
+  function recordRows(collection, items) {
+    return items.length ? items.map(r=>`<div class="list-row"><div><h3>${esc(r.title || r.name || r.description)}</h3><p>${esc(r.organisation || r.notes || '')}</p><div class="meta">${r.status ? `<span class="badge">${esc(choiceLabel(collection,'status',r.status))}</span>` : ''}${r.consent ? `<span class="badge">Permission: ${esc(r.consent)}</span>` : ''}${r.dueDate ? `<span>Your date: ${esc(r.dueDate)}</span>` : ''}${r.amount ? `<span>AUD ${esc(r.amount)}</span>` : ''}${link(r.evidenceUrl || r.sourceUrl,'Source')}</div></div>${button('edit','Open',`data-collection="${collection}" data-id="${esc(r.id)}"`)}</div>`).join('') : empty('Nothing saved here yet','Add something when it is useful to you.');
+  }
+  function recordView(collection) {
+    if(collection==='contacts')return outreachView();
+    const copy = {tasks:['A collection of possibilities','Ideas, sources and conversations you choose to keep. A date is always optional.'],contacts:['Connections you choose to keep','Record known contacts and their actual permission preferences. The directory does not add anyone automatically.'],publications:['A place for drafts','Keep a source, working text and review notes together. Saving a draft does not publish or send it.'],enquiries:['Questions and conversations','Record enquiries you have received. The public contact form still needs its private submission service connected.'],expenses:['Resources and records','Record an expense or a possibility when useful. Amounts here are your entries, not a spending plan.']}[collection];
+    return `<div class="content">${intro(...copy)}<div class="toolbar">${button('add',`Add ${collection==='tasks' ? 'a possibility' : 'a record'}`,`data-collection="${collection}"`,false)}${button('csv','Export these records',`data-collection="${collection}"`)}</div><div class="panel">${recordRows(collection,state[collection])}</div></div>`;
+  }
+  function calendarView() {
+    const dated = state.tasks.filter(t=>t.dueDate).sort((a,b)=>a.dueDate.localeCompare(b.dueDate));
+    return `<div class="content">${intro('Dates you choose','Only your saved possibilities with a date appear here. External election dates are shown separately as reference.')}<div class="panel">${recordRows('tasks',dated)}</div><div class="panel"><h2>Official reference</h2><p>ECQ announced the Redland mayoral by-election for 12 December 2026, with a full postal ballot. The notice of election and opening of nominations are scheduled for 10 November.</p><p>${link(campaign.electionSource,'Read ECQ’s 5 November announcement')}</p><p class="small muted">These are external dates, not a personal schedule. Nomination closing and ballot-return details should be checked in the official notice.</p></div></div>`;
+  }
+  function projectsView() {
+    return `<div class="content">${intro('The work you can draw on','Existing projects retain their own context. A library entry does not make a proposal campaign policy.')}<div class="toolbar"><label class="field">Search projects<input id="project-search" type="search" placeholder="Try music, household or resilience"></label></div><p class="small muted" id="project-count"></p><div class="project-grid" id="project-results"></div></div>`;
+  }
+  function filterProjects() {
+    const q = $('#project-search').value.toLowerCase(); const matches=projects.filter(p=>[p.title,p.summary,p.category,...p.tags].join(' ').toLowerCase().includes(q));
+    $('#project-count').textContent=`${matches.length} of ${projects.length} projects`;
+    $('#project-results').innerHTML=matches.map(p=>`<article class="project-card"><span class="badge">${esc(p.status)}</span><h3>${esc(p.title)}</h3><p>${esc(p.summary)}</p><div class="tags">${p.tags.map(t=>`<span class="tag">${esc(t)}</span>`).join('')}</div><div class="actions">${link(p.url,'Explore project')}${link(`${p.repo}/blob/${p.sourceCommit}/${p.sourcePath}`,'Reviewed source')}</div>${button('save-project','Save a possibility',`data-id="${esc(p.id)}"`)}</article>`).join('') || empty('No matching projects','Try another search.');
+  }
+  function agentsView() {
+    return `<div class="content">${intro('Bring a question to an AI companion','Choose a research prompt, edit it and copy it into your preferred AI chat. These are prompts, not running agents or scheduled jobs.')}<div class="agent-grid">${[['sources','Find more public sources','Explore South East Queensland podcasts, independent local voices and gaps in the broader media directory.'],['facts','Check a claim','Trace a factual claim to its original evidence and record uncertainty.'],['projects','Explore a connection','Compare a project with a local question without declaring a policy position.']].map(([id,title,description])=>`<article class="agent-card"><h3>${title}</h3><p>${description}</p>${button('prompt','Open prompt',`data-id="${id}"`)}</article>`).join('')}</div></div>`;
+  }
+  function settingsView() {
+    return `<div class="content">${intro('Know where your work lives',local ? 'Local control room. Records are saved in this repository’s ignored private folder.' : 'Public research site. Your saved records live only in this browser profile on this device.')}<div class="panel"><h2>${local ? 'Private local storage' : 'Browser storage'}</h2><p>${local ? 'The local service writes private/operations.json. The CLI and local control room use the same records. Files are not uploaded by this interface.' : 'This is not an account login or a cloud backup. Other visitors cannot see your saved records. Anyone using this browser profile may be able to read them. Clearing site data can remove them.'}</p><div class="actions">${button('backup',local ? 'Create a local backup' : 'Download workspace backup','',false)}${button('download','Download workspace JSON')}${local ? '' : button('restore','Restore a browser backup')}</div></div><div class="panel"><h2>Private Google Drive connection</h2><p>Integration source and setup instructions are in the repository. A private folder has been prepared, but this interface is not connected to a deployed Google service. Saving here does not save to Google Drive.</p><p>${link(`${campaign.repository}/blob/main/docs/GOOGLE-DRIVE.md`,'Read setup instructions')}</p></div><div class="panel"><h2>Public enquiries</h2><p>The contact form keeps Luke’s email off the site. Submission remains unavailable until the private service is deployed and its URL configured.</p><a href="https://auraofintelligence.github.io/redlands-mayoral-campaign/contact.html">View contact form</a></div><div class="panel"><h2>Sources and rights</h2><p>Research checked 8 November 2026. Dates and coverage can change. Original code uses the Strange But True Public Source Licence; photographs retain their credited Creative Commons licences.</p><p><a href="assets/photos/provenance.json">Photo register</a> · <a href="https://auraofintelligence.github.io/redlands-mayoral-campaign/licence.html">Licence</a> · <a href="https://auraofintelligence.github.io/redlands-mayoral-campaign/privacy.html">Privacy</a></p></div></div>`;
+  }
+  const sectionOrder = () => Array.from(document.querySelectorAll('[data-view]'),control=>control.dataset.view);
+  function updateSectionNavigation() {
+    const order=sectionOrder(),index=order.indexOf(current);
+    for(const [direction,offset] of [['previous',-1],['next',1]]){
+      const control=$(`#${direction}-section`),destination=$(`#${direction}-destination`),target=order[index+offset];
+      if(!control||!destination)continue;
+      control.disabled=!target;
+      destination.textContent=target ? views[target] : direction==='previous' ? 'First section' : 'Last section';
+      control.setAttribute('aria-label',target ? `${direction==='previous' ? 'Previous' : 'Next'}: ${views[target]}` : direction==='previous' ? 'Previous: first section reached' : 'Next: last section reached');
+      control.title=target ? views[target] : destination.textContent;
+    }
+  }
+  function returnToTop(smooth=false) {
+    const reduced=window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
+    window.scrollTo?.({top:0,left:0,behavior:smooth&&!reduced ? 'smooth' : 'instant'});
+    $('#screen-title').focus?.({preventScroll:true});
+  }
+  function render(view=current) {
+    if (!views[view]) view='overview'; const changed=view!==current; current=view; location.hash=view;
+    document.querySelectorAll('[data-view]').forEach(b=>{b.classList.toggle('active',b.dataset.view===view);if(b.dataset.view===view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
+    $('#screen-title').textContent=views[view]; document.title=`${views[view]} | Luke’s command centre`;
+    $('#view').innerHTML=collections[view] ? recordView(collections[view]) : ({overview,media:mediaView,'new-media':()=>mediaView('new-media'),'national-podcasts':()=>mediaView('national-podcasts'),'women-media':()=>mediaView('women-media'),music:()=>mediaView('music'),university:()=>mediaView('university'),unions:()=>mediaView('unions'),'community-networks':()=>mediaView('community-networks'),calendar:calendarView,projects:projectsView,agents:agentsView,settings:settingsView,activity:()=>`<div class="content">${intro('Your trail','A record of changes you explicitly saved. Browsing and opening sources are not logged.')}<div class="panel">${state.audit.length ? [...state.audit].reverse().map(a=>`<div class="audit-row"><time>${esc(a.at)}</time><span>${esc(a.action)} · ${esc(a.collection)}</span></div>`).join('') : empty('Your trail begins when you save','Explore freely. No activity is assigned to you.')}</div></div>`}[view])();
+    if(['media','new-media','national-podcasts','women-media','music','university','unions','community-networks'].includes(view))filterMedia(); if(view==='projects')filterProjects(); if(view==='outreach')filterOutreach();
+    $('#sidebar').classList.remove('open');$('#menu-toggle').setAttribute('aria-expanded','false');
+    updateSectionNavigation();
+    if(changed)returnToTop();
+  }
+  function editorField(collection, field, record) {
+    const type=M.fields[collection][field],value=record[field] ?? '',required=['required','date-required','money'].includes(type),label=labels[field] || field;
+    let input;
+    if(Array.isArray(type))input=`<select id="field-${field}" name="${field}">${type.map(v=>`<option value="${v}"${v===value ? ' selected' : ''}>${esc(field==='stage' ? stageLabels[v] : choiceLabel(collection,field,v))}</option>`).join('')}</select>`;
+    else if(field==='contactId')input=`<select id="field-${field}" name="${field}"><option value="">No linked contact</option>${state.contacts.map(c=>`<option value="${esc(c.id)}"${c.id===value ? ' selected' : ''}>${esc(c.name)}</option>`).join('')}</select>`;
+    else if(['notes','message','authorisation','consentEvidence'].includes(field))input=`<textarea id="field-${field}" name="${field}" rows="${field==='message' ? '9' : '4'}" maxlength="5000">${esc(value)}</textarea>`;
+    else input=`<input id="field-${field}" name="${field}" type="${type.startsWith?.('date') ? 'date' : type==='email' ? 'email' : type==='url' ? 'url' : type==='money' ? 'number' : 'text'}" ${type==='money' ? 'min="0" step="0.01"' : ''} value="${esc(value)}" maxlength="5000"${required ? ' required' : ''}>`;
+    return `<label class="field${['notes','message','subject','contactUrl','sourceUrl','consentEvidence'].includes(field) ? ' full' : ''}" for="field-${field}"><span>${esc(label)}${required ? ' *' : ''}</span>${input}</label>`;
+  }
+  function openEditor(collection, id, preset={}) {
+    const expectedRevision=state.revision;
+    const existing=id ? state[collection].find(r=>r.id===id) : null,record={...M.defaults[collection],...existing,...preset},isOutreach=collection==='contacts';
+    const allFields=Object.keys(M.fields[collection]),mainFields=isOutreach ? ['name','organisation','stage','lastContactDate','subject','message','notes','contactUrl','sourceUrl'].filter(field=>allFields.includes(field)) : allFields;
+    const advancedFields=isOutreach ? allFields.filter(field=>!mainFields.includes(field)&&field!=='sourceId') : [];
+    const title=isOutreach ? (id ? 'Edit outreach' : 'Prepare outreach') : `${id ? 'Edit' : 'Capture'} ${collection==='tasks' ? 'a possibility' : 'a record'}`;
+    $('#editor').innerHTML=`<form id="record-form"><div class="panel-head"><h2>${title}</h2>${button('close','Close')}</div>${isOutreach ? `<p class="help-text">Save the draft here. Contact routes open separately; stage and dates are yours to update.</p><div class="actions editor-source-links">${link(record.contactUrl,'Open contact route')}${link(record.sourceUrl,'View source')}</div><input type="hidden" name="sourceId" value="${esc(record.sourceId || '')}">` : ''}<div class="form-grid">${mainFields.map(field=>editorField(collection,field,record)).join('')}</div>${advancedFields.length ? `<details class="editor-advanced"><summary>Contact details and update permission</summary><div class="form-grid">${advancedFields.map(field=>editorField(collection,field,record)).join('')}</div></details>` : ''}<p class="help-text">${collection==='tasks' ? 'Leave the date and who fields empty if you wish. This saves a possibility, not a commitment.' : isOutreach ? 'Only choose Contacted or Replied after that has happened.' : 'Saving records does not send messages, publish content or subscribe anyone.'}</p><p id="editor-error" role="alert"></p><p id="editor-feedback" class="help-text" role="status"></p><div class="editor-actions">${button('close','Cancel')}${isOutreach ? button('copy-editor-draft','Copy draft') : ''}<button type="submit" class="button">${isOutreach ? 'Save outreach' : 'Save privately'}</button></div></form>`;
+    $('#editor').showModal();
+    $('#record-form').addEventListener('submit',async event=>{
+      event.preventDefault();const submit=event.target.querySelector('[type="submit"]');submit.disabled=true;
+      try{await save(collection,Object.fromEntries(new FormData(event.target)),id,expectedRevision);$('#editor').close();render(isOutreach ? 'outreach' : current);toast('Saved to your '+(local ? 'private local records.' : 'browser.'));}
+      catch(error){$('#editor-error').textContent=error.message;}finally{submit.disabled=false;}
+    });
+  }
+  function prompt(text) {$('#editor').innerHTML=`<div class="panel-head"><h2>Explore with AI</h2>${button('close','Close')}</div><label class="field">Edit the prompt<textarea id="ai-prompt" rows="16">${esc(text)}</textarea></label><p class="help-text">Copy this into an AI conversation when you choose. No agent is running from this page.</p><div class="editor-actions">${button('copy-prompt','Copy prompt','',false)}</div>`;$('#editor').showModal();}
+  function researchPrompt(item) { if(item.discoveryGroup==='university' || item.tags.includes('university')) return `Research ${item.name} as a university publication, society or public network. Start with these public sources:\n${item.sourceUrls.join('\n')}\n\nDescribe the institution, purpose, activities, public publications and contact routes. Check actual membership, contribution or event participation rules rather than assuming access. Keep source links and checked dates. Do not collect private member details, infer political views, send messages or create commitments. Give factual options without a schedule. Use no em dashes.`; if(item.discoveryGroup==='music') return `Research ${item.name} as a recorded-music or music conversation opportunity. Start with these public sources:\n${item.sourceUrls.join('\n')}\n\nLuke has four albums and his latest, A Protopian Gambit, is complete. He wrote the lyrics and used generative AI to create the music. Genres include EDM, house, pop, rock, cultural, reggae and coastal. He does not currently perform live. Verify the show's actual genres, current activity, interview formats, public music submission route, rights requirements and any published generative AI policy. Distinguish confirmed rules from unknowns and do not assume eligibility or acceptance. Keep source links and dates. Give factual options without sending messages, making commitments or scheduling activity. Use no em dashes.`; if(item.discoveryGroup==='women-focused' || item.tags.includes('women-focused')) return `Research ${item.name} as an Australian podcast or publication. Start with these public sources:\n${item.sourceUrls.join('\n')}\n\nDescribe its actual topics, hosts, location, current activity, example conversations and public contact routes. Distinguish general banter, relationships, culture and current events where evidenced. Check whether guests, listener stories or other contributions are invited and describe the published route without assuming access. Keep source links and dates. Do not infer listener characteristics, send messages, create commitments or schedule activity. Use no em dashes.`; if(item.discoveryGroup==='unions') return `Research ${item.name} as a workers’ union or public union network. Start with these official public sources:\n${item.sourceUrls.join('\n')}\n\nDescribe its actual geographic and industry coverage, purpose, public news, membership criteria and contact routes. Distinguish a branch, union and peak body. Do not assume eligibility, endorsement or permission to contact members. Keep sources and dates. Do not collect member details, infer political views, send messages or create commitments. Use no em dashes.`; if(item.discoveryGroup==='community-networks') return `Research ${item.name} as a Redlands community group. Start with these official public sources:\n${item.sourceUrls.join('\n')}\n\nDescribe its purpose, location, activities, public newsletters or group pages, membership information and contact routes. Distinguish a public page from a private group. Keep source links and checked dates. Do not collect private member details, invent group sizes, send messages or create commitments. Give me useful facts and options without a schedule. Use no em dashes.`; return `Research the public election coverage and contact routes of ${item.name} in relation to the 2026 Redland City mayoral by-election, Queensland, Australia.\n\nStart with:\n${item.sourceUrls.join('\n')}\n\nFind original dated sources, distinguish current election commentary from outlet identity, and identify unresolved gaps. Use public professional contact routes only. Do not infer political support, privately profile citizens, send messages or make commitments. Give me options without a schedule or ranked outreach strategy. Keep summaries neutral and factual, retain source links and dates, and use no em dashes.\n\nCurrent research note: ${item.notes}`; }
+  function download(text, name, type='application/json') {const url=URL.createObjectURL(new Blob([text],{type}));const a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}
+  async function restoreBrowser() {
+    const input=document.createElement('input');input.type='file';input.accept='.json,application/json';
+    input.onchange=async()=>{try{
+      if(!input.files[0])return;if(input.files[0].size>5000000)throw new Error('Backup exceeds the 5 MB browser restore limit.');
+      const candidate=validateState(JSON.parse(await input.files[0].text()));
+      $('#editor').innerHTML=`<h2>Restore this browser workspace?</h2><p>This replaces the saved records in this browser. It does not upload a file or change the local server.</p><ul>${Object.keys(M.fields).map(c=>`<li>${candidate[c].length} ${c}</li>`).join('')}</ul><p>Download your current workspace first if you want to keep it.</p><div class="editor-actions">${button('close','Cancel')}${button('download','Download current workspace')}<button type="button" class="button" id="confirm-restore">Replace browser records</button></div>`;
+      $('#editor').showModal();$('#confirm-restore').onclick=()=>{try{localStorage.setItem(key,JSON.stringify(candidate));state=candidate;$('#editor').close();render();toast('Browser records restored.');}catch(error){toast(error.message,true);}};
+    }catch(error){toast(error.message,true);}}; input.click();
+  }
+  document.addEventListener('click',async event=>{
+    if(event.target.closest('.skip-link')){
+      event.preventDefault();
+      window.scrollTo?.({top:0,left:0,behavior:'instant'});
+      $('#view').focus?.({preventScroll:true});
+      return;
+    }
+    const nav=event.target.closest('[data-view]');if(nav){render(nav.dataset.view);return;}
+    const el=event.target.closest('[data-action]');if(!el)return;
+    const {action,id,collection}=el.dataset;
+    try{
+      if(action==='view')render(el.dataset.viewTarget);
+      if(action==='previous-section'||action==='next-section'){
+        const order=sectionOrder(),target=order[order.indexOf(current)+(action==='previous-section' ? -1 : 1)];
+        if(target)render(target);
+      }
+      if(action==='back-to-top')returnToTop(true);
+      if(action==='close')$('#editor').close();
+      if(action==='add')openEditor(collection);
+      if(action==='edit')openEditor(collection,id);
+      if(action==='prepare-outreach')prepareOutreach(id);
+      if(action==='edit-outreach')openEditor('contacts',id);
+      if(action==='copy-outreach'){const record=state.contacts.find(contact=>contact.id===id);if(!record)throw new Error('Outreach record not found.');const text=draftText(record);if(!text)throw new Error('Add a subject or message before copying.');await navigator.clipboard.writeText(text);toast('Draft copied.');}
+      if(action==='copy-editor-draft'){const text=draftText({subject:$('#field-subject').value,message:$('#field-message').value});if(!text){$('#editor-error').textContent='Add a subject or message before copying.';return;}await navigator.clipboard.writeText(text);$('#editor-error').textContent='';$('#editor-feedback').textContent='Draft copied.';}
+      if(action==='reset-outreach'){$('#outreach-search').value='';$('#outreach-stage').value='';filterOutreach();}
+      if(action==='save-source'){const item=media.find(m=>m.id===id);openEditor('tasks',null,{title:`Explore ${item.name}`,evidenceUrl:item.coverageUrl || item.website,notes:`${item.description}\n\n${item.notes}`});}
+      if(action==='save-project'){const item=projects.find(p=>p.id===id);openEditor('tasks',null,{title:`Explore ${item.title}`,evidenceUrl:item.url,notes:item.summary});}
+      if(action==='research-source')prompt(researchPrompt(media.find(m=>m.id===id)));
+      if(action==='prompt')prompt(({sources:'Find additional South East Queensland podcasts, independent commentators, digital publishers and other local media sources relevant to the 2026 Redland City mayoral by-election. Verify their local base or editorial focus and link an example of their work. Distinguish local publishing from confirmed coverage of this election. Do not substitute national shows for local sources. Check original dated evidence. Return public contact routes, coverage links, research date and gaps. Do not infer support, score audiences, send messages, create schedules or collect private citizen details. Use no em dashes.',facts:'Help me check this factual claim: [paste claim]. Find primary evidence, record publication dates, explain uncertainty and separate facts from inference. Do not invent a policy position or publish anything. Use no em dashes.',projects:'Explore possible connections between this existing project [link] and this local question [question]. Describe what is already demonstrated, what is a proposal and what remains uncertain. Check council responsibilities against primary sources. Give me options without declaring commitments, scheduling activity or creating targeted political messages. Use no em dashes.'})[id]);
+      if(action==='copy-prompt'){await navigator.clipboard.writeText($('#ai-prompt').value);toast('Prompt copied.');}
+      if(action==='reset-media'){if($('#media-category'))$('#media-category').value='';$('#media-search').value='';$('#media-kind').value='';$('#media-format').value='';if($('#media-region'))$('#media-region').value='';if($('#media-topic'))$('#media-topic').value='';$('#media-evidence').value='';filterMedia();}
+      if(action==='previous-results'||action==='next-results'){mediaPage+=action==='next-results' ? 1 : -1;filterMedia(false);$('#media-count').focus?.({preventScroll:true});$('#media-count').scrollIntoView?.({block:'start',behavior:'instant'});}
+      if(action==='surprise'){const shuffled=[...newMedia()];for(let i=shuffled.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[shuffled[i],shuffled[j]]=[shuffled[j],shuffled[i]];}$('#discovery-cards').innerHTML=shuffled.slice(0,3).map(mediaCard).join('');}
+      if(action==='download' || (action==='backup'&&!local))download(JSON.stringify(state,null,2)+'\n','redlands-workspace.json');
+      if(action==='backup'&&local){const result=await api('backup',{});toast(`Local backup created: ${result.path}`);}
+      if(action==='csv')download(M.exportCsv(state,collection),`${collection}.csv`,'text/csv');
+      if(action==='restore'&&!local)await restoreBrowser();
+    }catch(error){toast(error.message,true);}
+  });
+  document.addEventListener('input',event=>{if(event.target.id==='media-search')filterMedia();if(event.target.id==='project-search')filterProjects();if(event.target.id==='outreach-search')filterOutreach();});
+  document.addEventListener('change',event=>{if(['media-category','media-kind','media-format','media-region','media-topic','media-evidence'].includes(event.target.id))filterMedia();if(event.target.id==='outreach-stage')filterOutreach();});
+  $('#quick-add').onclick=()=>openEditor('contacts');
+  $('#menu-toggle').onclick=()=>{$('#sidebar').classList.toggle('open');$('#menu-toggle').setAttribute('aria-expanded',String($('#sidebar').classList.contains('open')));};
+  addEventListener('hashchange',()=>{const view=location.hash.slice(1);if(view!==current)render(view);});
+  addEventListener('storage',event=>{if(!local&&event.key===key){try{state=browserState();if(!$('#editor').open)render();toast('Workspace updated in another tab.');}catch(error){toast(error.message,true);}}});
+  async function start(){
+    try{
+      [media,projects,campaign]=await Promise.all(['media','projects','campaign'].map(async name=>{const r=await fetch(`assets/data/${name}.json`);if(!r.ok)throw new Error(`Could not load ${name}. Please reload.`);return r.json();}));
+      if(location.hostname==='127.0.0.1'&&location.port==='4183'){csrf=(await api('session')).csrfToken;state=await api('state');local=true;}
+      else {try{state=browserState();}catch(error){toast(`Browser records could not be opened: ${error.message}`,true);$('#quick-add').disabled=true;throw error;}}
+      $('#storage-status').textContent=local ? 'Private local records' : 'Saved in this browser';$('#storage-status').classList.add('connected');
+      render(location.hash.slice(1)||'overview');
+    }catch(error){$('#view').innerHTML=`<div class="content">${empty('Workspace could not open',error.message)}<p>Your existing data has not been replaced. Reload after checking storage or the local service.</p></div>`;$('#storage-status').textContent='Storage unavailable';$('#storage-status').classList.add('error');$('#quick-add').disabled=true;}
+  }
+  start();
+})();
