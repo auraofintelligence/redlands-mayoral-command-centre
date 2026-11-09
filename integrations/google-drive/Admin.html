@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <base target="_top">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Campaign administration</title>
+  <style>
+    :root {color-scheme:dark;--bg:#0b1520;--surface:#122332;--line:#355065;--text:#edf5f5;--muted:#a9c1cd;--accent:#9ae0d0;font-family:system-ui,sans-serif}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);line-height:1.55}header,main{max-width:1280px;margin:auto;padding:24px}h1{font-size:clamp(1.8rem,5vw,3rem);margin:5px 0}p{max-width:75ch}a{color:var(--accent)}button,input,select,textarea{font:inherit}button{padding:10px 16px;border:1px solid var(--line);border-radius:7px;background:var(--surface);color:var(--text);cursor:pointer}button:hover,button[aria-current=true]{border-color:var(--accent);color:var(--accent)}button:disabled{opacity:.5;cursor:wait}nav,.tools{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}section{background:var(--surface);border:1px solid var(--line);padding:22px;border-radius:12px;margin-bottom:22px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}label{display:block;margin:12px 0}input,textarea,select{display:block;width:100%;padding:10px;background:#08121c;color:var(--text);border:1px solid var(--line);border-radius:5px}textarea{min-height:100px}small,.muted{color:var(--muted)}#status{padding:12px;border-left:3px solid var(--accent);min-height:48px}ul{padding-left:18px}.record{padding:12px 0;border-bottom:1px solid var(--line)}.record button{margin-left:10px}.record span{display:block;color:var(--muted);font-size:.9rem}details{margin-top:18px}summary{cursor:pointer}:focus-visible{outline:3px solid #e9c870;outline-offset:3px}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.8rem}.badge{letter-spacing:.12em;font-size:.75rem;color:var(--accent);text-transform:uppercase}@media(max-width:800px){.grid{grid-template-columns:1fr}header,main{padding:16px}}@media print{button,nav,#editor,#suppression{display:none}body,section{background:#fff;color:#111}.grid{display:block}}
+  </style>
+</head>
+<body>
+  <header><div class="badge">Private workspace</div><h1>Campaign administration</h1><p>Luke Nathan Hayes. One owner, with AI assistance for drafts and administration. Every publication decision remains with Luke.</p><p id="account" class="muted">Checking your Google account.</p></header>
+  <main>
+    <p id="status" role="status" aria-live="polite">Loading private records.</p>
+    <div class="tools"><button id="reload" type="button">Reload records</button><button id="backup" type="button">Create Drive backup</button><a id="storage" hidden>Open private storage</a></div>
+    <nav aria-label="Record categories" id="navigation"></nav>
+    <div class="grid">
+      <section><h2 id="list-title">Records</h2><p id="count" class="muted"></p><div class="tools"><button id="new-record" type="button">New record</button><button id="export" type="button">Download private CSV</button></div><div id="records"></div></section>
+      <section id="editor"><h2 id="editor-title" tabindex="-1">New record</h2><p class="muted">Record only what you need to manage a request or consent. Keep political preferences, sensitive personal details and copied address lists out of this system.</p><form id="record-form"><div id="fields"></div><button type="submit">Save private record</button><button id="cancel" type="button">Clear form</button></form></section>
+    </div>
+    <section id="suppression"><h2>Record an unsubscribe</h2><p>This blocks a contact from being marked as consented again. It does not send a reply.</p><form id="suppress-form"><label>Email address<input name="email" type="email" autocomplete="off" required></label><label>Reason<input name="reason" value="Unsubscribe received" maxlength="1000" required></label><button type="submit">Save suppression</button></form><p id="suppressed" class="muted"></p></section>
+    <section><h2>Publication control</h2><p>A record marked approved needs a source, review date, reviewer and authorisation text. Approval here records an administrative decision. It does not publish to GitHub or send mail. Check the current electoral requirements and the actual publication before release.</p><details><summary>Recent administrative audit</summary><pre id="audit"></pre></details></section>
+  </main>
+  <script>
+    'use strict';
+    let dashboard, selected='contacts', editing=null, busy=false;
+    const el=id=>document.getElementById(id);
+    const label=value=>value.replace(/([A-Z])/g,' $1').replace(/^./,text=>text.toUpperCase());
+    function message(text){el('status').textContent=text;}
+    function pending(value){busy=value;document.querySelectorAll('button').forEach(button=>button.disabled=value);}
+    function request(method,args,success){if(busy)return;pending(true);google.script.run.withSuccessHandler(result=>{pending(false);success(result);}).withFailureHandler(error=>{pending(false);message(error.message||'Request failed. Your unsaved form remains available.');})[method](...args);}
+    function load(){request('getDashboard',[],result=>{dashboard=result;el('account').textContent='Signed in as '+result.owner+'. Revision '+result.state.revision+'.';el('storage').href=result.storageUrl;el('storage').hidden=false;render();message('Private records loaded.');});}
+    function render(){
+      editing=null;el('account').textContent='Signed in as '+dashboard.owner+'. Revision '+dashboard.state.revision+'.';
+      el('navigation').replaceChildren();
+      Object.keys(dashboard.fields).forEach(name=>{const button=document.createElement('button');button.type='button';button.textContent=label(name);button.setAttribute('aria-current',String(selected===name));button.onclick=()=>{selected=name;editing=null;render();};el('navigation').append(button);});
+      el('list-title').textContent=label(selected);el('count').textContent=dashboard.state[selected].length+' records';el('records').replaceChildren();
+      if(!dashboard.state[selected].length){const p=document.createElement('p');p.textContent='No records yet.';el('records').append(p);}
+      dashboard.state[selected].slice().reverse().forEach(record=>{const row=document.createElement('div');row.className='record';const name=document.createElement('strong');name.textContent=record.name||record.title||record.description;const edit=document.createElement('button');edit.type='button';edit.textContent='Edit';edit.onclick=()=>{editing=record.id;form(record);el('editor-title').focus();};const detail=document.createElement('span');detail.textContent=[record.status||record.consent,record.email||record.dueDate||record.date,record.amount?record.currency+' '+record.amount:''].filter(Boolean).join(' / ');row.append(name,edit,detail);el('records').append(row);});
+      el('suppressed').textContent=dashboard.state.suppression.length+' suppressed addresses.';el('audit').textContent=JSON.stringify(dashboard.state.audit.slice(-20),null,2);form();
+    }
+    function form(record){el('editor-title').textContent=record?'Edit record':'New record';el('fields').replaceChildren();Object.entries(dashboard.fields[selected]).forEach(([name,type])=>{const wrapper=document.createElement('label');wrapper.textContent=label(name);let control;if(Array.isArray(type)){control=document.createElement('select');type.forEach(value=>{const option=document.createElement('option');option.value=value;option.textContent=label(value);control.append(option);});}else if(name==='notes'||name==='consentEvidence'||name==='authorisation'){control=document.createElement('textarea');}else{control=document.createElement('input');control.type=type.startsWith('date')?'date':type==='email'?'email':type==='url'?'url':type==='money'?'number':'text';if(type==='money'){control.min='0';control.step='0.01';}}control.name=name;control.required=type==='required'||type==='date-required'||type==='money';control.value=record?record[name]:(dashboard.defaults[selected][name]||'');if(name==='owner'&&!record)control.value='Luke Nathan Hayes';control.maxLength=5000;wrapper.append(control);el('fields').append(wrapper);});}
+    el('record-form').onsubmit=event=>{event.preventDefault();const record=Object.fromEntries(new FormData(event.currentTarget));request('saveRecord',[selected,record,editing,dashboard.state.revision],result=>{dashboard.state=result.state;editing=null;render();message('Private record saved.');});};
+    el('suppress-form').onsubmit=event=>{event.preventDefault();const values=new FormData(event.currentTarget);request('suppressContact',[values.get('email'),values.get('reason'),dashboard.state.revision],result=>{dashboard.state=result.state;render();event.target.reset();message('Suppression saved.');});};
+    el('new-record').onclick=el('cancel').onclick=()=>{editing=null;form();};el('reload').onclick=load;
+    el('backup').onclick=()=>request('createPrivateBackup',[],result=>{message('Private Drive backup created at revision '+result.revision+'.');const link=document.createElement('a');link.href=result.url;link.textContent=' Open backup';el('status').append(link);});
+    el('export').onclick=()=>request('exportRecords',[selected],result=>{const url=URL.createObjectURL(new Blob([result.content],{type:'text/csv;charset=utf-8'}));const link=document.createElement('a');link.href=url;link.download=result.name;link.click();setTimeout(()=>URL.revokeObjectURL(url),1000);message('Private CSV downloaded. Keep it outside the public repository.');});
+    load();
+  </script>
+</body>
+</html>
