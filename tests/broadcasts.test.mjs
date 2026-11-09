@@ -1,6 +1,8 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {mkdtemp,readFile,writeFile,rm} from 'node:fs/promises';
+import {mkdir,mkdtemp,readFile,writeFile,rm} from 'node:fs/promises';
+import {join,resolve,sep} from 'node:path';
+import {fileURLToPath} from 'node:url';
 import {randomUUID} from 'node:crypto';
 import model from '../operations/model.cjs';
 import finance from '../operations/finance.cjs';
@@ -37,13 +39,15 @@ test('repeat plays remain separate audited occurrences and are not counted as fi
 });
 
 test('the broadcast ledger upgrades an existing store without changing it until a record is saved',async()=>{
-  const directory=await mkdtemp(new URL('../private/broadcast-test-',import.meta.url));
+  const scratch=fileURLToPath(new URL('../private/',import.meta.url));
+  await mkdir(scratch,{recursive:true});
+  const directory=await mkdtemp(join(scratch,'broadcast-test-'));
   try {
     const old=model.fresh();delete old.broadcasts;
-    const bytes=JSON.stringify(old);await writeFile(new URL('operations.json','file:///'+directory.replaceAll('\\','/')+'/'),bytes);
+    const bytes=JSON.stringify(old);await writeFile(join(directory,'operations.json'),bytes);
     const store=new OperationsStore(directory),loaded=await store.read();
     assert.deepEqual(loaded.broadcasts,[]);assert.equal(await readFile(store.file,'utf8'),bytes);
     await store.save('broadcasts',confirmed);
     const reloaded=await store.read();assert.equal(reloaded.broadcasts.length,1);assert.equal(reloaded.broadcasts[0].localTime,'18:42:03');assert.deepEqual(reloaded.contacts,old.contacts);
-  } finally {await rm(directory,{recursive:true,force:true});}
+  } finally {assert.ok(resolve(directory).startsWith(resolve(scratch)+sep));await rm(directory,{recursive:true,force:true});}
 });
