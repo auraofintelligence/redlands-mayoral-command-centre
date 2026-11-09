@@ -4,7 +4,7 @@ The operator mode runs at `http://127.0.0.1:4183` and uses the existing private 
 
 Start it with `npm run control` once the repository's control room build is ready. Startup creates no tasks, schedules, contacts or approvals. Existing records stay unchanged, and a new store begins empty. Stop the process with Ctrl+C.
 
-All live records remain in `private/operations.json`. CSV exports and backups contain private information. A public GitHub Pages control room, when provided, uses its separate browser storage mode. It cannot read this local store or inherit this server's session. Moving between those stores is an explicit export and import operation, not automatic synchronisation.
+All live records remain in `private/operations.json`. CSV exports and backups contain private information. The public campaign website does not host the command centre or read this store. Any records previously saved in a browser stay in that browser and origin. Moving those records into this local store requires an explicit export and import; it is not automatic synchronisation.
 
 ## Frontend contract
 
