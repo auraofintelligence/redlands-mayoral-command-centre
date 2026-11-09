@@ -26,6 +26,10 @@ Run `npm run ops -- status` to inspect the local private store. See `docs/CONTRO
 
 Open **Budget and reporting** in the sidebar. It separates contributions, budget options and expenses, including pledges, receipts awaiting review, accepted cash and non-cash value. A reviewed reporting draft contains selected public fields only; it does not publish automatically or submit ECQ returns. See [finance guidance](docs/FINANCE.md).
 
+## Music airplay log
+
+Open **Music airplay log** to record each known song play, interview or feature with station, date, time, time zone, version and evidence. Reported, scheduled and confirmed items stay distinct. Repeats receive separate records. The log does not monitor stations automatically, value editorial coverage as advertising or add donations. See [airplay guidance](docs/AIRPLAY.md).
+
 ## Migration note
 
 Initial sources were separated from the public `redlands-mayoral-campaign` repository on 9 November 2026. No private local records were exported or imported in this GitHub migration. Older public Git commits may retain previously published source files.

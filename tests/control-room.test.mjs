@@ -103,6 +103,22 @@ test('validated task create and update persist through the existing operations s
   }finally{await app.close();}
 });
 
+test('broadcast evidence validation returns actionable errors and saves separate repeat plays',async()=>{
+  const app=await fixture();
+  try {
+    const headers=await app.session();
+    const record={title:'Example song',station:'Example station',status:'confirmed',broadcastDate:'2026-11-10',localTime:'18:20:10',timeAccuracy:'exact',evidenceType:'station-log',evidenceReference:'Private log'};
+    const invalid=await app.request('/api/records/broadcasts',{method:'POST',headers,body:{record:{...record,evidenceReference:''}}});
+    assert.equal(invalid.status,400);assert.match(invalid.data.error,/Confirmed broadcasts/);
+    const first=await app.request('/api/records/broadcasts',{method:'POST',headers,body:{record}});
+    const repeat=await app.request('/api/records/broadcasts',{method:'POST',headers,body:{record:{...record,localTime:'19:20:10'}}});
+    assert.equal(first.status,200);assert.equal(repeat.status,200);assert.notEqual(first.data.record.id,repeat.data.record.id);
+    const state=await app.store.read();assert.equal(state.broadcasts.length,2);assert.equal(state.contributions.length,0);assert.equal(state.expenses.length,0);
+    const exported=await app.request('/api/export/broadcasts',{headers:{cookie:headers.cookie}});
+    assert.equal(exported.status,200);assert.match(exported.text,/18:20:10/);assert.match(exported.text,/19:20:10/);
+  } finally {await app.close();}
+});
+
 test('static serving rejects traversal and never exposes private files or repository data',async()=>{
   const app=await fixture();
   try{

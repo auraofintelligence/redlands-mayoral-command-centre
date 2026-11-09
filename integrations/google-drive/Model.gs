@@ -9,15 +9,17 @@ var CampaignModel = (function () {
     tasks: {title: 'required', owner: 'text', dueDate: 'date', status: ['planned', 'active', 'blocked', 'done'], evidenceUrl: 'url', notes: 'text'},
     expenses: {description: 'required', date: 'date-required', amount: 'money', currency: ['AUD'], category: 'required', payee: 'text', receiptReference: 'text', paymentReference: 'text', status: ['planned', 'incurred', 'paid', 'cancelled'], notes: 'text', publicApproved: ['no', 'yes'], publicDescription: 'text', publicPayee: 'text'},
     contributions: {name: 'required', kind: ['donation', 'gift-in-kind', 'personal-funds', 'loan'], date: 'date-required', amount: 'money', currency: ['AUD'], status: ['enquiry', 'pledged', 'received-pending-review', 'accepted', 'returned', 'declined'], address: 'text', eligibility: ['unchecked', 'checked', 'ineligible'], eligibilityEvidence: 'text', publicationAgreement: ['not-recorded', 'agreed'], publicApproved: ['no', 'yes'], publicNote: 'text', receiptReference: 'text', paymentReference: 'text', disclosureStatus: ['not-reviewed', 'not-required', 'required', 'filed'], disclosureReference: 'text', notes: 'text'},
-    budgets: {description: 'required', amount: 'money', category: 'required', status: ['option', 'approved', 'cancelled'], publicApproved: ['no', 'yes'], notes: 'text'}
+    budgets: {description: 'required', amount: 'money', category: 'required', status: ['option', 'approved', 'cancelled'], publicApproved: ['no', 'yes'], notes: 'text'},
+    broadcasts: {title: 'required', itemType: ['song', 'interview', 'feature'], station: 'required', programme: 'text', version: 'text', broadcastDate: 'date', localTime: 'time', timeZone: 'required', timeAccuracy: ['unknown', 'exact', 'approximate'], durationSeconds: 'seconds', platform: ['radio', 'simulcast', 'stream', 'podcast', 'television', 'other'], status: ['reported', 'scheduled', 'confirmed', 'cancelled'], evidenceType: ['unknown', 'station-log', 'station-confirmation', 'recording', 'public-playlist', 'listener-report', 'operator-note'], evidenceUrl: 'url', evidenceReference: 'text', arrangement: ['unknown', 'editorial', 'paid-advertising', 'paid-sponsorship', 'offered-support'], financeReference: 'text', reviewStatus: ['not-reviewed', 'clarification-needed', 'reviewed'], reviewNote: 'text', notes: 'text'}
   };
   var defaults = {contacts: {channel: 'other', consent: 'unknown', stage: 'exploring'}, enquiries: {status: 'new'}, publications: {format: 'web', status: 'draft'}, tasks: {status: 'planned'}, expenses: {currency: 'AUD', status: 'planned', publicApproved: 'no'}, contributions: {kind: 'donation', currency: 'AUD', status: 'enquiry', eligibility: 'unchecked', publicationAgreement: 'not-recorded', publicApproved: 'no', disclosureStatus: 'not-reviewed'}, budgets: {status: 'option', publicApproved: 'no'}};
   function fail(message) { throw new Error(message); }
-  function fresh() { return {version: 1, revision: 0, contacts: [], enquiries: [], publications: [], tasks: [], expenses: [], contributions: [], budgets: [], suppression: [], audit: []}; }
+  defaults.broadcasts = {itemType:'song',timeZone:'Australia/Brisbane',timeAccuracy:'unknown',platform:'radio',status:'reported',evidenceType:'unknown',arrangement:'unknown',reviewStatus:'not-reviewed'};
+  function fresh() { return {version: 1, revision: 0, contacts: [], enquiries: [], publications: [], tasks: [], expenses: [], contributions: [], budgets: [], broadcasts: [], suppression: [], audit: []}; }
   function upgrade(state) {
     if (!state || typeof state !== 'object' || state.version !== 1) return state;
     var next=Object.assign({},state);
-    ['contributions','budgets'].forEach(function(name){if(next[name]===undefined)next[name]=[];});
+    ['contributions','budgets','broadcasts'].forEach(function(name){if(next[name]===undefined)next[name]=[];});
     return next;
   }
   function collection(name) { if (!Object.prototype.hasOwnProperty.call(fields, name)) fail('Unknown collection.'); return fields[name]; }
@@ -37,6 +39,8 @@ var CampaignModel = (function () {
       if (Array.isArray(type)) { if (type.indexOf(value) < 0) fail('Choose a valid ' + key); }
       else if ((type === 'required' || type === 'date-required') && !value) fail(key + ' is required.');
       if ((type === 'date' || type === 'date-required') && value && !validDate(value)) fail(key + ' must be YYYY-MM-DD.');
+      if (type === 'time' && value && !/^(?:[01]\d|2[0-3]):[0-5]\d(?::[0-5]\d)?$/.test(value)) fail(key + ' must be HH:MM or HH:MM:SS.');
+      if (type === 'seconds' && value && (!/^\d+$/.test(value) || Number(value)>86400)) fail('Duration must be whole seconds from 0 to 86400.');
       if (type === 'email') value = email(value);
       if (type === 'url' && value && !/^https:\/\/[^\s/]+(?:\/[^\s]*)?$/.test(value)) fail(key + ' must be an HTTPS URL.');
       if (type === 'money') { if (!/^\d+(?:\.\d{1,2})?$/.test(value) || Number(value) > 100000000) fail('Amount must be a non-negative amount with at most two decimal places.'); value = Number(value).toFixed(2); }
@@ -47,6 +51,11 @@ var CampaignModel = (function () {
     if (name === 'publications' && ['approved', 'published'].indexOf(out.status) >= 0 && out.reviewer !== 'Luke Nathan Hayes') fail('Only Luke Nathan Hayes can approve a publication.');
     if (name === 'publications' && out.status === 'published' && !out.publishedUrl) fail('Published records require a published URL.');
     if (name === 'contributions' && out.status==='accepted' && (!out.name || out.eligibility!=='checked' || !out.eligibilityEvidence || out.publicationAgreement!=='agreed' || Number(out.amount)<=0)) fail('Accepted contributions require a name, positive amount, recorded eligibility check and agreement to named publication.');
+    if (name === 'broadcasts') {
+      try { new Intl.DateTimeFormat('en-AU',{timeZone:out.timeZone}).format(); } catch(error) { fail('Choose a valid IANA time zone, such as Australia/Brisbane.'); }
+      if ((out.timeAccuracy==='unknown') !== !out.localTime) fail('Choose exact or approximate for a known time, or leave the time blank when unknown.');
+      if (out.status==='confirmed' && (!out.broadcastDate || ['station-log','station-confirmation','recording','public-playlist'].indexOf(out.evidenceType)<0 || !(out.evidenceUrl || out.evidenceReference))) fail('Confirmed broadcasts require a date and station, recording or playlist evidence.');
+    }
     return out;
   }
   function audit(state, action, name, id, context) { state.audit.push({id: context.id(), at: context.now(), action: action, collection: name, recordId: id}); state.revision += 1; }
