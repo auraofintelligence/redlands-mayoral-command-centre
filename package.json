@@ -1,0 +1,17 @@
+{
+  "name": "redlands-mayoral-command-centre",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Private local operations and outreach workspace for Redlands campaign research",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node scripts/build-control.mjs",
+    "test": "node --test tests/operations.test.mjs tests/control-room.test.mjs tests/directory.test.mjs tests/browser-workspace.test.mjs tests/new-media-view.test.mjs tests/outreach-workflow.test.mjs tests/contact-mail.test.mjs",
+    "check": "npm run build && npm test",
+    "control": "npm run build && node control-room/server.mjs",
+    "ops": "node operations/cli.mjs"
+  }
+}

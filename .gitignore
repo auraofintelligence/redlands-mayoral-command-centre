@@ -1,0 +1,13 @@
+/private/
+/dist/
+/node_modules/
+.env
+.env.*
+*.log
+*.zip
+.DS_Store
+Thumbs.db
+integrations/google-drive/.clasp.json
+integrations/google-drive/.clasprc.json
+/control-room/public/model.js
+/control-room/public/assets/data/
