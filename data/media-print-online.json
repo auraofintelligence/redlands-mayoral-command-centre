@@ -1,0 +1,709 @@
+[
+  {
+    "id": "redland-bayside-news",
+    "name": "Redland Bayside News",
+    "kind": "traditional-media",
+    "area": "Redland City and Bayside",
+    "description": "Local print newspaper and news website publishing current mayoral race reporting.",
+    "website": "https://redlandbaysidenews.com.au/",
+    "contactUrl": "https://localnewsgroup.com.au/contact-us/",
+    "coverageUrl": "https://redlandbaysidenews.com.au/five-contenders-emerge-in-redlands/",
+    "coverageTitle": "Five candidates enter Redlands mayoral race as battle hots up",
+    "coverageDate": "2026-11-05",
+    "tags": [
+      "print",
+      "online",
+      "local-news",
+      "current-race"
+    ],
+    "notes": "The article describes announced contenders. It is not the ECQ certified nomination list.",
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://redlandbaysidenews.com.au/",
+      "https://localnewsgroup.com.au/contact-us/",
+      "https://redlandbaysidenews.com.au/five-contenders-emerge-in-redlands/"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "andrew-jefferson",
+    "name": "Andrew Jefferson",
+    "kind": "journalist",
+    "area": "Redland City and Bayside",
+    "description": "Local News Group editor with current Redland mayoral reporting and an editor's column.",
+    "website": "https://redlandbaysidenews.com.au/author/ajefferson/",
+    "contactUrl": "https://localnewsgroup.com.au/contact-us/",
+    "coverageUrl": "https://redlandbaysidenews.com.au/from-the-editors-desk/",
+    "coverageTitle": "From the editor's desk",
+    "coverageDate": "2026-11-06",
+    "tags": [
+      "editor",
+      "opinion",
+      "local-news",
+      "current-race"
+    ],
+    "notes": "The newspaper homepage dates this column 6 November and describes it as opinion about the incoming mayor. Contact link is the publisher's general enquiry page.",
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://redlandbaysidenews.com.au/author/ajefferson/",
+      "https://localnewsgroup.com.au/contact-us/",
+      "https://redlandbaysidenews.com.au/from-the-editors-desk/",
+      "https://redlandbaysidenews.com.au/",
+      "https://redlandbaysidenews.com.au/five-contenders-emerge-in-redlands/"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "redland-city-minute",
+    "name": "The Redland City Minute",
+    "kind": "online-media",
+    "area": "Redland City",
+    "description": "Hyperlocal digital publication in the Worthview network, with current mayoral contest reporting.",
+    "website": "https://redlandcityminute.com.au/",
+    "contactUrl": "https://redlandcityminute.com.au/contact/",
+    "coverageUrl": "https://redlandcityminute.com.au/redlands-mayoral-contest-awaits-official-nominations/",
+    "coverageTitle": "Redlands mayoral contest awaits official nominations",
+    "coverageDate": "2026-11-05",
+    "tags": [
+      "online",
+      "local-news",
+      "newsletter",
+      "current-race"
+    ],
+    "notes": "Its statement that the election date was unconfirmed is superseded by the ECQ announcement on 5 November. The contact URL is linked by the publication; its page timed out during checking. Byline: Worthview Media Team.",
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://redlandcityminute.com.au/",
+      "https://redlandcityminute.com.au/contact/",
+      "https://redlandcityminute.com.au/redlands-mayoral-contest-awaits-official-nominations/",
+      "https://redlandcityminute.substack.com/",
+      "https://redlandcityminute.substack.com/about"
+    ],
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "new-media",
+    "region": "Redlands",
+    "formats": [
+      "newsletter",
+      "article"
+    ]
+  },
+  {
+    "id": "brisbane-times",
+    "name": "Brisbane Times",
+    "kind": "traditional-media",
+    "area": "Queensland",
+    "description": "Queensland news masthead with current mayoral reporting.",
+    "website": "https://www.brisbanetimes.com.au/",
+    "contactUrl": "https://www.brisbanetimes.com.au/contact-us",
+    "coverageUrl": "https://www.brisbanetimes.com.au/national/queensland/short-campaign-for-mayor-race-as-byelection-date-set-20261105-p61br3.html",
+    "coverageTitle": "Short campaign for mayor race as byelection date set",
+    "coverageDate": "2026-11-05",
+    "tags": [
+      "online",
+      "queensland-news",
+      "current-race"
+    ],
+    "notes": "Subscription access may apply.",
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://www.brisbanetimes.com.au/",
+      "https://www.brisbanetimes.com.au/contact-us",
+      "https://www.brisbanetimes.com.au/national/queensland/short-campaign-for-mayor-race-as-byelection-date-set-20261105-p61br3.html"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "julius-dennis",
+    "name": "Julius Dennis",
+    "kind": "journalist",
+    "area": "Queensland",
+    "description": "Brisbane Times reporter.",
+    "website": "https://www.brisbanetimes.com.au/national/queensland/mayor-resigns-citing-threats-accusations-and-harassment-20261028-p618zl.html",
+    "contactUrl": "https://www.brisbanetimes.com.au/contact-us",
+    "coverageUrl": "https://www.brisbanetimes.com.au/national/queensland/mayor-resigns-citing-threats-accusations-and-harassment-20261028-p618zl.html",
+    "coverageTitle": "Mayor resigns, citing 'threats, accusations and harassment'",
+    "coverageDate": "2026-10-28",
+    "tags": [
+      "journalist",
+      "queensland-news",
+      "election-trigger"
+    ],
+    "notes": "Publisher contact route. Subscription access may apply.",
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://www.brisbanetimes.com.au/national/queensland/mayor-resigns-citing-threats-accusations-and-harassment-20261028-p618zl.html",
+      "https://www.brisbanetimes.com.au/contact-us"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "william-davis",
+    "name": "William Davis",
+    "kind": "journalist",
+    "area": "Queensland",
+    "description": "Brisbane Times reporter.",
+    "website": "https://www.brisbanetimes.com.au/national/queensland/up-until-two-seconds-ago-i-had-not-had-contact-in-bizarre-presser-council-claims-mayor-had-not-resigned-20261028-p619cg.html",
+    "contactUrl": "https://www.brisbanetimes.com.au/contact-us",
+    "coverageUrl": "https://www.brisbanetimes.com.au/national/queensland/up-until-two-seconds-ago-i-had-not-had-contact-in-bizarre-presser-council-claims-mayor-had-not-resigned-20261028-p619cg.html",
+    "coverageTitle": "Council responds to Redland mayor's resignation",
+    "coverageDate": "2026-10-28",
+    "tags": [
+      "journalist",
+      "queensland-news",
+      "election-trigger"
+    ],
+    "notes": "Coverage title shortened. Shared byline with Julius Dennis. Subscription access may apply.",
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://www.brisbanetimes.com.au/national/queensland/up-until-two-seconds-ago-i-had-not-had-contact-in-bizarre-presser-council-claims-mayor-had-not-resigned-20261028-p619cg.html",
+      "https://www.brisbanetimes.com.au/contact-us"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "abc-news-queensland",
+    "name": "ABC News Queensland",
+    "kind": "traditional-media",
+    "area": "Queensland",
+    "description": "Public broadcaster with online reporting on the resignation that triggered the by-election.",
+    "website": "https://www.abc.net.au/news/",
+    "contactUrl": "https://www.abc.net.au/news/contact",
+    "coverageUrl": "https://www.abc.net.au/news/2026-10-28/qld-redland-city-mayor-jos-mitchell-steps-down/107317138",
+    "coverageTitle": "Redland mayor resigns and by-election follows",
+    "coverageDate": "2026-10-28",
+    "tags": [
+      "television",
+      "online",
+      "public-broadcaster",
+      "election-trigger"
+    ],
+    "notes": "Linked coverage concerns the resignation and resulting election, rather than the final candidate field. Radio options are listed separately.",
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://www.abc.net.au/news/",
+      "https://www.abc.net.au/news/contact",
+      "https://www.abc.net.au/news/2026-10-28/qld-redland-city-mayor-jos-mitchell-steps-down/107317138"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "jessica-black",
+    "name": "Jessica Black",
+    "kind": "journalist",
+    "area": "Brisbane and Queensland",
+    "description": "ABC Brisbane newsroom journalist and co-author of the linked Redland mayoral report.",
+    "website": "https://www.abc.net.au/news/jessica-black/14017854",
+    "contactUrl": "https://www.abc.net.au/news/jessica-black/14017854",
+    "coverageUrl": "https://www.abc.net.au/news/2026-10-28/qld-redland-city-mayor-jos-mitchell-steps-down/107317138",
+    "coverageTitle": "Redland mayor resigns and by-election follows",
+    "coverageDate": "2026-10-28",
+    "tags": [
+      "journalist",
+      "abc",
+      "election-trigger"
+    ],
+    "notes": "Professional profile includes a contact link. Listing records a published byline, not a promise of interest or availability.",
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://www.abc.net.au/news/jessica-black/14017854",
+      "https://www.abc.net.au/news/2026-10-28/qld-redland-city-mayor-jos-mitchell-steps-down/107317138"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "meghan-dansie",
+    "name": "Meghan Dansie",
+    "kind": "journalist",
+    "area": "Queensland",
+    "description": "ABC journalist and co-author of the linked Redland mayoral report.",
+    "website": "https://www.abc.net.au/news/meghan-dansie/102153704",
+    "contactUrl": "https://www.abc.net.au/news/contact",
+    "coverageUrl": "https://www.abc.net.au/news/2026-10-28/qld-redland-city-mayor-jos-mitchell-steps-down/107317138",
+    "coverageTitle": "Redland mayor resigns and by-election follows",
+    "coverageDate": "2026-10-28",
+    "tags": [
+      "journalist",
+      "abc",
+      "election-trigger"
+    ],
+    "notes": "Use the broadcaster's published contact route; no personal contact information is stored here.",
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://www.abc.net.au/news/meghan-dansie/102153704",
+      "https://www.abc.net.au/news/contact",
+      "https://www.abc.net.au/news/2026-10-28/qld-redland-city-mayor-jos-mitchell-steps-down/107317138"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "7news",
+    "name": "7NEWS Queensland and 7NEWS.com.au",
+    "kind": "traditional-media",
+    "area": "Queensland and Australia",
+    "description": "Television and digital news outlet with reporting on the mayoral resignation and resulting by-election.",
+    "website": "https://7news.com.au/",
+    "contactUrl": "https://7news.com.au/contact-us",
+    "coverageUrl": "https://7news.com.au/politics/redland-city-mayor-jos-mitchell-resigns-after-alleged-threats-vandalised-cars-and-attacks-on-her-family-c-23082483",
+    "coverageTitle": "Redland mayoral vacancy report",
+    "coverageDate": "2026-10-28",
+    "tags": [
+      "television",
+      "online",
+      "election-trigger"
+    ],
+    "notes": "The contact page offers a newsroom story form and links to the Brisbane social channel. No submission has been made.",
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://7news.com.au/",
+      "https://7news.com.au/contact-us",
+      "https://7news.com.au/politics/redland-city-mayor-jos-mitchell-resigns-after-alleged-threats-vandalised-cars-and-attacks-on-her-family-c-23082483"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "katharina-loesche",
+    "name": "Katharina Loesche",
+    "kind": "journalist",
+    "area": "Queensland",
+    "description": "7NEWS Queensland reporter with the byline on the linked Redland mayoral report.",
+    "website": "https://7news.com.au/profile/katharina-loesche",
+    "contactUrl": "https://7news.com.au/contact-us",
+    "coverageUrl": "https://7news.com.au/politics/redland-city-mayor-jos-mitchell-resigns-after-alleged-threats-vandalised-cars-and-attacks-on-her-family-c-23082483",
+    "coverageTitle": "Redland mayoral vacancy report",
+    "coverageDate": "2026-10-28",
+    "tags": [
+      "journalist",
+      "7news",
+      "election-trigger"
+    ],
+    "notes": "The contact route is the publication's newsroom form, not a personal inbox.",
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://7news.com.au/profile/katharina-loesche",
+      "https://7news.com.au/contact-us",
+      "https://7news.com.au/politics/redland-city-mayor-jos-mitchell-resigns-after-alleged-threats-vandalised-cars-and-attacks-on-her-family-c-23082483"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "inside-local-government",
+    "name": "Inside Local Government",
+    "kind": "online-media",
+    "area": "Australian local government",
+    "description": "Sector news publication covering the Redland mayoral vacancy and proposed election arrangements.",
+    "website": "https://insidelocalgovernment.com.au/",
+    "contactUrl": "https://insidelocalgovernment.com.au/about/",
+    "coverageUrl": "https://insidelocalgovernment.com.au/redland-council-seeks-full-postal-vote-for-mayoral-by-election/",
+    "coverageTitle": "Redland council seeks full postal vote for Mayoral by-election",
+    "coverageDate": "2026-10-29",
+    "tags": [
+      "online",
+      "local-government",
+      "sector-news",
+      "election-arrangements"
+    ],
+    "notes": "This report records the council's request at the time. Use the ECQ for the final election arrangements. The About page identifies editorial contacts.",
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://insidelocalgovernment.com.au/",
+      "https://insidelocalgovernment.com.au/about/",
+      "https://insidelocalgovernment.com.au/redland-council-seeks-full-postal-vote-for-mayoral-by-election/"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "kelly-nealon",
+    "name": "Kelly Nealon",
+    "kind": "journalist",
+    "area": "Australian local government",
+    "description": "Editor named on Inside Local Government's official About page.",
+    "website": "https://insidelocalgovernment.com.au/about/",
+    "contactUrl": "https://insidelocalgovernment.com.au/about/",
+    "tags": [
+      "editor",
+      "sector-news"
+    ],
+    "notes": "Professional editorial role verified. A personal byline on current Redland election coverage was not verified; the publication has separate verified coverage.",
+    "verification": "outlet-verified",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "sourceUrls": [
+      "https://insidelocalgovernment.com.au/about/"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "local-government-news-roundup",
+    "name": "Local Government News Roundup",
+    "kind": "podcast",
+    "area": "Australian local government",
+    "description": "Podcast and news website with a current roundup discussing the Redland mayoral election date and contest.",
+    "website": "https://www.lgnewsroundup.com/",
+    "contactUrl": "https://www.lgnewsroundup.com/contact-us/",
+    "coverageUrl": "https://wp.lgnewsroundup.com/historic-mayoral-result-suspension-plea-and-a-call-for-kindness-660/",
+    "coverageTitle": "Council news roundup, edition 660",
+    "coverageDate": "2026-11-06",
+    "tags": [
+      "podcast",
+      "online",
+      "local-government",
+      "current-race"
+    ],
+    "notes": "Redland coverage appears in the Queensland section. The contact route is linked from the current website; fetching that page returned a cache miss.",
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://www.lgnewsroundup.com/",
+      "https://www.lgnewsroundup.com/contact-us/",
+      "https://wp.lgnewsroundup.com/historic-mayoral-result-suspension-plea-and-a-call-for-kindness-660/"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "podcast"
+    ]
+  },
+  {
+    "id": "chris-eddy",
+    "name": "Chris Eddy",
+    "kind": "commentator",
+    "area": "Australian local government",
+    "description": "Host of Local Government News Roundup, whose 6 November edition includes the Redland mayoral contest.",
+    "website": "https://www.buzzsprout.com/1726495/contributors",
+    "contactUrl": "https://www.lgnewsroundup.com/contact-us/",
+    "coverageUrl": "https://wp.lgnewsroundup.com/historic-mayoral-result-suspension-plea-and-a-call-for-kindness-660/",
+    "coverageTitle": "Council news roundup, edition 660",
+    "coverageDate": "2026-11-06",
+    "tags": [
+      "podcast-host",
+      "local-government",
+      "current-race"
+    ],
+    "notes": "Host role verified on the podcast's own contributor page. Contact link belongs to the programme.",
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://www.buzzsprout.com/1726495/contributors",
+      "https://www.lgnewsroundup.com/contact-us/",
+      "https://wp.lgnewsroundup.com/historic-mayoral-result-suspension-plea-and-a-call-for-kindness-660/",
+      "https://www.lgnewsroundup.com/"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "podcast"
+    ]
+  },
+  {
+    "id": "redlands2030",
+    "name": "Redlands2030",
+    "kind": "civic-commentary",
+    "area": "Redland City",
+    "description": "Local civic news and views publisher covering council decisions, planning and environmental issues.",
+    "website": "https://redlands2030.net/",
+    "contactUrl": "https://redlands2030.net/contact-us/",
+    "tags": [
+      "online",
+      "civic-commentary",
+      "letters",
+      "local-news"
+    ],
+    "notes": "Current local publishing and historical election commentary verified. Specific coverage of the 2026 mayoral by-election was not located in this check. Its advocacy positions are its own.",
+    "verification": "outlet-verified",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "sourceUrls": [
+      "https://redlands2030.net/",
+      "https://redlands2030.net/contact-us/",
+      "https://redlands2030.net/category/elections/"
+    ],
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "new-media",
+    "region": "Redlands",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "community-leader-redlands",
+    "name": "The Community Leader, Redlands edition",
+    "kind": "traditional-media",
+    "area": "Redlands and Bayside",
+    "description": "Community print and online publication with a Redlands edition and public news enquiry form.",
+    "website": "https://thecommunityleader.com.au/",
+    "contactUrl": "https://thecommunityleader.com.au/contact/",
+    "tags": [
+      "print",
+      "online",
+      "local-news",
+      "community-publication"
+    ],
+    "notes": "Publication and contact route verified. Current by-election coverage was not located. Historical candidate content must not be mistaken for the 2026 race.",
+    "verification": "outlet-verified",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "sourceUrls": [
+      "https://thecommunityleader.com.au/",
+      "https://thecommunityleader.com.au/contact/"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "friendly-bay-islander",
+    "name": "The Friendly Bay Islander",
+    "kind": "traditional-media",
+    "area": "Bay Islands and Redlands",
+    "description": "Island and Redlands magazine and news website with public editorial enquiry details.",
+    "website": "https://thefriendlybayislander.com/",
+    "contactUrl": "https://thefriendlybayislander.com/contact",
+    "tags": [
+      "magazine",
+      "online",
+      "islands",
+      "local-news"
+    ],
+    "notes": "Publication and editorial route verified. Specific current by-election coverage was not located in this check.",
+    "verification": "outlet-verified",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "sourceUrls": [
+      "https://thefriendlybayislander.com/",
+      "https://thefriendlybayislander.com/contact"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "elissa-thompson",
+    "name": "Elissa Thompson",
+    "kind": "journalist",
+    "area": "Bay Islands and Redlands",
+    "description": "Public editorial contact named by The Friendly Bay Islander.",
+    "website": "https://thefriendlybayislander.com/contact",
+    "contactUrl": "https://thefriendlybayislander.com/contact",
+    "tags": [
+      "editorial-contact",
+      "islands",
+      "local-news"
+    ],
+    "notes": "Professional editorial role verified on the publication's contact page. No current by-election byline or commentary was verified.",
+    "verification": "outlet-verified",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "sourceUrls": [
+      "https://thefriendlybayislander.com/contact"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "guardian-australia",
+    "name": "Guardian Australia",
+    "kind": "online-media",
+    "area": "Australia, including Queensland",
+    "description": "National newsroom with a public route for story tips and editorial enquiries.",
+    "website": "https://www.theguardian.com/au",
+    "contactUrl": "https://www.theguardian.com/info/2013/may/26/contact-guardian-australia",
+    "tags": [
+      "online",
+      "national-news"
+    ],
+    "notes": "Outlet and contact route verified. Current Redland mayoral by-election coverage was not located in this check.",
+    "verification": "outlet-verified",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "sourceUrls": [
+      "https://www.theguardian.com/au",
+      "https://www.theguardian.com/info/2013/may/26/contact-guardian-australia"
+    ],
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "9news-queensland",
+    "name": "9News Queensland",
+    "kind": "traditional-media",
+    "area": "Queensland",
+    "description": "Television and digital newsroom with a published story-submission route through Nine.",
+    "website": "https://www.9news.com.au/",
+    "contactUrl": "https://www.nine.com.au/contact-us",
+    "tags": [
+      "television",
+      "online",
+      "queensland-news"
+    ],
+    "notes": "Official Nine contact page verifies the newsroom route and Brisbane office. No current Redland by-election coverage was verified. Direct 9News pages were rate-limited during this check.",
+    "sourceUrls": [
+      "https://www.nine.com.au/contact-us",
+      "https://www.acma.gov.au/register-eligible-news-businesses"
+    ],
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "10-news-queensland",
+    "name": "10 News Queensland",
+    "kind": "traditional-media",
+    "area": "Queensland",
+    "description": "Network 10's Queensland news bulletin and online video reporting.",
+    "website": "https://10.com.au/news/queensland",
+    "contactUrl": "https://10.com.au/contact-us",
+    "tags": [
+      "television",
+      "online-video",
+      "queensland-news"
+    ],
+    "notes": "Programme identity verified on Network 10's own page. Contact page gives the Brisbane station's general route, not a dedicated newsroom submission form. Current Redland by-election coverage was not verified.",
+    "sourceUrls": [
+      "https://10.com.au/news/queensland",
+      "https://10.com.au/contact-us"
+    ],
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "courier-mail",
+    "name": "The Courier-Mail",
+    "kind": "traditional-media",
+    "area": "Queensland",
+    "description": "Queensland print and digital masthead published by News Corp Australia.",
+    "website": "https://www.couriermail.com.au/",
+    "contactUrl": "https://www.newscorpaustralia.com/contact-us/",
+    "tags": [
+      "print",
+      "online",
+      "queensland-news"
+    ],
+    "notes": "Publisher's current website and October 2026 event announcement verify the masthead. Its own site was inaccessible to this research tool. Contact link is the publisher's general form, which accepts editorial enquiries. No current Redland election coverage verified.",
+    "sourceUrls": [
+      "https://www.newscorpaustralia.com/",
+      "https://www.newscorpaustralia.com/contact-us/",
+      "https://www.newscorpaustralia.com/pm-premier-and-bluey-creator-headline-the-courier-mails-future-brisbane-2026/"
+    ],
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "sbs-news",
+    "name": "SBS News",
+    "kind": "traditional-media",
+    "area": "Australia",
+    "description": "National public broadcaster with television, online news and news podcasts.",
+    "website": "https://www.sbs.com.au/news",
+    "contactUrl": "https://www.sbs.com.au/aboutus/media-centre/media-contacts/",
+    "tags": [
+      "television",
+      "online",
+      "podcast",
+      "public-broadcaster",
+      "national-news"
+    ],
+    "notes": "The official contact page distinguishes newsroom story ideas and media releases from enquiries about SBS itself. No current Redland mayoral by-election coverage was verified.",
+    "sourceUrls": [
+      "https://www.sbs.com.au/news",
+      "https://www.sbs.com.au/aboutus/media-centre/media-contacts/"
+    ],
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "westender",
+    "name": "Westender",
+    "kind": "online-media",
+    "area": "West End and inner Brisbane; occasional wider regional coverage",
+    "description": "Independent community news website with current local publishing and historical reporting about Toondah Harbour.",
+    "website": "https://westender.com.au/",
+    "contactUrl": "https://westender.com.au/about-us/",
+    "tags": [
+      "online",
+      "community-media",
+      "brisbane",
+      "regional-context"
+    ],
+    "notes": "Its principal focus is West End. The linked 2021 Toondah story establishes historical Redland coverage, not current by-election commentary. The About page publishes an editorial route. No current Redland election coverage verified.",
+    "sourceUrls": [
+      "https://westender.com.au/",
+      "https://westender.com.au/about-us/",
+      "https://westender.com.au/proposed-development-on-protected-wetlands-raises-community-fears/"
+    ],
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "formats": [
+      "article"
+    ]
+  }
+]

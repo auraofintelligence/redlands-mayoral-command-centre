@@ -1,0 +1,501 @@
+[
+  {
+    "id": "uqu-clubs-societies",
+    "name": "UQ Union / Clubs and Societies",
+    "kind": "Club directory",
+    "institution": "University of Queensland",
+    "area": "St Lucia, Brisbane; UQ networks",
+    "region": "Brisbane",
+    "description": "UQ Union's public club directory covers academic, cultural, recreational and social societies. Its website also offers a newsletter about campus events and announcements.",
+    "website": "https://uqu.com.au/clubs-and-societies/",
+    "contactUrl": "https://uqu.com.au/contact/",
+    "formats": [
+      "article",
+      "newsletter"
+    ],
+    "tags": [
+      "university",
+      "club-directory",
+      "uq",
+      "student-networks",
+      "newsletter"
+    ],
+    "sampleUrl": "https://uqu.com.au/clubs-and-societies/",
+    "sampleTitle": "Affiliated clubs directory and newsletter sign-up",
+    "sampleDate": null,
+    "notes": "This is an umbrella directory, not one club or a list of members. The page is undated. The contact page distinguishes club enquiries, general queries and commercial sponsorship requests.",
+    "participationNotes": "Use individual club listings for their membership and participation rules. The Union newsletter form includes an Other option as well as student and staff.",
+    "publicChannels": [
+      {
+        "label": "Find a club",
+        "url": "https://uqu.com.au/clubs-and-societies/"
+      },
+      {
+        "label": "Public contact form",
+        "url": "https://uqu.com.au/contact/"
+      }
+    ],
+    "sourceUrls": [
+      "https://uqu.com.au/clubs-and-societies/",
+      "https://uqu.com.au/contact/"
+    ],
+    "discoveryGroup": "university",
+    "category": "Club directory",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "semper-floreat-uq",
+    "name": "Semper Floreat",
+    "kind": "Student publication",
+    "institution": "University of Queensland",
+    "area": "University of Queensland, Brisbane",
+    "region": "Brisbane",
+    "description": "UQ's student newspaper publishes editions and articles on campus life, culture and public affairs. Its 2026 archive includes a Women's Edition and a July issue.",
+    "website": "https://www.semperfloreat.com.au/",
+    "contactUrl": "https://semperfloreat.carrd.co/",
+    "formats": [
+      "article",
+      "social"
+    ],
+    "tags": [
+      "university",
+      "student-publication",
+      "uq",
+      "culture",
+      "current-events"
+    ],
+    "sampleUrl": "https://www.semperfloreat.com.au/2026-womens-edition/",
+    "sampleTitle": "2026 Women's Edition",
+    "sampleDate": "2026-08-31",
+    "notes": "The homepage supplies the 31 August publication date for this edition. The newspaper's link hub provides its editorial contact and official social pages. A special women's edition does not make the entire newspaper a women-only publication.",
+    "participationNotes": "The contributor expression of interest specifically addresses current UQ students. Use the editorial contact route to ask about an external story or interview rather than assuming contributor eligibility.",
+    "publicChannels": [
+      {
+        "label": "Editions and articles",
+        "url": "https://www.semperfloreat.com.au/"
+      },
+      {
+        "label": "Official Instagram",
+        "url": "https://www.instagram.com/semperfloreat"
+      },
+      {
+        "label": "Official Facebook",
+        "url": "https://www.facebook.com/SemperFloreatUQU"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.semperfloreat.com.au/",
+      "https://www.semperfloreat.com.au/2026-womens-edition/",
+      "https://semperfloreat.carrd.co/"
+    ],
+    "discoveryGroup": "university",
+    "category": "Student publication",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "qut-guild-clubs",
+    "name": "QUT Guild / Clubs and Societies",
+    "kind": "Club directory",
+    "institution": "Queensland University of Technology",
+    "area": "QUT Gardens Point and Kelvin Grove, Brisbane",
+    "region": "Brisbane",
+    "description": "QUT Guild's club directory provides routes to student societies, social activities and professional networks. The Guild also links its newsletter and student publication Glass.",
+    "website": "https://qutguild.com/clubs/",
+    "contactUrl": "https://qutguild.com/about/meet-your-src/",
+    "formats": [
+      "article",
+      "social",
+      "newsletter"
+    ],
+    "tags": [
+      "university",
+      "club-directory",
+      "qut",
+      "student-networks",
+      "newsletter"
+    ],
+    "sampleUrl": "https://qutguild.com/clubs/",
+    "sampleTitle": "Join a Club or Society",
+    "sampleDate": null,
+    "notes": "The club directory is undated. Public club contacts are available through its listings and the Guild's Clubs and Societies Officer page. Glass has its own existing directory record; it is not counted again here.",
+    "participationNotes": "Check each society's published membership rules. The Guild's public link hub offers a newsletter sign-up; this does not establish a route to email individual members.",
+    "publicChannels": [
+      {
+        "label": "Club directory",
+        "url": "https://qutguild.com/clubs/"
+      },
+      {
+        "label": "Guild social pages and newsletter links",
+        "url": "https://linktr.ee/qutguild"
+      }
+    ],
+    "sourceUrls": [
+      "https://qutguild.com/clubs/",
+      "https://qutguild.com/about/meet-your-src/",
+      "https://linktr.ee/qutguild"
+    ],
+    "discoveryGroup": "university",
+    "category": "Club directory",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "qut-music-society",
+    "name": "QUT Music Society",
+    "kind": "Music society",
+    "institution": "Queensland University of Technology",
+    "area": "Brisbane and QUT",
+    "region": "Brisbane",
+    "description": "A society for music makers and listeners, with ensembles, social events, trivia, karaoke and jam sessions. Its official website links public events and social channels.",
+    "website": "https://qutmusicsociety.com/",
+    "contactUrl": "https://qmuso214017630.wordpress.com/contact/",
+    "formats": [
+      "article",
+      "social"
+    ],
+    "tags": [
+      "university",
+      "qut",
+      "music",
+      "creative-community",
+      "student-networks"
+    ],
+    "sampleUrl": "https://qmuso214017630.wordpress.com/",
+    "sampleTitle": "Society activities and ensembles",
+    "sampleDate": null,
+    "notes": "The official domain redirects to this WordPress site. The undated activities page describes a community for music makers and listeners; it is not a recorded-music submission desk or a promise of an interview.",
+    "participationNotes": "The website describes ensemble participation for students and non-students, while instrument requirements vary by ensemble. Social and general enquiries have a public form. Luke's listing here is for discovery and conversation, not an offer to perform.",
+    "publicChannels": [
+      {
+        "label": "Official Facebook and events",
+        "url": "https://www.facebook.com/QMuSo"
+      },
+      {
+        "label": "Official Instagram",
+        "url": "https://www.instagram.com/qmuso/"
+      },
+      {
+        "label": "Contact form",
+        "url": "https://qmuso214017630.wordpress.com/contact/"
+      }
+    ],
+    "sourceUrls": [
+      "https://qutmusicsociety.com/",
+      "https://qmuso214017630.wordpress.com/",
+      "https://qmuso214017630.wordpress.com/contact/"
+    ],
+    "discoveryGroup": "university",
+    "category": "Music society",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "griffith-brisbane-clubs",
+    "name": "Griffith Clubs / Brisbane and Logan",
+    "kind": "Club directory",
+    "institution": "Griffith University",
+    "area": "Brisbane South, Brisbane City and Logan campuses",
+    "region": "Brisbane",
+    "description": "Griffith's public club listings cover academic, social, cultural, arts and recreational groups. They include society descriptions and links to individual public pages.",
+    "website": "https://student.griffith.edu.au/uni-life/clubs-and-society/find-a-club-in-brisbane",
+    "contactUrl": "https://student.griffith.edu.au/uni-life/clubs-and-society",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "university",
+      "club-directory",
+      "griffith",
+      "brisbane",
+      "logan"
+    ],
+    "sampleUrl": "https://student.griffith.edu.au/uni-life/clubs-and-society/find-a-club-in-brisbane",
+    "sampleTitle": "Find a club in Brisbane",
+    "sampleDate": null,
+    "notes": "The directory is undated. Griffith separates the Brisbane and Logan campus clubs from the Gold Coast Student Guild directory. This record is the directory route, not a count of independently contacted groups.",
+    "participationNotes": "Follow each club's own listing for membership and activity details. The university clubs page publishes the clubs team's contact route.",
+    "publicChannels": [
+      {
+        "label": "Public club listings",
+        "url": "https://student.griffith.edu.au/uni-life/clubs-and-society/find-a-club-in-brisbane"
+      },
+      {
+        "label": "Clubs information and enquiries",
+        "url": "https://student.griffith.edu.au/uni-life/clubs-and-society"
+      }
+    ],
+    "sourceUrls": [
+      "https://student.griffith.edu.au/uni-life/clubs-and-society/find-a-club-in-brisbane",
+      "https://student.griffith.edu.au/uni-life/clubs-and-society"
+    ],
+    "discoveryGroup": "university",
+    "category": "Club directory",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "griffith-gold-coast-clubs",
+    "name": "Griffith Gold Coast Student Guild / Clubs",
+    "kind": "Club directory",
+    "institution": "Griffith University",
+    "area": "Griffith Gold Coast campus, Southport",
+    "region": "Gold Coast",
+    "description": "The Gold Coast Student Guild lists campus clubs across arts, recreation, academic interests, culture, sport and community service, with a public club browsing portal.",
+    "website": "https://gugcstudentguild.com.au/clubs/",
+    "contactUrl": "https://gugcstudentguild.com.au/contact-us/",
+    "formats": [
+      "article",
+      "social"
+    ],
+    "tags": [
+      "university",
+      "club-directory",
+      "griffith",
+      "gold-coast",
+      "student-networks"
+    ],
+    "sampleUrl": "https://gugcstudentguild.com.au/clubs/",
+    "sampleTitle": "Get Involved with Guild Clubs",
+    "sampleDate": null,
+    "notes": "The clubs page is undated. Gold Coast campus scope is explicit. The Guild's old Getamungstit magazine archive is not represented as a newly active publication.",
+    "participationNotes": "Club membership conditions vary. The general contact page includes public contact details and a form requiring a student number; non-students should use the published general enquiry route, without inventing a student identifier.",
+    "publicChannels": [
+      {
+        "label": "Find a campus club",
+        "url": "https://gugcstudentguild.com.au/clubs/"
+      },
+      {
+        "label": "Guild contact and official social pages",
+        "url": "https://gugcstudentguild.com.au/contact-us/"
+      }
+    ],
+    "sourceUrls": [
+      "https://gugcstudentguild.com.au/clubs/",
+      "https://gugcstudentguild.com.au/contact-us/"
+    ],
+    "discoveryGroup": "university",
+    "category": "Club directory",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "griffitti-student-magazine",
+    "name": "Griffitti",
+    "kind": "Student publication",
+    "institution": "Griffith University",
+    "area": "Griffith University, Brisbane and Logan",
+    "region": "Brisbane",
+    "description": "Griffith's SRC-supported student magazine publishes news, arts, campus reporting, humour and public affairs. Its current website includes a June 2026 feature on a West End creative event.",
+    "website": "https://griffitti.com.au/",
+    "contactUrl": "https://griffitti.com.au/contact-us/",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "university",
+      "student-publication",
+      "griffith",
+      "arts",
+      "current-events"
+    ],
+    "sampleUrl": "https://griffitti.com.au/2026/06/08/finding-community-in-the-backstreets-of-west-end-a-feature-on-clutch-meanjins-opening-night/",
+    "sampleTitle": "Finding Community in the Backstreets of West End",
+    "sampleDate": "2026-06-08",
+    "notes": "The SRC confirms Griffitti is student-led and links the current publication. The homepage supplies the sample date. Its contact page offers an editorial form and anonymous tipline. The Get Published page could not be fetched, so external contributor eligibility was not verified.",
+    "participationNotes": "Ask the editors about stories, interviews or contributions. Publication is an editorial decision; the contact form's student number field is not marked required.",
+    "publicChannels": [
+      {
+        "label": "Current articles and issues",
+        "url": "https://griffitti.com.au/"
+      },
+      {
+        "label": "Editorial contact form",
+        "url": "https://griffitti.com.au/contact-us/"
+      }
+    ],
+    "sourceUrls": [
+      "https://griffithsrc.com.au/about-us/src-board/griffitti/",
+      "https://griffitti.com.au/",
+      "https://griffitti.com.au/contact-us/",
+      "https://griffitti.com.au/2026/06/08/finding-community-in-the-backstreets-of-west-end-a-feature-on-clutch-meanjins-opening-night/"
+    ],
+    "discoveryGroup": "university",
+    "category": "Student publication",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "unisc-student-guild-clubs",
+    "name": "UniSC Student Guild / Clubs and Societies",
+    "kind": "Club directory",
+    "institution": "University of the Sunshine Coast",
+    "area": "Sunshine Coast and Moreton Bay; all UniSC campuses",
+    "region": "Sunshine Coast",
+    "description": "UniSC Student Guild supports academic and non-academic clubs across its campuses and publishes public activity, club and student network information.",
+    "website": "https://uniscstudentguild.com.au/affiliated-clubs-and-societies/",
+    "contactUrl": "https://uniscstudentguild.com.au/contact-us/",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "university",
+      "club-directory",
+      "unisc",
+      "sunshine-coast",
+      "moreton-bay"
+    ],
+    "sampleUrl": "https://uniscstudentguild.com.au/affiliated-clubs-and-societies/",
+    "sampleTitle": "Affiliated Clubs and Societies",
+    "sampleDate": null,
+    "notes": "The directory is undated and explicitly covers all UniSC campuses. The contact page distinguishes general, Moreton Bay and club enquiries. The separate Keep in Touch page could not be fetched, so no specific newsletter is asserted.",
+    "participationNotes": "Use each club's public listing for its current activities and membership conditions. The Guild provides a public club enquiry route.",
+    "publicChannels": [
+      {
+        "label": "Academic and non-academic club directories",
+        "url": "https://uniscstudentguild.com.au/affiliated-clubs-and-societies/"
+      },
+      {
+        "label": "Guild events and updates",
+        "url": "https://uniscstudentguild.com.au/"
+      }
+    ],
+    "sourceUrls": [
+      "https://uniscstudentguild.com.au/",
+      "https://uniscstudentguild.com.au/affiliated-clubs-and-societies/",
+      "https://uniscstudentguild.com.au/contact-us/"
+    ],
+    "discoveryGroup": "university",
+    "category": "Club directory",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "unisq-student-guild-clubs",
+    "name": "UniSQ Student Guild / Clubs and Societies",
+    "kind": "Club directory",
+    "institution": "University of Southern Queensland",
+    "area": "Ipswich, Springfield and Toowoomba campuses",
+    "region": "Ipswich",
+    "description": "UniSQ Student Guild provides a public club directory and student network resources across Ipswich, Springfield and Toowoomba, alongside campus activities and volunteering.",
+    "website": "https://studentguild.com.au/clubs-societies/",
+    "contactUrl": "https://studentguild.com.au/contact-student-guild/",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "university",
+      "club-directory",
+      "unisq",
+      "ipswich",
+      "springfield",
+      "toowoomba"
+    ],
+    "sampleUrl": "https://studentguild.com.au/clubs-societies/",
+    "sampleTitle": "UniSQ clubs directory and club resources",
+    "sampleDate": null,
+    "notes": "The directory is undated and includes a QPay club browsing portal. Ipswich is used as the local region filter; the organisation also covers Springfield and Toowoomba, as stated in the area field.",
+    "participationNotes": "Membership and participation rules belong to each club. The Guild publishes a general contact form and campus office routes.",
+    "publicChannels": [
+      {
+        "label": "Find a club",
+        "url": "https://studentguild.com.au/clubs-societies/"
+      },
+      {
+        "label": "Guild contact form and campus routes",
+        "url": "https://studentguild.com.au/contact-student-guild/"
+      }
+    ],
+    "sourceUrls": [
+      "https://studentguild.com.au/clubs-societies/",
+      "https://studentguild.com.au/contact-student-guild/"
+    ],
+    "discoveryGroup": "university",
+    "category": "Club directory",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "scratchthat-magazine",
+    "name": "ScratchThat Magazine",
+    "kind": "Student publication",
+    "institution": "Queensland University of Technology",
+    "area": "QUT Kelvin Grove and Brisbane creative communities",
+    "region": "Brisbane",
+    "description": "QUT's student-led arts magazine publishes writing, visual art and music. Its official event profile describes print editions, web features and a fortnightly newsletter.",
+    "website": "https://scratchthatmagazine.com/",
+    "contactUrl": "https://www.instagram.com/scratchthat.mag/",
+    "formats": [
+      "article",
+      "newsletter",
+      "social"
+    ],
+    "tags": [
+      "university",
+      "student-publication",
+      "qut",
+      "arts",
+      "music",
+      "newsletter"
+    ],
+    "sampleUrl": "https://events.humanitix.com/host/scratchthat-magazine",
+    "sampleTitle": "Publisher profile and Lore edition launch listing",
+    "sampleDate": null,
+    "notes": "The publisher-managed Humanitix profile links its official website and social pages. The profile is undated; 23 October is an event date rather than a verified article publication date. The main website returned an access error during research.",
+    "participationNotes": "Current submission rules and eligibility for AI-generated recordings were not verified. Use the linked official social/contact route to ask the editors; a music publishing focus does not establish acceptance of this project.",
+    "publicChannels": [
+      {
+        "label": "Publisher profile and public events",
+        "url": "https://events.humanitix.com/host/scratchthat-magazine"
+      },
+      {
+        "label": "Official Instagram",
+        "url": "https://www.instagram.com/scratchthat.mag/"
+      },
+      {
+        "label": "Official Facebook",
+        "url": "https://www.facebook.com/scratchthatmag/"
+      }
+    ],
+    "sourceUrls": [
+      "https://scratchthatmagazine.com/",
+      "https://events.humanitix.com/host/scratchthat-magazine",
+      "https://events.humanitix.com/scratchthat-launch-party-2026"
+    ],
+    "discoveryGroup": "university",
+    "category": "Student publication",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  }
+]

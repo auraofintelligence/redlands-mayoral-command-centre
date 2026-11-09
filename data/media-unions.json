@@ -1,0 +1,695 @@
+[
+  {
+    "id": "union-queensland-council",
+    "name": "Queensland Council of Unions",
+    "kind": "Peak body",
+    "sector": "Cross-industry",
+    "area": "Queensland; office in South Brisbane",
+    "region": "Queensland",
+    "description": "Queensland's peak union body provides a public directory of affiliated unions, media releases and links to worker support services.",
+    "website": "https://www.qldunions.com/",
+    "contactUrl": "https://www.qldunions.com/contact",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "workers-unions",
+      "queensland",
+      "peak-body",
+      "union-directory"
+    ],
+    "sampleUrl": "https://www.qldunions.com/about-us",
+    "sampleTitle": "About Queensland Unions and affiliated unions",
+    "notes": "The affiliate directory is undated. The separate news page contains dated media releases. This is an umbrella organisation, with affiliated unions covering different workplaces.",
+    "participationNotes": "Use the affiliate directory or the linked Australian Unions finder to identify the union relevant to a workplace. The contact page separates general and media enquiries.",
+    "publicChannels": [
+      {
+        "label": "Affiliated union directory",
+        "url": "https://www.qldunions.com/about-us"
+      },
+      {
+        "label": "Public news and media",
+        "url": "https://www.qldunions.com/news"
+      },
+      {
+        "label": "General and media contact routes",
+        "url": "https://www.qldunions.com/contact"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.qldunions.com/about-us",
+      "https://www.qldunions.com/news",
+      "https://www.qldunions.com/contact"
+    ],
+    "category": "Peak body",
+    "sampleDate": null,
+    "discoveryGroup": "unions",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "union-together-queensland",
+    "name": "Together Queensland",
+    "sector": "Public and private services",
+    "area": "Queensland public and private sector workplaces",
+    "region": "Queensland",
+    "description": "Together represents workers across Queensland's public and private sectors, including public services, private hospitals, aged care, pathology and call centres.",
+    "website": "https://together.org.au/",
+    "contactUrl": "https://together.org.au/helping-members/contact-us-help-at-work",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "workers-unions",
+      "queensland",
+      "public-services",
+      "private-sector"
+    ],
+    "sampleUrl": "https://together.org.au/join",
+    "sampleTitle": "Together's workplace coverage and membership information",
+    "notes": "The coverage page is undated. The website distinguishes public information from member-only updates and workplace assistance.",
+    "participationNotes": "The contact page invites people to check whether Together covers their workplace. Use the general contact route to ask about public enquiries or contributions.",
+    "publicChannels": [
+      {
+        "label": "Public website and updates",
+        "url": "https://together.org.au/"
+      },
+      {
+        "label": "Coverage and membership information",
+        "url": "https://together.org.au/join"
+      },
+      {
+        "label": "Contact and coverage enquiries",
+        "url": "https://together.org.au/helping-members/contact-us-help-at-work"
+      }
+    ],
+    "sourceUrls": [
+      "https://together.org.au/",
+      "https://together.org.au/join",
+      "https://together.org.au/helping-members/contact-us-help-at-work"
+    ],
+    "kind": "Union",
+    "category": "Union",
+    "sampleDate": null,
+    "discoveryGroup": "unions",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "union-awu-qld-nt",
+    "name": "Australian Workers' Union / Queensland and NT",
+    "sector": "Manufacturing, resources and general industries",
+    "area": "Queensland and Northern Territory; Queensland branch offices",
+    "region": "Queensland",
+    "description": "The AWU's Queensland and Northern Territory branch covers varied industries, including manufacturing, mining, civil construction, oil and gas, agriculture and hairdressing.",
+    "website": "https://awu.net.au/qld/",
+    "contactUrl": "https://awu.net.au/qld/contact-us/",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "workers-unions",
+      "queensland",
+      "awu",
+      "manufacturing",
+      "resources"
+    ],
+    "sampleUrl": "https://awu.net.au/qld/contact-us/",
+    "sampleTitle": "Queensland and NT branch offices and industry coverage",
+    "notes": "The branch contact and coverage page is undated. It lists public office routes across Queensland.",
+    "participationNotes": "Coverage depends on the work and workplace. Use the branch contact route to check eligibility or ask where a general enquiry belongs.",
+    "publicChannels": [
+      {
+        "label": "Queensland branch website",
+        "url": "https://awu.net.au/qld/"
+      },
+      {
+        "label": "Branch office contact routes",
+        "url": "https://awu.net.au/qld/contact-us/"
+      }
+    ],
+    "sourceUrls": [
+      "https://awu.net.au/qld/",
+      "https://awu.net.au/qld/contact-us/"
+    ],
+    "kind": "Union",
+    "category": "Union",
+    "sampleDate": null,
+    "discoveryGroup": "unions",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "union-united-workers-queensland",
+    "name": "United Workers Union / Queensland",
+    "sector": "Health support, care and other services",
+    "area": "Queensland; office in South Brisbane",
+    "region": "Queensland",
+    "description": "United Workers Union covers multiple service industries, including aged care, disability support, health support and education. Its national contact directory includes a Queensland office.",
+    "website": "https://unitedworkers.org.au/",
+    "contactUrl": "https://unitedworkers.org.au/contact/",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "workers-unions",
+      "queensland",
+      "united-workers",
+      "aged-care",
+      "health-support"
+    ],
+    "sampleUrl": "https://unitedworkers.org.au/our-coverage/",
+    "sampleTitle": "United Workers Union industry coverage",
+    "notes": "The industry coverage directory is undated. The contact page distinguishes membership assistance, office enquiries and media enquiries.",
+    "participationNotes": "Use the coverage directory and Queensland office route to check the appropriate branch or industry. Member assistance and member-portal access have their own conditions.",
+    "publicChannels": [
+      {
+        "label": "Industry coverage directory",
+        "url": "https://unitedworkers.org.au/our-coverage/"
+      },
+      {
+        "label": "Queensland office and media contact routes",
+        "url": "https://unitedworkers.org.au/contact/"
+      },
+      {
+        "label": "Public union website",
+        "url": "https://unitedworkers.org.au/"
+      }
+    ],
+    "sourceUrls": [
+      "https://unitedworkers.org.au/our-coverage/",
+      "https://unitedworkers.org.au/contact/",
+      "https://unitedworkers.org.au/"
+    ],
+    "kind": "Union",
+    "category": "Union",
+    "sampleDate": null,
+    "discoveryGroup": "unions",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "union-qnmu",
+    "name": "Queensland Nurses and Midwives' Union",
+    "sector": "Nursing and midwifery",
+    "area": "Queensland nursing and midwifery workplaces",
+    "region": "Queensland",
+    "description": "QNMU's public website offers nursing and midwifery news, media releases and selected InScope articles. InScope is its member publication.",
+    "website": "https://www.qnmu.org.au/",
+    "contactUrl": "https://www.qnmu.org.au/Web/Web/About/About_us.aspx",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "workers-unions",
+      "queensland",
+      "nursing",
+      "midwifery",
+      "inscope"
+    ],
+    "sampleUrl": "https://www.qnmu.org.au/Web/News_and_Stories/Inscope/Web/Resources/Publications/In-Scope-Public.aspx?hkey=8468708d-d337-4323-8375-09304c6676d5",
+    "sampleTitle": "InScope public articles and publication information",
+    "notes": "The publication landing page is undated. Full issues require member access; selected articles and advertising information are public. Direct contact-page links returned errors when checked, so the contact action opens the About page with public enquiry details in its footer.",
+    "participationNotes": "Membership relates to nursing and midwifery, with a separate student route. Publication or advertising enquiries should follow the published process; public articles do not grant access to member channels.",
+    "publicChannels": [
+      {
+        "label": "InScope public articles",
+        "url": "https://www.qnmu.org.au/Web/News_and_Stories/Inscope/Web/Resources/Publications/In-Scope-Public.aspx?hkey=8468708d-d337-4323-8375-09304c6676d5"
+      },
+      {
+        "label": "Public enquiry details in page footer",
+        "url": "https://www.qnmu.org.au/Web/Web/About/About_us.aspx"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.qnmu.org.au/Web/Web/About/About_us.aspx",
+      "https://www.qnmu.org.au/Web/News_and_Stories/Inscope/Web/Resources/Publications/In-Scope-Public.aspx?hkey=8468708d-d337-4323-8375-09304c6676d5"
+    ],
+    "kind": "Union",
+    "category": "Union",
+    "sampleDate": null,
+    "discoveryGroup": "unions",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "union-queensland-teachers",
+    "name": "Queensland Teachers' Union",
+    "sector": "State schools and TAFE",
+    "area": "Queensland state schools and TAFE",
+    "region": "Queensland",
+    "description": "QTU represents teachers and school leaders in Queensland state education and TAFE. Its Queensland Teachers' Journal has a public issue archive and published editorial and advertising routes.",
+    "website": "https://www.qtu.asn.au/",
+    "contactUrl": "https://www.qtu.asn.au/membership-faqs",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "workers-unions",
+      "queensland",
+      "teachers",
+      "tafe",
+      "journal"
+    ],
+    "sampleUrl": "https://www.qtu.asn.au/journal",
+    "sampleTitle": "Queensland Teachers' Journal archive and contribution information",
+    "notes": "The archive includes a November 2026 issue. The archive itself has no single publication date. Editorial contributions and paid advertising have separate instructions.",
+    "participationNotes": "Check the QTU's published membership coverage. For the Journal, follow its contribution or advertising requirements and confirm whether a proposed external contribution is suitable.",
+    "publicChannels": [
+      {
+        "label": "Journal archive and submission information",
+        "url": "https://www.qtu.asn.au/journal"
+      },
+      {
+        "label": "Membership and public contact information",
+        "url": "https://www.qtu.asn.au/membership-faqs"
+      },
+      {
+        "label": "Who can join",
+        "url": "https://www.qtu.asn.au/join"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.qtu.asn.au/journal",
+      "https://www.qtu.asn.au/membership-faqs",
+      "https://www.qtu.asn.au/join"
+    ],
+    "kind": "Union",
+    "category": "Union",
+    "sampleDate": null,
+    "discoveryGroup": "unions",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "union-ieu-qld-nt",
+    "name": "Independent Education Union / Queensland and NT",
+    "sector": "Non-government education",
+    "area": "Queensland and Northern Territory non-government education",
+    "region": "Queensland",
+    "description": "IEU-QNT represents teachers, school support staff and other education professionals in non-government education. It publishes public news and Independent Voice.",
+    "website": "https://ieuqnt.org.au/",
+    "contactUrl": "https://ieuqnt.org.au/contact-us/",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "workers-unions",
+      "queensland",
+      "education",
+      "school-support",
+      "independent-voice"
+    ],
+    "sampleUrl": "https://ieuqnt.org.au/news/independentvoice/",
+    "sampleTitle": "Independent Voice publication archive",
+    "notes": "The publication archive has no single publication date. Public news is separate from the MyIEU member portal.",
+    "participationNotes": "Membership is based on the union's employment coverage. Its contact page distinguishes general or membership enquiries from communications enquiries.",
+    "publicChannels": [
+      {
+        "label": "Independent Voice",
+        "url": "https://ieuqnt.org.au/news/independentvoice/"
+      },
+      {
+        "label": "Public website and news",
+        "url": "https://ieuqnt.org.au/"
+      },
+      {
+        "label": "Contact our union",
+        "url": "https://ieuqnt.org.au/contact-us/"
+      }
+    ],
+    "sourceUrls": [
+      "https://ieuqnt.org.au/",
+      "https://ieuqnt.org.au/news/independentvoice/",
+      "https://ieuqnt.org.au/contact-us/"
+    ],
+    "kind": "Union",
+    "category": "Union",
+    "sampleDate": null,
+    "discoveryGroup": "unions",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "union-sda-queensland",
+    "name": "SDA / Queensland",
+    "sector": "Retail, fast food and warehousing",
+    "area": "Queensland retail, fast food and warehouse workplaces",
+    "region": "Queensland",
+    "description": "SDA Queensland provides a public news feed and branch contact page for workers in retail, fast food and warehousing. The contact page also links its official social channels.",
+    "website": "https://www.sda.au/qld/",
+    "contactUrl": "https://www.sda.au/qld/contact/",
+    "formats": [
+      "article",
+      "social"
+    ],
+    "tags": [
+      "workers-unions",
+      "queensland",
+      "retail",
+      "fast-food",
+      "warehousing"
+    ],
+    "sampleUrl": "https://www.sda.au/qld/news/",
+    "sampleTitle": "SDA Queensland news",
+    "notes": "This is a rolling news index with dated items, rather than a single dated article. The public contact page supplies the official Facebook route.",
+    "participationNotes": "Check workplace coverage with the Queensland branch. Public news and social pages are available to read; membership services and contributions require the relevant process.",
+    "publicChannels": [
+      {
+        "label": "Queensland news",
+        "url": "https://www.sda.au/qld/news/"
+      },
+      {
+        "label": "Official Facebook",
+        "url": "https://www.facebook.com/sdaunionqld"
+      },
+      {
+        "label": "Queensland branch contact",
+        "url": "https://www.sda.au/qld/contact/"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.sda.au/qld/contact/",
+      "https://www.sda.au/qld/news/"
+    ],
+    "kind": "Union",
+    "category": "Union",
+    "sampleDate": null,
+    "discoveryGroup": "unions",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "union-etu-qld-nt",
+    "name": "Electrical Trades Union / Queensland and NT",
+    "sector": "Electrical trades and energy",
+    "area": "Queensland and Northern Territory; Brisbane and regional offices",
+    "region": "Queensland",
+    "description": "The ETU Queensland and Northern Territory branch represents electrical workers. Its public website provides press releases and a directory of branch offices.",
+    "website": "https://www.etu.org.au/",
+    "contactUrl": "https://www.etu.org.au/Web/Your_Union/Contact_Us/Web/Your_Union/Branches/Find_Your_Closest_Office.aspx?hkey=890b6ad7-892c-4677-ba9e-c81a5c46da7f",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "workers-unions",
+      "queensland",
+      "electrical-trades",
+      "energy"
+    ],
+    "sampleUrl": "https://www.etu.org.au/Web/News/Press_Releases.aspx",
+    "sampleTitle": "ETU Queensland and NT press releases",
+    "notes": "The press-release index has no single publication date. The office directory includes Brisbane and regional Queensland routes.",
+    "participationNotes": "Use the branch office directory to ask about workplace coverage or a general enquiry. Member benefits and internal activities follow the union's eligibility rules.",
+    "publicChannels": [
+      {
+        "label": "Public press releases",
+        "url": "https://www.etu.org.au/Web/News/Press_Releases.aspx"
+      },
+      {
+        "label": "Branch office directory",
+        "url": "https://www.etu.org.au/Web/Your_Union/Contact_Us/Web/Your_Union/Branches/Find_Your_Closest_Office.aspx?hkey=890b6ad7-892c-4677-ba9e-c81a5c46da7f"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.etu.org.au/Web/Your_Union/About_ETUQ/Web/Your_Union/About_ETUQ.aspx?hkey=3f78a54e-d8ec-4982-bfab-bae6953c3b24",
+      "https://www.etu.org.au/Web/News/Press_Releases.aspx",
+      "https://www.etu.org.au/Web/Your_Union/Contact_Us/Web/Your_Union/Branches/Find_Your_Closest_Office.aspx?hkey=890b6ad7-892c-4677-ba9e-c81a5c46da7f"
+    ],
+    "kind": "Union",
+    "category": "Union",
+    "sampleDate": null,
+    "discoveryGroup": "unions",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "union-amwu-qld-nt",
+    "name": "Australian Manufacturing Workers' Union / Queensland and NT",
+    "sector": "Manufacturing, engineering and trades",
+    "area": "Queensland and Northern Territory",
+    "region": "Queensland",
+    "description": "The AMWU's Queensland and Northern Territory branch covers manufacturing and trade occupations, including fitters, mechanics, printers and laboratory technicians. National publications include the AMWU Journal and the workplace safety newsletter It's No Accident.",
+    "website": "https://www.amwu.org.au/qld_nt",
+    "contactUrl": "https://www.amwu.org.au/qld_nt",
+    "formats": [
+      "article",
+      "newsletter"
+    ],
+    "tags": [
+      "workers-unions",
+      "queensland",
+      "manufacturing",
+      "engineering",
+      "workplace-safety",
+      "newsletter"
+    ],
+    "sampleUrl": "https://www.amwu.org.au/union_publications",
+    "sampleTitle": "AMWU Journal and It's No Accident newsletter",
+    "notes": "The publications landing page is undated. The Queensland branch page links contact and news routes, but its visible news examples are historical, including 2015 and 2016 items.",
+    "participationNotes": "Ask the branch to confirm occupation and workplace coverage. Public publication archives can be read without assuming eligibility for member assistance or access to member distribution lists.",
+    "publicChannels": [
+      {
+        "label": "Journal and safety newsletter archive",
+        "url": "https://www.amwu.org.au/union_publications"
+      },
+      {
+        "label": "Queensland and NT branch contact routes",
+        "url": "https://www.amwu.org.au/qld_nt"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.amwu.org.au/qld_nt",
+      "https://www.amwu.org.au/union_publications"
+    ],
+    "kind": "Union",
+    "category": "Union",
+    "sampleDate": null,
+    "discoveryGroup": "unions",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "union-meaa",
+    "name": "Media, Entertainment and Arts Alliance",
+    "sector": "Media, entertainment and arts",
+    "area": "National union with Queensland affiliation and networks",
+    "region": "Australia",
+    "description": "MEAA covers media, performers, musicians and entertainment crew. Its public resources include material for journalism and music, and its general contact form accepts both member and non-member enquiries.",
+    "website": "https://www.meaa.org/",
+    "contactUrl": "https://www.meaa.org/Public/Contents/Contact_Us.aspx",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "workers-unions",
+      "queensland",
+      "media",
+      "music",
+      "arts",
+      "entertainment"
+    ],
+    "sampleUrl": "https://www.meaa.org/Public/Contents/Resources.aspx",
+    "sampleTitle": "MEAA public industry resources",
+    "notes": "The resources directory is undated. MEAA is listed among Queensland Council of Unions affiliates. Its public resources are separate from member benefits and services.",
+    "participationNotes": "Ask about the appropriate route for the work actually undertaken. Creating recorded music does not by itself establish membership eligibility or access to performance opportunities.",
+    "publicChannels": [
+      {
+        "label": "Public industry resources",
+        "url": "https://www.meaa.org/Public/Contents/Resources.aspx"
+      },
+      {
+        "label": "General enquiry form",
+        "url": "https://www.meaa.org/Public/Contents/Contact_Us.aspx"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.meaa.org/",
+      "https://www.meaa.org/Public/Contents/Resources.aspx",
+      "https://www.meaa.org/Public/Contents/Contact_Us.aspx",
+      "https://www.qldunions.com/about-us"
+    ],
+    "kind": "Union",
+    "category": "Union",
+    "sampleDate": null,
+    "discoveryGroup": "unions",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "union-services-queensland",
+    "name": "The Services Union",
+    "sector": "Services and administration",
+    "area": "Queensland; ASU Services and Northern Administrative branch",
+    "region": "Queensland",
+    "description": "The Services Union is the trading name of the ASU's Queensland Services and Northern Administrative branch. Its public website provides branch information and a contact form.",
+    "website": "https://www.theservicesunion.com.au/",
+    "contactUrl": "https://www.theservicesunion.com.au/ASU_TSU/Contact/ASU_TSU/Contact_Us.aspx?hkey=00377d62-adb4-49aa-ae39-fa920baec90e",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "workers-unions",
+      "queensland",
+      "services",
+      "administration",
+      "asu"
+    ],
+    "sampleUrl": "https://www.theservicesunion.com.au/ASU_TSU/About/ASU_TSU/AboutASU.aspx?hkey=7e841768-15de-4569-9066-ddc93e3f3b56",
+    "sampleTitle": "The Services Union branch information",
+    "notes": "The branch information page is undated. The public form asks for the enquiry type and includes a short message field. This is a separate branch entry from Together Queensland.",
+    "participationNotes": "Use the branch to confirm coverage for a particular workplace or service industry. A national ASU coverage list does not establish which Queensland branch applies.",
+    "publicChannels": [
+      {
+        "label": "Branch information",
+        "url": "https://www.theservicesunion.com.au/ASU_TSU/About/ASU_TSU/AboutASU.aspx?hkey=7e841768-15de-4569-9066-ddc93e3f3b56"
+      },
+      {
+        "label": "Public contact form",
+        "url": "https://www.theservicesunion.com.au/ASU_TSU/Contact/ASU_TSU/Contact_Us.aspx?hkey=00377d62-adb4-49aa-ae39-fa920baec90e"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.theservicesunion.com.au/ASU_TSU/About/ASU_TSU/AboutASU.aspx?hkey=7e841768-15de-4569-9066-ddc93e3f3b56",
+      "https://www.theservicesunion.com.au/ASU_TSU/Contact/ASU_TSU/Contact_Us.aspx?hkey=00377d62-adb4-49aa-ae39-fa920baec90e"
+    ],
+    "kind": "Union",
+    "category": "Union",
+    "sampleDate": null,
+    "discoveryGroup": "unions",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "union-rtbu-queensland",
+    "name": "Rail, Tram and Bus Union / Queensland",
+    "sector": "Rail and public transport",
+    "area": "Queensland; Brisbane branch office",
+    "region": "Queensland",
+    "description": "RTBU Queensland provides a public branch contact route and website for rail and public transport workers. Its site separates the public pages from a member portal.",
+    "website": "https://www.rtbu.com.au/",
+    "contactUrl": "https://www.rtbu.com.au/uhub/Contact_Us/Uhub/Contact_Us.aspx?hkey=d073cfea-3aad-46b4-8a47-ee2616988047",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "workers-unions",
+      "queensland",
+      "rail",
+      "public-transport",
+      "rtbu"
+    ],
+    "sampleUrl": "https://www.rtbu.com.au/uhub/Contact_Us/Uhub/Contact_Us.aspx?hkey=d073cfea-3aad-46b4-8a47-ee2616988047",
+    "sampleTitle": "RTBU Queensland public branch contact information",
+    "notes": "The contact page is undated. The site has a News navigation item, but no individual current article was verified from that page. Member-only content requires sign-in.",
+    "participationNotes": "Check occupational and workplace coverage with the branch. Public branch contact information does not establish access to the member portal or internal communications.",
+    "publicChannels": [
+      {
+        "label": "Public branch website",
+        "url": "https://www.rtbu.com.au/"
+      },
+      {
+        "label": "Queensland branch contact",
+        "url": "https://www.rtbu.com.au/uhub/Contact_Us/Uhub/Contact_Us.aspx?hkey=d073cfea-3aad-46b4-8a47-ee2616988047"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.rtbu.com.au/",
+      "https://www.rtbu.com.au/uhub/Contact_Us/Uhub/Contact_Us.aspx?hkey=d073cfea-3aad-46b4-8a47-ee2616988047",
+      "https://www.qirc.qld.gov.au/industrial-organisations-and-associated-entities/employee-organisations"
+    ],
+    "kind": "Union",
+    "category": "Union",
+    "sampleDate": null,
+    "discoveryGroup": "unions",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  },
+  {
+    "id": "union-nteu-queensland",
+    "name": "National Tertiary Education Union / Queensland",
+    "sector": "Tertiary education",
+    "area": "Queensland universities; division office in Taringa, Brisbane",
+    "region": "Queensland",
+    "description": "NTEU's public contact directory includes its Queensland division and university branches, including UQ, QUT, Griffith, UniSC and UniSQ. Its national publications archive includes Advocate and Sentry.",
+    "website": "https://www.nteu.au/",
+    "contactUrl": "https://www.nteu.au/Bargaining/NTEU/Contacts.aspx",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "workers-unions",
+      "queensland",
+      "universities",
+      "tertiary-education",
+      "nteu",
+      "publications"
+    ],
+    "sampleUrl": "https://www.nteu.au/NTEU/Our_Union/Publications/NTEU/publications.aspx?hkey=7db3d817-7e1b-45e9-aaf1-e6c9783463c2",
+    "sampleTitle": "NTEU publications archive",
+    "notes": "The archive is undated and includes historical editions. Its listed titles and old publication schedules do not establish a current release frequency. NTEU is a staff union, separate from student guilds and societies.",
+    "participationNotes": "Use the Queensland division or relevant university branch to check employment coverage and public enquiry options. Publication access does not establish membership or contributor eligibility.",
+    "publicChannels": [
+      {
+        "label": "Queensland division and campus branch contacts",
+        "url": "https://www.nteu.au/Bargaining/NTEU/Contacts.aspx"
+      },
+      {
+        "label": "Publications archive",
+        "url": "https://www.nteu.au/NTEU/Our_Union/Publications/NTEU/publications.aspx?hkey=7db3d817-7e1b-45e9-aaf1-e6c9783463c2"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.nteu.au/Bargaining/NTEU/Contacts.aspx",
+      "https://www.nteu.au/NTEU/Our_Union/Publications/NTEU/publications.aspx?hkey=7db3d817-7e1b-45e9-aaf1-e6c9783463c2"
+    ],
+    "kind": "Union",
+    "category": "Union",
+    "sampleDate": null,
+    "discoveryGroup": "unions",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08"
+  }
+]

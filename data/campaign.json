@@ -1,0 +1,29 @@
+{
+  "name": "Luke Nathan Hayes",
+  "shortName": "Luke Hayes",
+  "office": "Mayor of Redland City",
+  "status": "Exploring a possible mayoral campaign",
+  "nominationCertified": false,
+  "launchDate": null,
+  "electionDate": "2026-12-12",
+  "timezone": "Australia/Brisbane",
+  "updated": "2026-11-08",
+  "baseUrl": "https://auraofintelligence.github.io/redlands-mayoral-campaign/",
+  "repository": "https://github.com/auraofintelligence/redlands-mayoral-campaign",
+  "publicationMode": "preparation-preview",
+  "authorisation": {
+    "name": "Luke Nathan Hayes",
+    "address": "",
+    "status": "incomplete",
+    "note": "Address omitted at Luke's request. Any public release and required wording remain to be decided and verified."
+  },
+  "operatorModel": "One person, supported by AI agents",
+  "electionSource": "https://www.ecq.qld.gov.au/media/2026-media-statements",
+  "nominationClosingDate": null,
+  "expenditureCap": null,
+  "postalReturnDeadline": null,
+  "contactFormUrl": "https://script.google.com/macros/s/AKfycbz3qnCKj81AYJGWKvrqHbkK3Fo3LnxdMQETjzXSbJzg5Du2rFvHiJ2o4cfJh_znv4tb/exec",
+  "tentativeStartDate": "2026-11-11",
+  "startDateStatus": "Tentative option only; no launch or personal schedule committed",
+  "campaignApproach": "Relaxed, serendipitous and self-directed"
+}

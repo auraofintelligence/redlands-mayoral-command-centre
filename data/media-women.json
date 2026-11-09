@@ -1,0 +1,625 @@
+[
+  {
+    "kind": "online-media",
+    "area": "Australia",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "women-focused",
+    "id": "womens-agenda",
+    "name": "Women's Agenda",
+    "description": "Australian reporting and commentary on politics, work, leadership, health and climate, with newsletters and the Women's Agenda Podcast.",
+    "website": "https://womensagenda.com.au/",
+    "contactUrl": "https://womensagenda.com.au/contact/",
+    "formats": [
+      "article",
+      "newsletter",
+      "podcast"
+    ],
+    "tags": [
+      "women-focused",
+      "public-affairs",
+      "work",
+      "leadership",
+      "podcast"
+    ],
+    "sampleUrl": "https://podcasts.apple.com/au/podcast/ais-gendered-harms-and-case-for-a-feminist-ai-future/id1465210528?i=1000793310073",
+    "sampleTitle": "AI's gendered harms and case for a feminist AI future",
+    "sampleDate": "2026-10-05",
+    "notes": "Published by Agenda Media, which describes itself as women-owned and independently run. The example is Angela Priestley's interview with researcher Elise Stephenson about AI and public life. Its title and 5 October date are listed in the publisher-authored podcast feed; the individual Apple page could not be fetched during checking. No current Redland election coverage was verified.",
+    "sourceUrls": [
+      "https://womensagenda.com.au/",
+      "https://womensagenda.com.au/contact/",
+      "https://womensagenda.com.au/advertising-2/about-us/",
+      "https://podcasts.apple.com/au/podcast/the-womens-agenda-podcast/id1465210528",
+      "https://podcasts.apple.com/au/podcast/ais-gendered-harms-and-case-for-a-feminist-ai-future/id1465210528?i=1000793310073"
+    ]
+  },
+  {
+    "kind": "podcast",
+    "area": "Australia",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "women-focused",
+    "id": "mamamia-the-quicky",
+    "name": "The Quicky / Mamamia",
+    "description": "Mamamia current-affairs podcast with news updates, explainers and guest conversations about Australian and international events.",
+    "website": "https://www.mamamia.com.au/podcasts/the-quicky/",
+    "contactUrl": "https://help.mamamia.com.au/en-US/contact",
+    "formats": [
+      "podcast",
+      "article",
+      "video",
+      "social"
+    ],
+    "tags": [
+      "women-focused",
+      "current-affairs",
+      "podcast",
+      "interviews"
+    ],
+    "sampleUrl": "https://podcasts.apple.com/au/podcast/nab-to-cut-2500-jobs-did-australian-politics-just-change/id1451469361?i=1000797305811",
+    "sampleTitle": "NAB To Cut 2500 Jobs & Did Australian Politics Just Change Forever?",
+    "sampleDate": null,
+    "notes": "This record describes The Quicky, a named programme within Mamamia, rather than the publisher as a separate organisation. The example includes Josh Butler discussing political representatives and their communities. The publisher feed uses a relative date and the individual episode page could not be fetched, so an exact publication date is not recorded. The contact link is Mamamia's general enquiry form; programme-specific contact details appear in the show notes. No current Redland election coverage was verified.",
+    "sourceUrls": [
+      "https://www.mamamia.com.au/podcasts/the-quicky/",
+      "https://help-move.mamamia.com.au/en-US",
+      "https://help.mamamia.com.au/en-US/contact",
+      "https://www.mamamia.com.au//news/",
+      "https://podcasts.apple.com/au/podcast/the-quicky/id1451469361",
+      "https://podcasts.apple.com/au/podcast/nab-to-cut-2500-jobs-did-australian-politics-just-change/id1451469361?i=1000797305811"
+    ]
+  },
+  {
+    "kind": "online-media",
+    "area": "Australia",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "women-focused",
+    "id": "missing-perspectives",
+    "name": "Missing Perspectives",
+    "description": "Australian digital publication covering public affairs, culture, sport and work, with reporting and commentary about women's experiences and representation.",
+    "website": "https://missingperspectives.com/",
+    "contactUrl": "https://missingperspectives.com/contact/",
+    "formats": [
+      "article",
+      "newsletter",
+      "social"
+    ],
+    "tags": [
+      "women-focused",
+      "public-affairs",
+      "culture",
+      "sport",
+      "work"
+    ],
+    "sampleUrl": "https://missingperspectives.com/posts/2026-27-federal-budget-women-missed-coverage/",
+    "sampleTitle": "What the 2026-27 Federal Budget coverage missed for women",
+    "sampleDate": "2026-05-13",
+    "notes": "The example is Lauren Beckman's commentary on federal budget coverage, not Redland election reporting. The publication's contact page has an enquiry form and a separate submissions route. Its current-affairs pages and contact route were accessible; the homepage timed out during checking. No current Redland election coverage was verified.",
+    "sourceUrls": [
+      "https://missingperspectives.com/desks/news/",
+      "https://missingperspectives.com/contact/",
+      "https://missingperspectives.com/posts/2026-27-federal-budget-women-missed-coverage/"
+    ]
+  },
+  {
+    "kind": "online-media",
+    "area": "Australia",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "women-focused",
+    "id": "cheek-media",
+    "name": "Cheek Media",
+    "description": "Independent Australian commentary publication founded by Hannah Ferguson, publishing on political, social and feminist issues through Instagram, Substack articles and newsletters.",
+    "website": "https://www.cheekmedia.co/",
+    "contactUrl": "https://www.cheekmedia.co/contact",
+    "formats": [
+      "social",
+      "newsletter",
+      "article"
+    ],
+    "tags": [
+      "women-focused",
+      "commentary",
+      "feminism",
+      "public-affairs",
+      "newsletter"
+    ],
+    "sampleUrl": "https://cheekmedia.substack.com/p/open-for-a-surprise",
+    "sampleTitle": "Open for a surprise: a new news newsletter",
+    "sampleDate": "2026-10-30",
+    "notes": "Cheek explicitly describes its editorial position as progressive and feminist. The linked newsletter illustrates its political commentary and editorial format. Founder Hannah Ferguson has also disclosed an intention to contest Grayndler as an independent; that personal candidacy is distinct from this publication entry. This is a national source, not a Brisbane local outlet merely because Ferguson studied in Queensland. No current Redland election coverage was verified.",
+    "sourceUrls": [
+      "https://www.cheekmedia.co/",
+      "https://www.cheekmedia.co/about",
+      "https://www.cheekmedia.co/contact",
+      "https://cheekmedia.substack.com/about",
+      "https://cheekmedia.substack.com/p/open-for-a-surprise",
+      "https://cheekmedia.substack.com/p/a-sentimental-saturday-note-i-dont"
+    ]
+  },
+  {
+    "kind": "magazine-and-online",
+    "area": "Australia",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "women-focused",
+    "id": "australian-womens-weekly",
+    "name": "The Australian Women's Weekly",
+    "description": "National magazine and digital publication with interviews, real-life reporting, work, community, health and culture coverage, plus its Love Stories podcast.",
+    "website": "https://www.womensweekly.com.au/",
+    "contactUrl": "https://www.aremedia.com.au/about-us/contact-us/",
+    "formats": [
+      "article",
+      "newsletter",
+      "podcast"
+    ],
+    "tags": [
+      "women-focused",
+      "magazine",
+      "community-stories",
+      "interviews",
+      "work"
+    ],
+    "sampleUrl": "https://www.womensweekly.com.au/news/real-life/narelle-fraser-the-policewoman/",
+    "sampleTitle": "Narelle Fraser spent her life protecting others. Then she had to save herself",
+    "sampleDate": "2026-11-06",
+    "notes": "Published by Are Media. This is an established magazine with digital formats, not an independent creator. The example profiles former detective Narelle Fraser's working life and experience of leaving policing. The contact link is the publisher's general form rather than a verified direct editorial booking route for this title. No current Redland election coverage was verified.",
+    "sourceUrls": [
+      "https://www.womensweekly.com.au/",
+      "https://www.aremedia.com.au/about-us/contact-us/",
+      "https://www.womensweekly.com.au/news/real-life/narelle-fraser-the-policewoman/"
+    ]
+  },
+  {
+    "kind": "podcast",
+    "area": "Australia",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "women-focused",
+    "id": "life-uncut",
+    "name": "Life Uncut",
+    "description": "Brittany Hockley and Laura Byrne mix everyday banter, dating and relationship dilemmas with interviews and conversations about life. Their Ask Uncut and Offcuts episodes include listener questions, friendships and popular culture.",
+    "website": "https://www.lifeuncutpodcast.com.au/",
+    "contactUrl": "https://www.lifeuncutpodcast.com.au/connect",
+    "formats": [
+      "podcast",
+      "video",
+      "social",
+      "newsletter"
+    ],
+    "tags": [
+      "women-focused",
+      "banter",
+      "relationships",
+      "dating",
+      "pop-culture",
+      "interviews"
+    ],
+    "sampleUrl": "https://podcasts.apple.com/au/podcast/offcuts-pregnancy-bts-the-meet-them-twice-theory/id1472126503?i=1000794509940",
+    "sampleTitle": "Offcuts: Pregnancy BTS, The Meet Them Twice Theory & The Rockstar Relationship Theory",
+    "sampleDate": null,
+    "notes": "The publisher-authored feed contains 2026 episodes. The linked Offcuts example discusses relationship theories and a Queensland community story. Its exact publication date was not verified. The Connect page separates Ask Uncut listener questions from a commercial partnership form and also links the show's community and newsletter. Neither form is described as an open guest-booking service.",
+    "sourceUrls": [
+      "https://www.lifeuncutpodcast.com.au/",
+      "https://www.lifeuncutpodcast.com.au/connect",
+      "https://podcasts.apple.com/au/podcast/life-uncut/id1472126503",
+      "https://podcasts.apple.com/au/podcast/offcuts-pregnancy-bts-the-meet-them-twice-theory/id1472126503?i=1000794509940"
+    ]
+  },
+  {
+    "kind": "podcast",
+    "area": "Melbourne, with an Australian and international pop-culture focus",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "women-focused",
+    "id": "shameless-podcast",
+    "name": "Shameless",
+    "description": "Michelle Andrews and Zara McDonald discuss entertainment news, celebrity culture and the stories circulating in everyday conversation. The Melbourne podcast also publishes video and the Smart, Dumb Stuff newsletter.",
+    "website": "https://shamelessmedia.com.au/show/shameless/",
+    "contactUrl": "https://shamelessmedia.com.au/partnerships/",
+    "formats": [
+      "podcast",
+      "video",
+      "newsletter",
+      "social"
+    ],
+    "tags": [
+      "women-focused",
+      "banter",
+      "pop-culture",
+      "current-events",
+      "entertainment"
+    ],
+    "sampleUrl": "https://podcasts.apple.com/au/podcast/not-an-a-lister-in-sight/id1352875216?i=1000787314866",
+    "sampleTitle": "Not an A-lister in sight!",
+    "sampleDate": "2026-09-02",
+    "notes": "Shameless Media explicitly describes its editorial business as serving women. The example is a Quick and Dirty entertainment-news episode. The linked contact route is the network's commercial partnerships page, not a verified open guest invitation. Shameless and Everybody Has a Secret are separate programmes from the same publisher.",
+    "sourceUrls": [
+      "https://shamelessmedia.com.au/",
+      "https://shamelessmedia.com.au/show/shameless/",
+      "https://shamelessmedia.com.au/partnerships/",
+      "https://podcasts.apple.com/au/podcast/shameless/id1352875216",
+      "https://podcasts.apple.com/au/podcast/not-an-a-lister-in-sight/id1352875216?i=1000787314866"
+    ]
+  },
+  {
+    "kind": "podcast",
+    "area": "Australia, published by Shameless Media",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "women-focused",
+    "id": "everybody-has-a-secret",
+    "name": "Everybody Has a Secret",
+    "description": "Annabelle Lee and Charlotte White discuss listeners' personal stories, relationship dilemmas, friendship and family life. The conversational show is accompanied by the Ask Us advice newsletter.",
+    "website": "https://shamelessmedia.com.au/show/everybody-has-a-secret/",
+    "contactUrl": "https://shamelessmedia.com.au/ehas-mailbox/",
+    "formats": [
+      "podcast",
+      "social",
+      "newsletter"
+    ],
+    "tags": [
+      "women-focused",
+      "banter",
+      "relationships",
+      "friendship",
+      "listener-stories"
+    ],
+    "sampleUrl": "https://podcasts.apple.com/au/podcast/everybody-has-a-secret/id1621235461",
+    "sampleTitle": "Is nobody having sex anymore?",
+    "sampleDate": null,
+    "notes": "The example title and discussion of relationships appear in the show's 2026 publisher-authored feed; the exact episode date was not verified. The public mailbox is specifically for anonymous listener stories, not publicity pitches or guest bookings. Commercial enquiries use Shameless Media's separate partnerships page. The publisher states that submitted stories may become content under its published terms.",
+    "sourceUrls": [
+      "https://shamelessmedia.com.au/show/everybody-has-a-secret/",
+      "https://shamelessmedia.com.au/ehas-mailbox/",
+      "https://shamelessmedia.com.au/partnerships/",
+      "https://podcasts.apple.com/au/podcast/everybody-has-a-secret/id1621235461"
+    ]
+  },
+  {
+    "kind": "podcast",
+    "area": "Australia",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "women-focused",
+    "id": "mamamia-out-loud",
+    "name": "Mamamia Out Loud",
+    "description": "A rotating panel including Mia Freedman, Jessie Stephens and Holly Wainwright discusses news, relationships, popular culture and everyday dilemmas. The show combines current events with informal conversation and recommendations.",
+    "website": "https://www.mamamia.com.au/podcasts/mamamia-out-loud/",
+    "contactUrl": "https://help.mamamia.com.au/en-US/contact",
+    "formats": [
+      "podcast",
+      "video",
+      "social",
+      "newsletter"
+    ],
+    "tags": [
+      "women-focused",
+      "banter",
+      "relationships",
+      "current-events",
+      "pop-culture"
+    ],
+    "sampleUrl": "https://podcasts.apple.com/ca/podcast/jennifer-lawrences-hot-mum-rebrand-the-3-day-panic/id928350893?i=1000799329771",
+    "sampleTitle": "Jennifer Lawrence's 'Hot Mum' Rebrand & The 3-Day Panic You Can Ignore",
+    "sampleDate": "2026-11-02",
+    "notes": "Mamamia explicitly describes this as a podcast for women. This is a distinct programme from The Quicky, under the same publisher. The November example mixes popular culture, relationships and a news-related discussion. Some bonus material requires a subscription. The contact route is Mamamia's general enquiry form; the show notes also publish programme feedback and voice-message routes.",
+    "sourceUrls": [
+      "https://www.mamamia.com.au/podcasts/mamamia-out-loud/",
+      "https://www.mamamia.com.au/podcasts/mamamia-out-loud//",
+      "https://help.mamamia.com.au/en-US/contact",
+      "https://podcasts.apple.com/au/podcast/mamamia-out-loud/id928350893",
+      "https://podcasts.apple.com/ca/podcast/jennifer-lawrences-hot-mum-rebrand-the-3-day-panic/id928350893?i=1000799329771"
+    ]
+  },
+  {
+    "kind": "podcast",
+    "area": "Gold Coast hosts, with an Australia-wide show",
+    "region": "Gold Coast",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "women-focused",
+    "id": "happy-hour-lucy-nikki",
+    "name": "Happy Hour with Lucy & Nikki",
+    "description": "Lucy Jackson and Nikki Westcott share friendship stories, dating and relationship dilemmas, business experiences and general banter. Their Advice with the Queens episodes respond to listeners' questions.",
+    "website": "https://www.happyhourwithlucyandnikki.com/",
+    "contactUrl": "https://www.happyhourwithlucyandnikki.com/pages/contact-us",
+    "formats": [
+      "podcast",
+      "social",
+      "newsletter"
+    ],
+    "tags": [
+      "women-focused",
+      "banter",
+      "relationships",
+      "dating",
+      "friendship",
+      "gold-coast"
+    ],
+    "sampleUrl": "https://podcasts.apple.com/ca/podcast/advice-with-the-queens-relationship-edition/id1481026589?i=1000773127774",
+    "sampleTitle": "Advice with the Queens | Relationship Edition",
+    "sampleDate": "2026-06-17",
+    "notes": "The hosts describe their show as serving young women, and identified themselves as Gold Coast locals in a June 2025 interview. This is an Australian show with a Queensland host connection, not solely local news. The publisher feed was still listing new episodes at checking. The contact page distinguishes listener-story submissions from media, marketing and management enquiries.",
+    "sourceUrls": [
+      "https://www.happyhourwithlucyandnikki.com/",
+      "https://www.happyhourwithlucyandnikki.com/pages/about-new",
+      "https://www.happyhourwithlucyandnikki.com/pages/contact-us",
+      "https://www.insidegoldcoast.com.au/interview-lucy-nikki",
+      "https://play.listnr.com/podcast/happy-hour-with-lucy-and-nikki",
+      "https://podcasts.apple.com/au/podcast/happy-hour-with-lucy-nikki/id1481026589",
+      "https://podcasts.apple.com/ca/podcast/advice-with-the-queens-relationship-edition/id1481026589?i=1000773127774"
+    ]
+  },
+  {
+    "kind": "podcast",
+    "area": "Australia",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "women-focused",
+    "id": "its-a-lot-abbie-chatfield",
+    "name": "It's A Lot with Abbie Chatfield",
+    "description": "Abbie Chatfield discusses dating, relationships, feminism, popular culture and public issues, with guest interviews and listener stories. Episodes range from informal personal conversations to current-affairs discussions.",
+    "website": "https://www.itsalotpodcast.com/",
+    "contactUrl": "https://www.itsalotpodcast.com/contact",
+    "formats": [
+      "podcast",
+      "social",
+      "video"
+    ],
+    "tags": [
+      "women-focused",
+      "banter",
+      "relationships",
+      "dating",
+      "current-events",
+      "interviews"
+    ],
+    "sampleUrl": "https://podcasts.apple.com/us/podcast/it%27s-a-lot-with-abbie-chatfield/id1500849438",
+    "sampleTitle": "Breaking Down the Budget with Larissa Waters",
+    "sampleDate": "2026-06-03",
+    "notes": "The creator-authored feed lists the June 2026 interview with Senator Larissa Waters and describes the show's relationship and feminist discussions. This is a national programme; Chatfield's Queensland origins do not establish current Queensland production. The contact page explicitly welcomes guest and topic suggestions and gives a separate management route for brand pitches and interviewing Abbie.",
+    "sourceUrls": [
+      "https://www.itsalotpodcast.com/contact",
+      "https://www.itsalotpodcast.com/podcast",
+      "https://linktr.ee/itsalotpod",
+      "https://podcasts.apple.com/us/podcast/it%27s-a-lot-with-abbie-chatfield/id1500849438"
+    ]
+  },
+  {
+    "kind": "podcast",
+    "area": "Australia",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "women-focused",
+    "id": "two-broke-chicks",
+    "name": "Two Broke Chicks",
+    "description": "Sally McMullen and Alex Hourigan discuss friendship, dating, work, money and everyday life with humour. The podcast includes guest conversations, shopping discussions and listener dilemmas.",
+    "website": "https://brokechicksmedia.com/",
+    "contactUrl": "https://brokechicksmedia.com/pages/contact",
+    "formats": [
+      "podcast",
+      "video",
+      "social"
+    ],
+    "tags": [
+      "women-focused",
+      "banter",
+      "relationships",
+      "friendship",
+      "money",
+      "pop-culture"
+    ],
+    "sampleUrl": "https://omny.fm/shows/twobrokechicks/chicks-chat-work-mistress-frenemies-christmas-proposals?in_playlist=podcast",
+    "sampleTitle": "Chicks Chat: Work Mistress, Frenemies & Christmas Proposals",
+    "sampleDate": null,
+    "notes": "The creator website and feed identify the hosts and their life-advice format. The example covers friendship, work relationships and a proposal dilemma; its exact publication date was not verified. The public contact page separates listener-story submissions from brand enquiries. Recent 2026 episodes were visible in the publisher-authored feed.",
+    "sourceUrls": [
+      "https://brokechicksmedia.com/pages/about-us",
+      "https://brokechicksmedia.com/pages/contact",
+      "https://podcasts.apple.com/us/podcast/two-broke-chicks/id1587075307",
+      "https://omny.fm/shows/twobrokechicks/chicks-chat-work-mistress-frenemies-christmas-proposals?in_playlist=podcast"
+    ]
+  },
+  {
+    "kind": "podcast",
+    "area": "Melbourne-based publisher, Australia-wide conversations",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "women-focused",
+    "id": "shes-on-the-money",
+    "name": "She's On The Money",
+    "description": "Victoria Devine and co-hosts discuss everyday money, careers and life decisions. The Friday Drinks format mixes conversational banter, listener questions and money stories, alongside the show's interviews and topic explainers.",
+    "website": "https://www.shesonthemoney.com/podcast",
+    "contactUrl": "https://www.shesonthemoney.com/contact-us",
+    "formats": [
+      "podcast",
+      "video",
+      "newsletter",
+      "social"
+    ],
+    "tags": [
+      "women-focused",
+      "banter",
+      "money",
+      "work",
+      "relationships",
+      "listener-stories"
+    ],
+    "sampleUrl": "https://podcasts.apple.com/au/podcast/she-did-everything-right-with-money-now-she-feels/id1468033698?i=1000791904981",
+    "sampleTitle": "She Did Everything 'Right' With Money. Now She Feels Completely Stuck.",
+    "sampleDate": "2026-09-27",
+    "notes": "The publisher describes a focus on women's financial literacy. Money Diaries, Friday Drinks and topic explainers are different formats within one show. The example is a listener's personal money story, not personalised advice from this directory. The contact form is for general questions and enquiries; the site also has a separate partnerships route.",
+    "sourceUrls": [
+      "https://www.shesonthemoney.com/about",
+      "https://www.shesonthemoney.com/podcast",
+      "https://www.shesonthemoney.com/contact-us",
+      "https://podcasts.apple.com/au/podcast/shes-on-the-money/id1468033698",
+      "https://podcasts.apple.com/au/podcast/she-did-everything-right-with-money-now-she-feels/id1468033698?i=1000791904981"
+    ]
+  },
+  {
+    "kind": "podcast",
+    "area": "Australia",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "women-focused",
+    "id": "big-small-talk",
+    "name": "Big Small Talk",
+    "description": "Sarah Jane Adams and Hannah Ferguson combine Australian and international current affairs with pop culture, relationships and interviews. Small Talk conversations sit alongside headline discussions and historical explainers.",
+    "website": "https://podcasts.apple.com/au/podcast/big-small-talk/id1701358863",
+    "contactUrl": "https://www.instagram.com/bigsmalltalk_pod/",
+    "formats": [
+      "podcast",
+      "social"
+    ],
+    "tags": [
+      "women-focused",
+      "current-events",
+      "pop-culture",
+      "relationships",
+      "interviews"
+    ],
+    "sampleUrl": "https://podcasts.apple.com/au/podcast/daisy-edgar-jones-esm%C3%A9-creed-miles-big-sister-advice/id1701358863?i=1000792515584",
+    "sampleTitle": "Daisy Edgar-Jones & Esmé Creed-Miles: Big Sister Advice",
+    "sampleDate": null,
+    "notes": "The publisher-authored 2026 feed includes conversations about women's experiences, dating and public issues. The example is an interview about film, family and relationships; an exact publication date was not verified. The public Instagram account is linked by the show's own page. It is a social contact route, not a verified open guest-booking form. Hannah Ferguson also appears in the separate Cheek Media entry.",
+    "sourceUrls": [
+      "https://linktr.ee/BigSmallTalk",
+      "https://podcasts.apple.com/au/podcast/big-small-talk/id1701358863",
+      "https://www.instagram.com/bigsmalltalk_pod/",
+      "https://podcasts.apple.com/au/podcast/daisy-edgar-jones-esm%C3%A9-creed-miles-big-sister-advice/id1701358863?i=1000792515584"
+    ]
+  },
+  {
+    "kind": "podcast",
+    "area": "Australia",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "women-focused",
+    "id": "ladies-we-need-to-talk",
+    "name": "Ladies, We Need To Talk",
+    "description": "Yumi Stynes hosts conversations about women's relationships, sex, mental load, health and everyday experiences. The ABC podcast brings together personal stories and guest interviews.",
+    "website": "https://www.abc.net.au/listen/programs/ladies-we-need-to-talk",
+    "contactUrl": "https://www.abc.net.au/listen/programs/ladies-we-need-to-talk",
+    "formats": [
+      "podcast",
+      "article"
+    ],
+    "tags": [
+      "women-focused",
+      "relationships",
+      "current-events",
+      "interviews",
+      "everyday-life"
+    ],
+    "sampleUrl": "https://www.abc.net.au/listen/programs/ladies-we-need-to-talk/amy-remeikis-screw-nice/107318698",
+    "sampleTitle": "No more nice: Amy Remeikis wants you to stop people-pleasing",
+    "sampleDate": "2026-11-03",
+    "notes": "This is an ABC programme rather than an independent creator. Its programme page explicitly welcomes episode ideas and feedback and publishes the show's contact details. The November example is an interview with journalist Amy Remeikis. It covers women's experiences and public life; it is not evidence of current Redland election reporting.",
+    "sourceUrls": [
+      "https://www.abc.net.au/listen/programs/ladies-we-need-to-talk",
+      "https://www.abc.net.au/listen/programs/ladies-we-need-to-talk/amy-remeikis-screw-nice/107318698",
+      "https://podcasts.apple.com/au/podcast/ladies-we-need-to-talk/id1277424411"
+    ]
+  },
+  {
+    "kind": "podcast",
+    "area": "Brisbane publisher, with Australian everyday-life conversations",
+    "region": "Brisbane",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "women-focused",
+    "id": "who-even-are-we",
+    "name": "Who Even Are We?",
+    "description": "Katie Mattin and Rachel Thaiday talk about friendship, marriage, parenting teens, confidence and changing identity. The conversations combine personal stories and everyday banter, following their earlier Am I A Bad Mum? show.",
+    "website": "https://podcasts.apple.com/au/podcast/who-even-are-we/id1374764917",
+    "contactUrl": "https://podshape.com/",
+    "formats": [
+      "podcast",
+      "social"
+    ],
+    "tags": [
+      "women-focused",
+      "banter",
+      "relationships",
+      "friendship",
+      "parenting",
+      "brisbane"
+    ],
+    "sampleUrl": "https://podcasts.apple.com/au/podcast/welcome-to-your-selfish-era/id1374764917?i=1000790796210",
+    "sampleTitle": "Welcome to Your Selfish Era",
+    "sampleDate": null,
+    "notes": "The current name and hosts are verified in Podshape's catalogue and the creator-authored feed, which includes 2026 episodes. Podshape identifies itself as Brisbane-based; this describes the publisher connection, not a claim that every episode is recorded in Brisbane. The sample discusses motherhood, relationships and boundaries. Its exact date was not verified. The public route is the producer's general contact page on its home site, not a dedicated guest invitation.",
+    "sourceUrls": [
+      "https://podshape.com/",
+      "https://au.linkedin.com/company/podshape",
+      "https://podcasts.apple.com/au/podcast/who-even-are-we/id1374764917",
+      "https://podcasts.apple.com/au/podcast/welcome-to-your-selfish-era/id1374764917?i=1000790796210"
+    ]
+  }
+]

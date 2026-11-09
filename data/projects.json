@@ -1,0 +1,547 @@
+[
+  {
+    "id": "Redlands_discovers_Luke_Hayes",
+    "title": "When Redlands Discovers Luke Hayes",
+    "category": "Record and context",
+    "tags": [
+      "redlands",
+      "essay",
+      "origins"
+    ],
+    "summary": "The October 2026 thought experiment connects Redlands, music, personal intelligence and the wider body of work. Its original edition did not announce a candidacy.",
+    "url": "https://auraofintelligence.github.io/Redlands_discovers_Luke_Hayes/",
+    "repo": "https://github.com/auraofintelligence/Redlands_discovers_Luke_Hayes",
+    "sourcePath": "README.md",
+    "sourceCommit": "cd700c5bdcd94eee5afd74bef538ae68c6f705e7",
+    "status": "published work",
+    "featured": true
+  },
+  {
+    "id": "open-record-luke-nathan-hayes",
+    "title": "Luke Nathan Hayes: Open Record",
+    "category": "Record and context",
+    "tags": [
+      "biography",
+      "source-record",
+      "public-work"
+    ],
+    "summary": "A public record linking life history, original documents, music and projects, with source notes and a dated review of recent public work.",
+    "url": "https://github.com/auraofintelligence/open-record-luke-nathan-hayes",
+    "repo": "https://github.com/auraofintelligence/open-record-luke-nathan-hayes",
+    "sourcePath": "README.md",
+    "sourceCommit": "dc24221a257ebb57bcc9176b52d41be237a371ff",
+    "status": "published work",
+    "featured": true
+  },
+  {
+    "id": "UNGA81-Luke-Hayes",
+    "title": "A Fair Go in the Age of Intelligence",
+    "category": "Ideas and research",
+    "tags": [
+      "fair-go",
+      "joyful-responsible-abundance",
+      "unga81"
+    ],
+    "summary": "Luke's independent September 2026 contribution brings together personal agency, shared capability and international cooperation. It is an author publication, without United Nations endorsement.",
+    "url": "https://auraofintelligence.github.io/UNGA81-Luke-Hayes/",
+    "repo": "https://github.com/auraofintelligence/UNGA81-Luke-Hayes",
+    "sourcePath": "README.md",
+    "sourceCommit": "12afc71ba7375a2096ab4c307934198568e58bed",
+    "status": "published work",
+    "featured": true
+  },
+  {
+    "id": "strange-but-true",
+    "title": "Strange But True",
+    "category": "Creative and practical work",
+    "tags": [
+      "practical-technology",
+      "public-speaking",
+      "creative-work"
+    ],
+    "summary": "Luke's public doorway for practical technology help, AI guidance, speaking, media and creative work. The public-speaking page introduces A Fair Go in the Age of Superintelligence.",
+    "url": "https://auraofintelligence.github.io/strange-but-true/",
+    "repo": "https://github.com/auraofintelligence/strange-but-true",
+    "sourcePath": "README.md",
+    "sourceCommit": "113ffbe57416c90889ad61671408c66f3687a361",
+    "status": "published work",
+    "featured": true
+  },
+  {
+    "id": "sovereign-capacity-lab",
+    "title": "Sovereign Capacity Lab",
+    "category": "Ideas and research",
+    "tags": [
+      "materials",
+      "energy",
+      "scenario-tools"
+    ],
+    "summary": "Browser research and editable scenarios connect mining, materials, electricity, storage, repairable robotics, manufacturing, housing and orbital infrastructure. Outputs retain their assumptions.",
+    "url": "https://auraofintelligence.github.io/sovereign-capacity-lab/",
+    "repo": "https://github.com/auraofintelligence/sovereign-capacity-lab",
+    "sourcePath": "README.md",
+    "sourceCommit": "fc5280fdcc6013836bb3bd432b2ce792dad6d2f1",
+    "status": "prototype",
+    "featured": true
+  },
+  {
+    "id": "joyful-responsible-abundance",
+    "title": "Joyful Responsible Abundance",
+    "category": "Ideas and research",
+    "tags": [
+      "personal-agency",
+      "superintelligence",
+      "sovereignty"
+    ],
+    "summary": "An educational guide to the connected proposals, a dated paper on superintelligence and Australian sovereignty, source libraries and browser calculators.",
+    "url": "https://auraofintelligence.github.io/joyful-responsible-abundance/",
+    "repo": "https://github.com/auraofintelligence/joyful-responsible-abundance",
+    "sourcePath": "README.md",
+    "sourceCommit": "45a5fcaf64f6fe5aec90743b3f6a4d3fa7916eea",
+    "status": "published work",
+    "featured": true
+  },
+  {
+    "id": "p4a-xyz-cinema",
+    "title": "P4A the Purple Party for Australia",
+    "category": "Civic participation",
+    "tags": [
+      "p4a",
+      "civic-workbench",
+      "redlands"
+    ],
+    "summary": "The P4A civic workbench links places, everyday questions, public evidence and participation routes, including its Redlands local journey.",
+    "url": "https://p4a.xyz/",
+    "repo": "https://github.com/auraofintelligence/p4a-xyz-cinema",
+    "sourcePath": "README.md",
+    "sourceCommit": "6e924cc26a3c2e1fa50ec51e4b6a9874a2f6ab59",
+    "status": "published work",
+    "featured": true
+  },
+  {
+    "id": "i-C-infinity-music-universe",
+    "title": "i C. infinity Music Universe",
+    "category": "Creative and practical work",
+    "tags": [
+      "music",
+      "lyrics",
+      "creative-catalogue"
+    ],
+    "summary": "The artist catalogue brings album pages, songs, lyrics, video links and creative production workbenches together with the original work and its context.",
+    "url": "https://auraofintelligence.github.io/i-C-infinity-music-universe/",
+    "repo": "https://github.com/auraofintelligence/i-C-infinity-music-universe",
+    "sourcePath": "README.md",
+    "sourceCommit": "33af57aa8e6b9e67f8f02ce4375c38c0531f7d5a",
+    "status": "published work",
+    "featured": true
+  },
+  {
+    "id": "aura-genesis",
+    "title": "Aura Genesis: Original Concept",
+    "category": "Personal intelligence and learning",
+    "tags": [
+      "aura",
+      "genesis",
+      "early-edition"
+    ],
+    "summary": "The earlier single-page concept introduces a proposed personal reflection and digital-twin journey. Its registration interface is a demonstration and does not store enquiries.",
+    "url": "https://auraofintelligence.github.io/aura-genesis/",
+    "repo": "https://github.com/auraofintelligence/aura-genesis",
+    "sourcePath": "README.md",
+    "sourceCommit": "b355a0a3a41c473d10a23c7653a1992a29ce7979",
+    "status": "prototype",
+    "featured": true
+  },
+  {
+    "id": "aura-genesis-geode-atlas",
+    "title": "Aura Genesis Protocol",
+    "category": "Personal intelligence and learning",
+    "tags": [
+      "aura",
+      "genesis",
+      "source-library"
+    ],
+    "summary": "The expanded public guide covers the proposed Genesis process, Geode hardware pathways, Truth Engine research and sixty daily readings. These remain proposals and research pathways.",
+    "url": "https://auraofintelligence.github.io/aura-genesis-geode-atlas/",
+    "repo": "https://github.com/auraofintelligence/aura-genesis-geode-atlas",
+    "sourcePath": "README.md",
+    "sourceCommit": "57a84ad9b8ce512fb64fb8bb13dca5a0e253813d",
+    "status": "proposal",
+    "featured": true
+  },
+  {
+    "id": "aura-verse-box",
+    "title": "Verse Box",
+    "category": "Personal intelligence and learning",
+    "tags": [
+      "aura",
+      "community-hours",
+      "learning"
+    ],
+    "summary": "A lower-cost public demonstration proposal for personal Aura building, learning and community participation, with a source-linked trial guide.",
+    "url": "https://auraofintelligence.github.io/aura-verse-box/",
+    "repo": "https://github.com/auraofintelligence/aura-verse-box",
+    "sourcePath": "README.md",
+    "sourceCommit": "c19109be56d423c797cd76c85af023e1149bb4db",
+    "status": "proposal",
+    "featured": true
+  },
+  {
+    "id": "project-atlas",
+    "title": "Project Atlas",
+    "category": "Record and context",
+    "tags": [
+      "project-directory",
+      "provenance",
+      "discovery"
+    ],
+    "summary": "A searchable public project directory connecting websites and repositories, with substantive build dates, source evidence and related-project links.",
+    "url": "https://auraofintelligence.github.io/project-atlas/",
+    "repo": "https://github.com/auraofintelligence/project-atlas",
+    "sourcePath": "README.md",
+    "sourceCommit": "a1ec56268f26219624ee879956a4fc8d0404a8a5",
+    "status": "published work",
+    "featured": true
+  },
+  {
+    "id": "outreach-cms",
+    "title": "Worldwide Contact System: Outreach CMS",
+    "category": "Publishing and operations",
+    "tags": [
+      "contact-workbench",
+      "discovery",
+      "google-sheets"
+    ],
+    "summary": "A public discovery workbench with invitation drafts, private contact-work design and publishing checks. Its reviewed public seed contains no confirmed resident contacts or participating communities.",
+    "url": "https://auraofintelligence.github.io/outreach-cms/",
+    "repo": "https://github.com/auraofintelligence/outreach-cms",
+    "sourcePath": "README.md",
+    "sourceCommit": "5239410ff3b4076428a789ac7109940fab8e8990",
+    "status": "prototype",
+    "featured": true
+  },
+  {
+    "id": "infinity-creative-workshop",
+    "title": "Infinity Creative Workshop",
+    "category": "Creative and practical work",
+    "tags": [
+      "music-video",
+      "creative-training",
+      "production"
+    ],
+    "summary": "Practical lessons, exercises and source tools for music video, educational film, shorts, the proposed Queens Council, Blender and DaVinci Resolve.",
+    "url": "https://auraofintelligence.github.io/infinity-creative-workshop/",
+    "repo": "https://github.com/auraofintelligence/infinity-creative-workshop",
+    "sourcePath": "README.md",
+    "sourceCommit": "23b5d16a847b291927f932dcdf67a5b9e5cc50ee",
+    "status": "published work",
+    "featured": true
+  },
+  {
+    "id": "aura-disaster-resilience",
+    "title": "Aura Disaster Resilience",
+    "category": "Community and resilience",
+    "tags": [
+      "resilience",
+      "community-information",
+      "planning"
+    ],
+    "summary": "A shared planning and design workshop for Minjerribah information kiosks, power, communications, practical learning and local support. Field operation has separate requirements.",
+    "url": "https://github.com/auraofintelligence/aura-disaster-resilience/wiki",
+    "repo": "https://github.com/auraofintelligence/aura-disaster-resilience",
+    "sourcePath": "README.md",
+    "sourceCommit": "a7ec31fa9e8b0a7d5c7daee85a451b308f8fd22a",
+    "status": "proposal",
+    "featured": true
+  },
+  {
+    "id": "australian-law-2012-lukes-relevance",
+    "title": "Australian Law 2012: Luke's Relevance",
+    "category": "Civic participation",
+    "tags": [
+      "legal-research",
+      "source-tracing",
+      "relevance-ladder"
+    ],
+    "summary": "A public account of Luke's legal reading method, a manifest of the historical corpus and a proposed source-grounded legal research engine.",
+    "url": "https://auraofintelligence.github.io/australian-law-2012-lukes-relevance/",
+    "repo": "https://github.com/auraofintelligence/australian-law-2012-lukes-relevance",
+    "sourcePath": "README.md",
+    "sourceCommit": "349b97b4cc1eb3e43572177420e4e9c52bd070c0",
+    "status": "published work",
+    "featured": true
+  },
+  {
+    "id": "household-bill-check",
+    "title": "Australian Household Bill Check",
+    "category": "Everyday tools",
+    "tags": [
+      "household-bills",
+      "contracts",
+      "browser-tools"
+    ],
+    "summary": "Browser tools for reading contracts, annualising fees, tracing references and exporting a provider request or research brief. The collective-bargaining strand is a regional thought experiment.",
+    "url": "https://auraofintelligence.github.io/household-bill-check/",
+    "repo": "https://github.com/auraofintelligence/household-bill-check",
+    "sourcePath": "README.md",
+    "sourceCommit": "eb9692e6f74972cda2f548bf6ca374618b475957",
+    "status": "published work",
+    "featured": true
+  },
+  {
+    "id": "Lukes-world-of-work-experience",
+    "title": "Luke's World of Work",
+    "category": "Record and context",
+    "tags": [
+      "work-history",
+      "education",
+      "volunteering"
+    ],
+    "summary": "A source-backed public account of work, education and volunteering, with an illustrated map, readable history and unresolved details made explicit.",
+    "url": "https://auraofintelligence.github.io/Lukes-world-of-work-experience/",
+    "repo": "https://github.com/auraofintelligence/Lukes-world-of-work-experience",
+    "sourcePath": "README.md",
+    "sourceCommit": "223c1349b29095ccdc1c4d4f11debdd5c0c0d86c",
+    "status": "published work",
+    "featured": false
+  },
+  {
+    "id": "luke-nathan-hayes-man-and-mind",
+    "title": "Luke Nathan Hayes: The Mind Behind the Man",
+    "category": "Record and context",
+    "tags": [
+      "self-portrait",
+      "public-record",
+      "sources"
+    ],
+    "summary": "An authored self-portrait and source collection that connects Luke's background, thinking and public body of work.",
+    "url": "https://auraofintelligence.github.io/luke-nathan-hayes-man-and-mind/",
+    "repo": "https://github.com/auraofintelligence/luke-nathan-hayes-man-and-mind",
+    "sourcePath": "README.md",
+    "sourceCommit": "c25c027b486c08cc990316c9bafbc902ef19dc24",
+    "status": "published work",
+    "featured": false
+  },
+  {
+    "id": "lifetime-memory-map",
+    "title": "Lifetime Memory Map",
+    "category": "Record and context",
+    "tags": [
+      "memory",
+      "life-history",
+      "public-record"
+    ],
+    "summary": "A public map of remembered places, journeys and life events. It remains a work in progress with date and evidence limits attached to individual entries.",
+    "url": "https://auraofintelligence.github.io/lifetime-memory-map/",
+    "repo": "https://github.com/auraofintelligence/lifetime-memory-map",
+    "sourcePath": "README.md",
+    "sourceCommit": "dbe3f722ac2a102932d6acc7a70e47724312f6a2",
+    "status": "prototype",
+    "featured": false
+  },
+  {
+    "id": "world-travel-patterns",
+    "title": "World Travel Patterns",
+    "category": "Everyday tools",
+    "tags": [
+      "travel-research",
+      "source-checks",
+      "recent-work"
+    ],
+    "summary": "A growing travel research collection for Australian passport holders, using dated checks of entry, local rules, cultural protocols, seasons and consular routes. Coverage varies by record.",
+    "url": "https://auraofintelligence.github.io/world-travel-patterns/",
+    "repo": "https://github.com/auraofintelligence/world-travel-patterns",
+    "sourcePath": "README.md",
+    "sourceCommit": "53bb131d7e023061255db2ddaf7cde4db608d5dd",
+    "status": "published work",
+    "featured": false
+  },
+  {
+    "id": "aura-civic-establishment",
+    "title": "Aura Civic Establishment",
+    "category": "Community and resilience",
+    "tags": [
+      "shared-spaces",
+      "planning",
+      "recent-work"
+    ],
+    "summary": "Planning tools for a proposed shared civic establishment, connecting rooms, equipment, programmes, costs and an optional compute module. The site establishes no tenancy or operating service.",
+    "url": "https://auraofintelligence.github.io/aura-civic-establishment/",
+    "repo": "https://github.com/auraofintelligence/aura-civic-establishment",
+    "sourcePath": "README.md",
+    "sourceCommit": "1c2dc29799914019f4dbad7a812fb632c8af6853",
+    "status": "proposal",
+    "featured": false
+  },
+  {
+    "id": "p4a-xyz-committees-inquiries",
+    "title": "P4A Committees and Inquiries",
+    "category": "Civic participation",
+    "tags": [
+      "p4a",
+      "committees",
+      "participation",
+      "recent-work"
+    ],
+    "summary": "A separately hosted civic directory for parliamentary committees, inquiries and council participation, with source dates, invitation status and recorded research gaps.",
+    "url": "https://auraofintelligence.github.io/p4a-xyz-committees-inquiries/",
+    "repo": "https://github.com/auraofintelligence/p4a-xyz-committees-inquiries",
+    "sourcePath": "README.md",
+    "sourceCommit": "b971e3fe9bb28d9d3c7093f6a6a74787c611e53c",
+    "status": "published work",
+    "featured": false
+  },
+  {
+    "id": "p4a-membership",
+    "title": "P4A: People and Possibility",
+    "category": "Civic participation",
+    "tags": [
+      "p4a",
+      "membership-preview",
+      "recent-work"
+    ],
+    "summary": "A fictional browser preview of membership, groups, projects, constitution drafting and contribution records. The public preview accepts no real memberships or payments.",
+    "url": "https://auraofintelligence.github.io/p4a-membership/",
+    "repo": "https://github.com/auraofintelligence/p4a-membership",
+    "sourcePath": "README.md",
+    "sourceCommit": "745ba28d48a55985815bc69effa25d647e1a6954",
+    "status": "prototype",
+    "featured": false
+  },
+  {
+    "id": "installing-the-missing-middle",
+    "title": "Installing the Missing Middle",
+    "category": "Ideas and research",
+    "tags": [
+      "community-compute",
+      "ownership",
+      "business-plan"
+    ],
+    "summary": "A business-plan proposal for an Australian installation network combining community compute, useful heat, local ownership, co-operative participation and hardware renewal.",
+    "url": "https://auraofintelligence.github.io/installing-the-missing-middle/",
+    "repo": "https://github.com/auraofintelligence/installing-the-missing-middle",
+    "sourcePath": "README.md",
+    "sourceCommit": "a4ae6e7d65a324943d2bf8af9a82697b8ab3d873",
+    "status": "proposal",
+    "featured": false
+  },
+  {
+    "id": "escape-room-team-building",
+    "title": "Escape Room Team Building",
+    "category": "Creative and practical work",
+    "tags": [
+      "immersive-learning",
+      "tourism",
+      "business-plan"
+    ],
+    "summary": "A business-plan proposal linking immersive experiences, tourism, paid local work and whole-of-life skill development, with readable and downloadable editions.",
+    "url": "https://auraofintelligence.github.io/escape-room-team-building/",
+    "repo": "https://github.com/auraofintelligence/escape-room-team-building",
+    "sourcePath": "README.md",
+    "sourceCommit": "d4be97e3a1b47ea83d1ca99a76c8fa697832493c",
+    "status": "proposal",
+    "featured": false
+  },
+  {
+    "id": "aura-teacher-training",
+    "title": "Aura Teacher Training",
+    "category": "Personal intelligence and learning",
+    "tags": [
+      "adult-learning",
+      "aura",
+      "teaching"
+    ],
+    "summary": "Sixty daily readings and expanded studio exercises for personal Aura development, critical engagement with AI and adult teaching. The materials are learning designs, not accreditation.",
+    "url": "https://auraofintelligence.github.io/aura-teacher-training/",
+    "repo": "https://github.com/auraofintelligence/aura-teacher-training",
+    "sourcePath": "README.md",
+    "sourceCommit": "177c8a367121a0cb95069f5ae04a3ffe304ff076",
+    "status": "published work",
+    "featured": false
+  },
+  {
+    "id": "aura-tourism",
+    "title": "Aura Tourism",
+    "category": "Personal intelligence and learning",
+    "tags": [
+      "tourism",
+      "aura",
+      "community-learning"
+    ],
+    "summary": "A proposal connecting personal reflection, music, sport, culture, nature and community learning, from Minjerribah through Australia.",
+    "url": "https://auraofintelligence.github.io/aura-tourism/",
+    "repo": "https://github.com/auraofintelligence/aura-tourism",
+    "sourcePath": "README.md",
+    "sourceCommit": "47627561ee1205fa1e66afc390ad2fe5228e7af8",
+    "status": "proposal",
+    "featured": false
+  },
+  {
+    "id": "aura-child-services",
+    "title": "Aura Children and Young People",
+    "category": "Personal intelligence and learning",
+    "tags": [
+      "young-people",
+      "learning",
+      "care-proposal"
+    ],
+    "summary": "A public proposal about personal Aura development through chosen interests, creative learning, rights, family, culture and human mentors.",
+    "url": "https://auraofintelligence.github.io/aura-child-services/",
+    "repo": "https://github.com/auraofintelligence/aura-child-services",
+    "sourcePath": "README.md",
+    "sourceCommit": "a2f5ab9488bc5beb855ef5472222f2b322d57829",
+    "status": "proposal",
+    "featured": false
+  },
+  {
+    "id": "aura-whole-of-life",
+    "title": "Aura Whole of Life Support",
+    "category": "Personal intelligence and learning",
+    "tags": [
+      "adaptive-support",
+      "personal-records",
+      "care-proposal"
+    ],
+    "summary": "A proposal for adaptive support through dementia, disability and aged care, connecting personal records, memory, choice and human support. Clinical pathways remain distinct development work.",
+    "url": "https://auraofintelligence.github.io/aura-whole-of-life/",
+    "repo": "https://github.com/auraofintelligence/aura-whole-of-life",
+    "sourcePath": "README.md",
+    "sourceCommit": "5adfebfcccbfdd1af1d8d2935d2032843d0e5608",
+    "status": "proposal",
+    "featured": false
+  },
+  {
+    "id": "community-club-builder-sandy-sports",
+    "title": "Community Club Builder",
+    "category": "Community and resilience",
+    "tags": [
+      "community-clubs",
+      "volunteering",
+      "planning"
+    ],
+    "summary": "A planning example for community-club capability, connecting governance, practical systems, participation and project development.",
+    "url": "https://auraofintelligence.github.io/community-club-builder-sandy-sports/",
+    "repo": "https://github.com/auraofintelligence/community-club-builder-sandy-sports",
+    "sourcePath": "README.md",
+    "sourceCommit": "a897e1ce3cd1653e6a590b08ee7767a967ff1905",
+    "status": "proposal",
+    "featured": false
+  },
+  {
+    "id": "C-Hour-introduction",
+    "title": "C-Hour Introduction",
+    "category": "Community and resilience",
+    "tags": [
+      "community-hours",
+      "voluntary-contribution",
+      "source-library"
+    ],
+    "summary": "An introduction and reference library for a proposed system recognising verified voluntary human contribution. One C-Hour has no monetary equivalent.",
+    "url": "https://auraofintelligence.github.io/C-Hour-introduction/",
+    "repo": "https://github.com/auraofintelligence/C-Hour-introduction",
+    "sourcePath": "README.md",
+    "sourceCommit": "722725e442a3c62311bdd3ba43dd4616f35fbd0c",
+    "status": "proposal",
+    "featured": false
+  }
+]

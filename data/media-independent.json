@@ -1,0 +1,221 @@
+[
+  {
+    "id": "women-of-wynnum-manly",
+    "name": "Women of Wynnum Manly",
+    "kind": "podcast",
+    "area": "Wynnum, Manly and Brisbane's bayside",
+    "description": "Allana Bianchi's local interview podcast about the people and organisations of the bayside, including community work, arts, business and public representatives.",
+    "website": "https://womenofwynnummanly.buzzsprout.com/",
+    "contactUrl": "https://www.facebook.com/profile.php?id=100083566629933",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "tags": [
+      "podcast",
+      "bayside",
+      "community-interviews",
+      "local-voices",
+      "women-focused"
+    ],
+    "notes": "The example is a 2025 interview with Bonner MP Kara Cook, not coverage of the Redland mayoral by-election. The feed checked lists December 2025 as its latest episode, so a current publishing schedule has not been verified. The contact link is the show's Facebook page linked by its publisher.",
+    "verification": "outlet-verified",
+    "sourceUrls": [
+      "https://womenofwynnummanly.buzzsprout.com/",
+      "https://womenofwynnummanly.buzzsprout.com/2002642/episodes/18021721-season-4-episode-13-kara-cook-mp-federal-member-for-bonner"
+    ],
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "new-media",
+    "formats": [
+      "podcast",
+      "social"
+    ],
+    "sampleUrl": "https://womenofwynnummanly.buzzsprout.com/2002642/episodes/18021721-season-4-episode-13-kara-cook-mp-federal-member-for-bonner",
+    "sampleTitle": "Season 4, Episode 13 - Kara Cook MP (Federal Member for Bonner)",
+    "sampleDate": "2025-10-16",
+    "region": "Brisbane"
+  },
+  {
+    "id": "living-the-dream-brisbane",
+    "name": "Living the Dream",
+    "kind": "podcast",
+    "area": "Brisbane and Queensland",
+    "description": "Brisbane-based political discussion podcast hosted by Jon and Dave, with Queensland government, labour and local activist history among its subjects.",
+    "website": "https://livingthedream.podbean.com/",
+    "contactUrl": null,
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "tags": [
+      "podcast",
+      "brisbane",
+      "queensland-politics",
+      "commentary"
+    ],
+    "notes": "The publisher explicitly describes the show as anticapitalist commentary. Its May 2026 episode discusses Queensland state government. This verifies a locally based show and Queensland subject matter, not Redland by-election coverage. No dedicated public enquiry page was verified.",
+    "verification": "outlet-verified",
+    "sourceUrls": [
+      "https://livingthedream.podbean.com/",
+      "https://livingthedream.podbean.com/e/living-the-dream-from-something-to-somewhere-else-in-qld/"
+    ],
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "new-media",
+    "formats": [
+      "podcast"
+    ],
+    "sampleUrl": "https://livingthedream.podbean.com/e/living-the-dream-from-something-to-somewhere-else-in-qld/",
+    "sampleTitle": "Living The Dream from Something to Somewhere Else in Qld",
+    "sampleDate": "2026-05-13",
+    "region": "Brisbane"
+  },
+  {
+    "id": "radio-reversal-podcast",
+    "name": "Radio Reversal",
+    "kind": "podcast",
+    "area": "Brisbane and South East Queensland",
+    "description": "Brisbane audio collective publishing a podcast, newsletter and community interviews, alongside its 4ZZZ programme. Subjects include local housing, public space and community organising.",
+    "website": "https://www.radioreversal.org/",
+    "contactUrl": "https://4zzz.org.au/program/radio-reversal",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "tags": [
+      "podcast",
+      "newsletter",
+      "brisbane",
+      "community-radio",
+      "local-government"
+    ],
+    "notes": "The collective describes an activist editorial perspective. This is a named podcast with its own publication site and an explicit 4ZZZ connection. Its May 2026 episode discusses homelessness and Moreton Bay council action. Redland by-election coverage has not been verified. The programme page provides its public contact route.",
+    "verification": "outlet-verified",
+    "sourceUrls": [
+      "https://www.radioreversal.org/",
+      "https://www.radioreversal.org/about/",
+      "https://4zzz.org.au/program/radio-reversal",
+      "https://www.radioreversal.org/episode-24-challenging-the-criminalisation-of-homelessness/"
+    ],
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "new-media",
+    "formats": [
+      "podcast",
+      "newsletter",
+      "social",
+      "radio"
+    ],
+    "sampleUrl": "https://www.radioreversal.org/episode-24-challenging-the-criminalisation-of-homelessness/",
+    "sampleTitle": "Episode 24: Challenging the criminalisation of homelessness",
+    "sampleDate": "2026-05-05",
+    "region": "Brisbane"
+  },
+  {
+    "id": "jonathan-sriranganathan-commentary",
+    "name": "Jonathan Sriranganathan",
+    "kind": "commentator",
+    "area": "Brisbane and South East Queensland",
+    "description": "Brisbane writer and former Gabba councillor publishing his own newsletter and longer articles on council decisions, housing, urban planning and civic life.",
+    "website": "https://www.jonathansri.com/",
+    "contactUrl": "https://www.jonathansri.com/about/",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "tags": [
+      "newsletter",
+      "commentator",
+      "brisbane",
+      "local-government",
+      "housing"
+    ],
+    "notes": "Self-published political commentary by a former Greens councillor and 2024 Brisbane mayoral candidate. The sample examines Brisbane short-stay rental regulation and refers to neighbouring council areas. It does not establish coverage of the Redland mayoral by-election. His About page provides public contact information.",
+    "verification": "outlet-verified",
+    "sourceUrls": [
+      "https://www.jonathansri.com/",
+      "https://www.jonathansri.com/about/",
+      "https://www.jonathansri.com/airbnbfreeforall/"
+    ],
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "new-media",
+    "formats": [
+      "newsletter",
+      "article"
+    ],
+    "sampleUrl": "https://www.jonathansri.com/airbnbfreeforall/",
+    "sampleTitle": "Thousands of Brissie homes have been converted to Airbnbs - Why did the council backflip on regulating them?",
+    "sampleDate": "2026-07-23",
+    "region": "Brisbane"
+  },
+  {
+    "id": "eco-radio-podcast",
+    "name": "Eco Radio",
+    "kind": "podcast",
+    "area": "Brisbane and South East Queensland, including bayside community events",
+    "description": "4ZZZ's environment programme, also distributed as a podcast, with interviews, sustainability discussions and a local bushcare roundup.",
+    "website": "https://4zzz.org.au/program/eco-radio",
+    "contactUrl": "https://4zzz.org.au/program/eco-radio",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "tags": [
+      "podcast",
+      "community-radio",
+      "brisbane",
+      "environment",
+      "bayside"
+    ],
+    "notes": "A named community-radio podcast, not a separate media organisation. The 28 October 2026 episode includes South East Queensland landscape history and Victoria Point community events. The sample link is the programme page, whose displayed episode changes over time. No Redland by-election commentary was verified.",
+    "verification": "outlet-verified",
+    "sourceUrls": [
+      "https://4zzz.org.au/program/eco-radio",
+      "https://4zzz.org.au/contacts"
+    ],
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "new-media",
+    "formats": [
+      "podcast",
+      "radio"
+    ],
+    "sampleUrl": "https://4zzz.org.au/program/eco-radio",
+    "sampleTitle": "Pacific Climate Warriors w/ Jacynta Fa'amau",
+    "sampleDate": "2026-10-28",
+    "region": "Brisbane"
+  },
+  {
+    "id": "qut-glass-just-to-be-clear",
+    "name": "Glass Media / Just To Be Clear",
+    "kind": "online-media",
+    "area": "QUT and Brisbane",
+    "description": "QUT Guild publication with digital reporting, interviews, social video and the Just To Be Clear podcast about people and issues in and around QUT.",
+    "website": "https://www.qutglass.com/",
+    "contactUrl": "https://linktr.ee/qutglass",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "tags": [
+      "podcast",
+      "digital-media",
+      "brisbane",
+      "qut",
+      "university",
+      "local-voices"
+    ],
+    "notes": "Founded by the QUT Guild, with a stated role in holding the university and Guild accountable. This is campus and local community media, not an established Redland election programme. The sample is a November 2026 article about the Guild's student representative council, not Brisbane City Council. Its official links page gives the podcast and social contact routes.",
+    "verification": "outlet-verified",
+    "sourceUrls": [
+      "https://www.qutglass.com/",
+      "https://www.qutglass.com/about/",
+      "https://linktr.ee/qutglass",
+      "https://open.spotify.com/show/5jHQyxhCv52ApdyCTrTVQ7",
+      "https://www.qutglass.com/october-src-meeting-recap/"
+    ],
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "new-media",
+    "formats": [
+      "podcast",
+      "video",
+      "social",
+      "article"
+    ],
+    "sampleUrl": "https://www.qutglass.com/october-src-meeting-recap/",
+    "sampleTitle": "October SRC Meeting Recap",
+    "sampleDate": "2026-11-05",
+    "region": "Brisbane"
+  }
+]

@@ -1,0 +1,143 @@
+[
+  {
+    "id": "ipswich-today-podcast",
+    "name": "Ipswich Today",
+    "kind": "podcast",
+    "area": "Ipswich",
+    "description": "Allan Roebuck's local news and commentary podcast, featuring Ipswich council decisions, community stories, business and interviews with local representatives.",
+    "website": "https://ipswichtoday.com.au/",
+    "contactUrl": "https://ipswichtoday.com.au/contact/",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "tags": [
+      "podcast",
+      "ipswich",
+      "local-news",
+      "local-government"
+    ],
+    "notes": "The show began as Ipswich Election Watch in 2020. Its August 2026 sample interviews Mayor Teresa Harding following a council meeting, covering local facilities, planning and infrastructure. This is verified Ipswich coverage, not reporting on the Redland mayoral by-election. The contact link is the show's public form.",
+    "verification": "outlet-verified",
+    "sourceUrls": [
+      "https://ipswichtoday.com.au/about/",
+      "https://ipswichtoday.com.au/contact/",
+      "https://podcasts.apple.com/au/podcast/ipswich-today/id1506513050",
+      "https://podcasts.apple.com/au/podcast/athletics-back-on-track-fig-trees-future-in-doubt-springfield/id1506513050?i=1000786393835"
+    ],
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "new-media",
+    "formats": [
+      "podcast"
+    ],
+    "sampleUrl": "https://podcasts.apple.com/au/podcast/athletics-back-on-track-fig-trees-future-in-doubt-springfield/id1506513050?i=1000786393835",
+    "sampleTitle": "Athletics back on track, fig trees future in doubt, Springfield Pkway progress, new Indigenous Accord, Galvanized festival",
+    "sampleDate": "2026-08-28",
+    "region": "Ipswich"
+  },
+  {
+    "id": "is-everybody-here-podcast",
+    "name": "Is Everybody Here?",
+    "kind": "podcast",
+    "area": "Moreton Bay",
+    "description": "Caboolture-based community podcast hosted by Angie Keegan, covering accessibility, inclusion, local experiences and interviews through the Is Everybody Here? association.",
+    "website": "https://music.amazon.co.uk/podcasts/3ab09e6f-eaf4-4941-abef-9ee911c6e3a3/is-everybody-here",
+    "contactUrl": null,
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "tags": [
+      "podcast",
+      "moreton-bay",
+      "caboolture",
+      "accessibility",
+      "community-interviews"
+    ],
+    "notes": "The association's April 2026 parliamentary submission identifies Caboolture as its base and Moreton Bay access and inclusion as recurring subjects. The July 2026 example interviews Dickson MP Ali France. No Redland election coverage or dedicated public enquiry page was verified. The sample link opens the show feed, which lists that episode.",
+    "verification": "outlet-verified",
+    "sourceUrls": [
+      "https://music.amazon.co.uk/podcasts/3ab09e6f-eaf4-4941-abef-9ee911c6e3a3/is-everybody-here",
+      "https://documents.parliament.qld.gov.au/com/SDIWC-1AF9/TOLMEUPOCA-AB90/submissions/00003022.pdf"
+    ],
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "new-media",
+    "formats": [
+      "podcast"
+    ],
+    "sampleUrl": "https://music.amazon.co.uk/podcasts/3ab09e6f-eaf4-4941-abef-9ee911c6e3a3/is-everybody-here",
+    "sampleTitle": "Episode 007: People with disabilities should have the right to prosper - A conversation with Ali France",
+    "sampleDate": "2026-07-24",
+    "region": "Moreton Bay"
+  },
+  {
+    "id": "everyone-has-a-story-sunshine-coast",
+    "name": "Everyone Has a Story / John Caruso",
+    "kind": "podcast",
+    "area": "Sunshine Coast",
+    "description": "John Caruso's interview podcast from the IN Publishing team behind Hello Sunshine and IN Noosa, exploring local businesses, community organisations and life stories across the Sunshine Coast and Noosa.",
+    "website": "https://hellosunshinemag.com.au/about/",
+    "contactUrl": "https://hellosunshinemag.com.au/contact/",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "tags": [
+      "podcast",
+      "sunshine-coast",
+      "noosa",
+      "community-interviews",
+      "local-business"
+    ],
+    "notes": "The publisher describes the show as Conversations from the Sunshine Coast and Noosa. It is associated with local lifestyle magazines. The sample publisher page accompanies its Jocelyn Walker interview about business and community service, published in June 2026; an exact day was not established for that page. Election commentary and Redland by-election coverage have not been verified. The contact form belongs to the publisher.",
+    "verification": "outlet-verified",
+    "sourceUrls": [
+      "https://hellosunshinemag.com.au/about/",
+      "https://hellosunshinemag.com.au/contact/",
+      "https://hellosunshinemag.com.au/life-of-service/",
+      "https://podcasts.apple.com/us/podcast/everyone-has-a-story-inspiring-life-lessons-from/id1346929034"
+    ],
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "new-media",
+    "formats": [
+      "podcast",
+      "article"
+    ],
+    "sampleUrl": "https://hellosunshinemag.com.au/life-of-service/",
+    "sampleTitle": "Life of Service with Jocelyn Walker",
+    "sampleDate": null,
+    "region": "Sunshine Coast"
+  },
+  {
+    "id": "striking-gold-podcast",
+    "name": "Striking Gold Podcast",
+    "kind": "podcast",
+    "area": "Gold Coast",
+    "description": "Sterling Cincotta's Gold Coast interview show, published by RXM Network, with conversations about local businesses, leadership, culture and the city's development.",
+    "website": "https://podcasts.apple.com/us/podcast/striking-gold-podcast/id1850894839",
+    "contactUrl": null,
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "tags": [
+      "podcast",
+      "gold-coast",
+      "local-business",
+      "community-interviews"
+    ],
+    "notes": "The November 2025 Tom Tate episode covers his career, city leadership and infrastructure. This establishes a local mayoral interview, not election reporting or Redland coverage. The feed checked lists January 2026 as its latest episode, so a current publishing schedule has not been verified. No dedicated public enquiry page was verified.",
+    "verification": "outlet-verified",
+    "sourceUrls": [
+      "https://podcasts.apple.com/us/podcast/striking-gold-podcast/id1850894839",
+      "https://podcasts.apple.com/us/podcast/1-tom-tate-leadership-vision-family/id1850894839?i=1000735352691&l=fr-FR",
+      "https://strikinggold.podbean.com/e/1-tom-tate-%C2%A0-leadership-vision-family/",
+      "https://podcasts.apple.com/us/podcast/1-tom-tate-leadership-vision-family/id1850894839?i=1000735352691"
+    ],
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "new-media",
+    "formats": [
+      "podcast"
+    ],
+    "sampleUrl": "https://podcasts.apple.com/us/podcast/1-tom-tate-leadership-vision-family/id1850894839?i=1000735352691",
+    "sampleTitle": "1. Tom Tate - Leadership, Vision & Family",
+    "sampleDate": "2025-11-05",
+    "region": "Gold Coast"
+  }
+]

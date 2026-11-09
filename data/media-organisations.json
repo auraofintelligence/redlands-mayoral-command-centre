@@ -1,0 +1,130 @@
+[
+  {
+    "id": "champion-redlands-coast-forum",
+    "name": "Champion Redlands Coast: Meet the Candidates",
+    "kind": "Public forum",
+    "area": "Redland City",
+    "description": "Organiser's listing for a mayoral by-election candidate forum at Alexandra Hills Hotel on 1 December 2026, 7-9 am.",
+    "website": "https://www.eventbrite.com.au/e/meet-the-candidates-redland-city-council-mayoral-by-election-tickets-2004206338109",
+    "contactUrl": "https://www.eventbrite.com.au/e/meet-the-candidates-redland-city-council-mayoral-by-election-tickets-2004206338109",
+    "coverageUrl": "https://www.eventbrite.com.au/e/meet-the-candidates-redland-city-council-mayoral-by-election-tickets-2004206338109",
+    "coverageTitle": "Meet the Candidates - Redland City Council Mayoral By-Election",
+    "coverageDate": null,
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://www.eventbrite.com.au/e/meet-the-candidates-redland-city-council-mayoral-by-election-tickets-2004206338109"
+    ],
+    "tags": [
+      "forum",
+      "business",
+      "candidate discussion",
+      "external event"
+    ],
+    "checkedOn": "2026-11-08",
+    "notes": "Organiser-published event, not independent reporting. Confirm arrangements with the organiser. No attendance, invitation, speaking place or booking for Luke is implied. Event date is not the publication date.",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "redlands-coast-today-official",
+    "name": "Redlands Coast Today: Council newsroom",
+    "kind": "Official source",
+    "area": "Redland City",
+    "description": "Redland City Council's own newsroom. Its 28 October statement confirms the mayoral vacancy and explains continuity of council operations.",
+    "website": "https://www.redlandscoasttoday.com.au/",
+    "contactUrl": "https://www.redland.qld.gov.au/",
+    "coverageUrl": "https://www.redlandscoasttoday.com.au/2026/10/council-confirms-mayoral-vacancy-following-resignation/",
+    "coverageTitle": "Council confirms Mayoral vacancy following resignation",
+    "coverageDate": "2026-10-28",
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://www.redlandscoasttoday.com.au/2026/10/council-confirms-mayoral-vacancy-following-resignation/"
+    ],
+    "tags": [
+      "government",
+      "official statement",
+      "council"
+    ],
+    "checkedOn": "2026-11-08",
+    "notes": "Council-owned source, not an independent newsroom or endorsement. The statement quotes Acting Mayor Julie Talty and chief executive Louise Rusan. Use ECQ for later election dates.",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "ecq-election-information",
+    "name": "Electoral Commission of Queensland",
+    "kind": "Official source",
+    "area": "Queensland / Redland City",
+    "description": "Election administrator. Its 5 November announcement sets the Redland mayoral by-election for 12 December 2026 with a full postal ballot, and notice and nominations opening on 10 November.",
+    "website": "https://www.ecq.qld.gov.au/",
+    "contactUrl": "https://www.ecq.qld.gov.au/",
+    "coverageUrl": "https://www.ecq.qld.gov.au/media/2026-media-statements",
+    "coverageTitle": "5 November 2026: Redland mayoral by-election date set",
+    "coverageDate": "2026-11-05",
+    "verification": "election-coverage-verified",
+    "sourceUrls": [
+      "https://www.ecq.qld.gov.au/media/2026-media-statements"
+    ],
+    "tags": [
+      "official dates",
+      "postal ballot",
+      "election administrator"
+    ],
+    "checkedOn": "2026-11-08",
+    "notes": "An official reference, not an outreach prospect or independent commentator. Check the election notice for subsequent details. These dates do not create any personal commitment for Luke.",
+    "formats": [
+      "article"
+    ]
+  },
+  {
+    "id": "redlands-coast-chamber",
+    "name": "Redlands Coast Chamber of Commerce",
+    "kind": "Chamber of commerce",
+    "area": "Redlands Coast",
+    "description": "Redlands business association with networking events, a public member directory and an e-newsletter. Its website provides a general enquiry form and a mailing list signup.",
+    "website": "https://redlandscoastchamber.org.au/",
+    "contactUrl": "https://redlandscoastchamber.org.au/contact-us/",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "sourceUrls": [
+      "https://redlandscoastchamber.org.au/",
+      "https://redlandscoastchamber.org.au/contact-us/",
+      "https://redlandscoastchamber.org.au/qtr-3-2026-rccc-e-newsletter/",
+      "https://redlandscoastchamber.org.au/membership/"
+    ],
+    "tags": [
+      "chamber-of-commerce",
+      "business-network",
+      "newsletter",
+      "events",
+      "redlands"
+    ],
+    "checkedOn": "2026-11-08",
+    "notes": "The Quarter 3 2026 newsletter page is dated 1 October 2026. Current election commentary and the relationship to the Champion Redlands Coast event listing remain unverified. No support or interest is inferred.",
+    "category": "Chamber of commerce",
+    "region": "Redlands",
+    "discoveryGroup": "community-networks",
+    "formats": [
+      "newsletter",
+      "article"
+    ],
+    "sampleUrl": "https://redlandscoastchamber.org.au/qtr-3-2026-rccc-e-newsletter/",
+    "sampleTitle": "Quarter 3 2026 e-newsletter",
+    "sampleDate": "2026-10-01",
+    "publicChannels": [
+      {
+        "label": "Quarterly e-newsletter",
+        "url": "https://redlandscoastchamber.org.au/qtr-3-2026-rccc-e-newsletter/"
+      },
+      {
+        "label": "Enquiry form and mailing list signup",
+        "url": "https://redlandscoastchamber.org.au/contact-us/"
+      }
+    ],
+    "participationNotes": "The website publishes membership options and a general enquiry form. Newsletter submission requirements are not stated on the checked pages; event access conditions are set by each event."
+  }
+]

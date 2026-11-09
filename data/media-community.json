@@ -1,0 +1,997 @@
+[
+  {
+    "id": "donald-simpson-centre",
+    "name": "Donald Simpson Centre",
+    "kind": "Community centre",
+    "category": "Community centre",
+    "area": "Cleveland and Redlands",
+    "description": "Cleveland community centre with arts, games, exercise, social activities and community projects. Its website publishes a monthly newsletter archive and activity information.",
+    "website": "https://www.donaldsimpsoncentre.com.au/",
+    "contactUrl": "https://www.donaldsimpsoncentre.com.au/contact/",
+    "tags": [
+      "community-centre",
+      "cleveland",
+      "newsletter",
+      "activities"
+    ],
+    "notes": "The archive lists an October 2026 edition, but only the month is evidenced. The sample links to the archive because the externally hosted issue could not be opened during this check.",
+    "sourceUrls": [
+      "https://www.donaldsimpsoncentre.com.au/",
+      "https://www.donaldsimpsoncentre.com.au/newsletter/",
+      "https://www.donaldsimpsoncentre.com.au/contact/"
+    ],
+    "formats": [
+      "newsletter",
+      "article"
+    ],
+    "sampleUrl": "https://www.donaldsimpsoncentre.com.au/newsletter/",
+    "sampleTitle": "Monthly newsletter archive, including October 2026",
+    "publicChannels": [
+      {
+        "label": "Newsletter archive",
+        "url": "https://www.donaldsimpsoncentre.com.au/newsletter/"
+      }
+    ],
+    "participationNotes": "The contact page directs general enquiries to the main office form. Newsletter submission requirements are not published on the checked page.",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks",
+    "sampleDate": null
+  },
+  {
+    "id": "redland-community-centre",
+    "name": "Redland Community Centre",
+    "kind": "Community centre",
+    "category": "Community centre",
+    "area": "Capalaba and Redlands, including the Bay Islands",
+    "description": "Community organisation based in Capalaba, operated by United Community Services. It runs community workshops and activities and links to an official Facebook page for workshop dates.",
+    "website": "https://redlandcommunitycentre.org/",
+    "contactUrl": "https://redlandcommunitycentre.org/contact/",
+    "tags": [
+      "community-centre",
+      "capalaba",
+      "workshops",
+      "facebook"
+    ],
+    "notes": "The official website verifies the Facebook route. Facebook posts were not independently readable during this check. The centre's sister organisation is Wynnum Community Place.",
+    "sourceUrls": [
+      "https://redlandcommunitycentre.org/",
+      "https://redlandcommunitycentre.org/about-us/",
+      "https://redlandcommunitycentre.org/contact/"
+    ],
+    "formats": [
+      "social",
+      "article"
+    ],
+    "sampleUrl": "https://redlandcommunitycentre.org/about-us/",
+    "sampleTitle": "Community workshops and activities",
+    "publicChannels": [
+      {
+        "label": "Official Facebook page",
+        "url": "https://www.facebook.com/Redland-Community-Centre-1747579318833160"
+      },
+      {
+        "label": "Community activities and workshops",
+        "url": "https://redlandcommunitycentre.org/about-us/"
+      }
+    ],
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks",
+    "sampleDate": null,
+    "participationNotes": "Posting requirements not published on the checked page."
+  },
+  {
+    "id": "bay-islands-community-services",
+    "name": "Bay Islands Community Services",
+    "kind": "Community centre",
+    "category": "Community centre",
+    "area": "Russell, Macleay, Lamb and Karragarra islands",
+    "description": "Community organisation with centres on Russell and Macleay islands. It provides spaces for local groups, community activities, events and island services.",
+    "website": "https://bics.org.au/",
+    "contactUrl": "https://bics.org.au/contact/",
+    "tags": [
+      "community-centre",
+      "bay-islands",
+      "russell-island",
+      "macleay-island",
+      "facebook"
+    ],
+    "notes": "The organisation's website links to its Facebook page and describes its island activities. Facebook posts were not independently readable during this check.",
+    "sourceUrls": [
+      "https://bics.org.au/",
+      "https://bics.org.au/contact/"
+    ],
+    "formats": [
+      "social",
+      "article"
+    ],
+    "sampleUrl": "https://bics.org.au/",
+    "sampleTitle": "Community centres and island activities",
+    "publicChannels": [
+      {
+        "label": "Official Facebook page",
+        "url": "https://www.facebook.com/BICSI01"
+      },
+      {
+        "label": "Island activities and services",
+        "url": "https://bics.org.au/"
+      }
+    ],
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks",
+    "sampleDate": null,
+    "participationNotes": "Posting requirements not published on the checked page."
+  },
+  {
+    "id": "coochie-progress",
+    "name": "Coochiemudlo Island Progress Association",
+    "kind": "Neighbourhood association",
+    "category": "Neighbourhood association",
+    "area": "Coochiemudlo Island",
+    "description": "Volunteer island association publishing public meeting and community event notices. Its stated objectives include identifying community needs, supporting local organisations and representing residents in dealings with government.",
+    "website": "https://coochieprogress.org/",
+    "contactUrl": "https://coochieprogress.org/",
+    "tags": [
+      "neighbourhood-association",
+      "coochiemudlo-island",
+      "public-meetings",
+      "community-events"
+    ],
+    "notes": "The checked homepage lists a quarterly public meeting for 7 November 2026. This is an event date; the notice has no verified publication date. The homepage provides a public telephone contact.",
+    "sourceUrls": [
+      "https://coochieprogress.org/",
+      "https://coochieprogress.org/membership-forms"
+    ],
+    "formats": [
+      "article"
+    ],
+    "sampleUrl": "https://coochieprogress.org/",
+    "sampleTitle": "Quarterly Public Meeting notice for 7 November 2026",
+    "publicChannels": [
+      {
+        "label": "Public meeting and event notices",
+        "url": "https://coochieprogress.org/"
+      }
+    ],
+    "participationNotes": "The association's published objectives state that it remains apolitical, non-religious and non-sectarian. Posting requirements are not published on the checked page.",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks",
+    "sampleDate": null
+  },
+  {
+    "id": "coochie-community-online",
+    "name": "Coochie Community Online",
+    "kind": "Community newsletter",
+    "category": "Community newsletter",
+    "area": "Coochiemudlo Island",
+    "description": "Adaire Palmer's island newsletter publishes community stories, local events, club notices and council-related updates. Public web editions and an official Facebook page are linked from the newsletter.",
+    "website": "https://coochiecommunityonline.com/",
+    "contactUrl": "https://coochiecommunityonline.com/n/do-you-really-know-coochie-register-for-the-latest-coochie-island-newsletter",
+    "tags": [
+      "community-newsletter",
+      "coochiemudlo-island",
+      "local-events",
+      "facebook"
+    ],
+    "notes": "The 24 June 2026 example discusses the Coochie Street Coordinator initiative and island activities. It identifies Coochiemudlo Island Beach Bar and Grill as the issue sponsor. The contact link opens the issue's published editorial contact options.",
+    "sourceUrls": [
+      "https://coochiecommunityonline.com/",
+      "https://coochiecommunityonline.com/archive/68953d19564a9e2bc22c4f2b",
+      "https://coochiecommunityonline.com/n/do-you-really-know-coochie-register-for-the-latest-coochie-island-newsletter"
+    ],
+    "formats": [
+      "newsletter",
+      "article",
+      "social"
+    ],
+    "sampleUrl": "https://coochiecommunityonline.com/n/do-you-really-know-coochie-register-for-the-latest-coochie-island-newsletter",
+    "sampleTitle": "Do you really know Coochie? Register for the Latest Coochie Island Newsletter!",
+    "sampleDate": "2026-06-24",
+    "publicChannels": [
+      {
+        "label": "Public newsletter archive",
+        "url": "https://coochiecommunityonline.com/archive/68953d19564a9e2bc22c4f2b"
+      },
+      {
+        "label": "Official Facebook page",
+        "url": "https://www.facebook.com/CoochieCommunityOnline/"
+      }
+    ],
+    "participationNotes": "The sample issue invites ideas, events and organisations for possible features through its published editorial contact routes. It does not promise publication.",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks"
+  },
+  {
+    "id": "alexandra-hills-mens-shed",
+    "name": "Alexandra Hills Men's Shed",
+    "kind": "Men's group",
+    "category": "Men's group",
+    "area": "Birkdale and Alexandra Hills",
+    "description": "Men's Shed based in Birkdale, with workshop projects, practical skills, social activities and work for community organisations. Its website publishes shed news and a calendar.",
+    "website": "https://alexhillsmensshed.com.au/",
+    "contactUrl": "https://alexhillsmensshed.com.au/contact/",
+    "tags": [
+      "mens-group",
+      "mens-shed",
+      "birkdale",
+      "alexandra-hills",
+      "community-projects"
+    ],
+    "notes": "Despite its name, the shed's published location is William Street, Birkdale. The homepage's contact button is verified, but the linked contact page was not readable during this check. The sample news item has no publication date visible on the checked homepage.",
+    "sourceUrls": [
+      "https://alexhillsmensshed.com.au/",
+      "https://alexhillsmensshed.com.au/contact/"
+    ],
+    "formats": [
+      "article"
+    ],
+    "sampleUrl": "https://alexhillsmensshed.com.au/",
+    "sampleTitle": "Shed News: Laser Engraver Community Grant",
+    "publicChannels": [
+      {
+        "label": "Shed news",
+        "url": "https://alexhillsmensshed.com.au/"
+      }
+    ],
+    "participationNotes": "The website asks visitors taking a tour to wear covered footwear. Posting requirements are not published on the checked page.",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks",
+    "sampleDate": null
+  },
+  {
+    "id": "redlands-centre-for-women",
+    "name": "Redlands Centre for Women",
+    "kind": "Women's group",
+    "category": "Women's group",
+    "area": "Cleveland and Redlands",
+    "description": "Volunteer community organisation based in Cleveland. It offers social activities, a book club, craft groups, walks and events, with a public activity programme and social channels.",
+    "website": "https://redlandscentreforwomen.com/",
+    "contactUrl": "https://redlandscentreforwomen.com/contact/",
+    "tags": [
+      "womens-group",
+      "cleveland",
+      "community-activities",
+      "facebook",
+      "instagram"
+    ],
+    "notes": "The website links its public Facebook page and Instagram account separately from members-only activity groups. Only the public page and account are listed here. The activities page is undated.",
+    "sourceUrls": [
+      "https://redlandscentreforwomen.com/",
+      "https://redlandscentreforwomen.com/activities/",
+      "https://redlandscentreforwomen.com/contact/",
+      "https://redlandscentreforwomen.com/events/"
+    ],
+    "formats": [
+      "article",
+      "social"
+    ],
+    "sampleUrl": "https://redlandscentreforwomen.com/activities/",
+    "sampleTitle": "Community activities programme",
+    "publicChannels": [
+      {
+        "label": "Public Facebook page",
+        "url": "https://www.facebook.com/profile.php?id=100091458400138"
+      },
+      {
+        "label": "Official Instagram",
+        "url": "https://www.instagram.com/redlandscentreforwomeninc/"
+      },
+      {
+        "label": "Activity programme",
+        "url": "https://redlandscentreforwomen.com/activities/"
+      }
+    ],
+    "participationNotes": "Some activities have membership or booking requirements stated on their individual pages. Posting requirements are not published on the checked page.",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks",
+    "sampleDate": null
+  },
+  {
+    "id": "rotary-redlands-bayside",
+    "name": "Rotary Club of Redlands Bayside",
+    "kind": "Service club",
+    "category": "Service club",
+    "area": "Victoria Point and Redlands",
+    "description": "Victoria Point service club organising local fundraising activities and supporting community projects. The website describes its projects and provides a public contact route.",
+    "website": "https://rotaryredlandsbayside.org/",
+    "contactUrl": "https://rotaryredlandsbayside.org/contact-us/",
+    "tags": [
+      "service-club",
+      "rotary",
+      "victoria-point",
+      "community-projects"
+    ],
+    "notes": "The club website verifies its Victoria Point base and describes fundraising and community projects. Its project overview is undated; no public newsletter archive was verified.",
+    "sourceUrls": [
+      "https://rotaryredlandsbayside.org/",
+      "https://rotaryredlandsbayside.org/contact-us/"
+    ],
+    "formats": [
+      "article"
+    ],
+    "sampleUrl": "https://rotaryredlandsbayside.org/",
+    "sampleTitle": "Club projects and community activities",
+    "publicChannels": [
+      {
+        "label": "Public club and project updates",
+        "url": "https://rotaryredlandsbayside.org/"
+      }
+    ],
+    "participationNotes": "The contact page welcomes guests at meetings, functions and project activities and asks them to call the club. Posting requirements are not published on the checked page.",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks",
+    "sampleDate": null
+  },
+  {
+    "id": "redland-coast-art-society",
+    "name": "Redland Coast Art Society",
+    "kind": "Arts and culture",
+    "category": "Arts and culture",
+    "area": "Capalaba and Redlands",
+    "description": "Volunteer community arts organisation at Winter Memorial Park, Capalaba. It runs a gallery and studio, exhibitions, classes and community art activities.",
+    "website": "https://www.redlandcoastartsociety.com.au/",
+    "contactUrl": "https://www.redlandcoastartsociety.com.au/",
+    "tags": [
+      "arts-and-culture",
+      "capalaba",
+      "visual-arts",
+      "exhibitions"
+    ],
+    "notes": "The society publishes its Capalaba location and organisational enquiry contacts on its homepage. The open-gallery page describes public visits and local artists' work; it has no publication date.",
+    "sourceUrls": [
+      "https://www.redlandcoastartsociety.com.au/",
+      "https://www.redlandcoastartsociety.com.au/find-us",
+      "https://www.redlandcoastartsociety.com.au/open-gallery"
+    ],
+    "formats": [
+      "article"
+    ],
+    "sampleUrl": "https://www.redlandcoastartsociety.com.au/open-gallery",
+    "sampleTitle": "Open Gallery and Studio",
+    "publicChannels": [
+      {
+        "label": "Gallery and studio information",
+        "url": "https://www.redlandcoastartsociety.com.au/open-gallery"
+      },
+      {
+        "label": "Society updates and activities",
+        "url": "https://www.redlandcoastartsociety.com.au/"
+      }
+    ],
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks",
+    "sampleDate": null,
+    "participationNotes": "Posting requirements not published on the checked page."
+  },
+  {
+    "id": "redlands-united-football-club",
+    "name": "Redlands United Football Club",
+    "kind": "Sport",
+    "category": "Sport",
+    "area": "Cleveland and Redlands",
+    "description": "Cleveland football club offering community and competitive football. Its website publishes season information, club policies, programme details and public enquiries.",
+    "website": "https://redlandsunited.com.au/",
+    "contactUrl": "https://redlandsunited.com.au/contact/",
+    "tags": [
+      "sport",
+      "football",
+      "cleveland",
+      "community-club",
+      "facebook"
+    ],
+    "notes": "The official 2024 member handbook identifies the club website and Facebook page as communication channels. Current season information is on the club website; Facebook posting activity was not independently verified.",
+    "sourceUrls": [
+      "https://redlandsunited.com.au/",
+      "https://redlandsunited.com.au/contact/",
+      "https://redlandsunited.com.au/2026-season-information/",
+      "https://redlandsunited.com.au/wp-content/uploads/2023/10/2024-Juniors-Information.pdf"
+    ],
+    "formats": [
+      "article",
+      "social"
+    ],
+    "sampleUrl": "https://redlandsunited.com.au/2026-season-information/",
+    "sampleTitle": "2026 season information",
+    "publicChannels": [
+      {
+        "label": "Official Facebook page",
+        "url": "https://www.facebook.com/redlandsunitedfc"
+      },
+      {
+        "label": "Season information",
+        "url": "https://redlandsunited.com.au/2026-season-information/"
+      }
+    ],
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks",
+    "sampleDate": null,
+    "participationNotes": "Posting requirements not published on the checked page."
+  },
+  {
+    "id": "capalaba-probus-club",
+    "name": "Capalaba Probus Club",
+    "kind": "Probus club",
+    "category": "Probus club",
+    "area": "Capalaba and Redlands",
+    "description": "Local social club meeting at Capalaba Sports Club. Its public website lists activities and a guest speaker programme covering local services, history, writing and practical interests.",
+    "website": "https://microsites.probussouthpacific.org/microsites/capalaba/About_us",
+    "contactUrl": "https://microsites.probussouthpacific.org/microsites/capalaba/Contact_Us",
+    "tags": [
+      "probus",
+      "capalaba",
+      "community-club",
+      "guest-speakers",
+      "social-activities"
+    ],
+    "notes": "The official site links the contact page, but that page could not be read during this check. The speaker programme lists months in 2026, including a November recycling and waste management talk; it has no publication date.",
+    "sourceUrls": [
+      "https://microsites.probussouthpacific.org/microsites/capalaba/About_us",
+      "https://microsites.probussouthpacific.org/microsites/capalaba/Guest_Speakers",
+      "https://probussouthpacific.org/club-news/probus-in-the-redland-city-council/"
+    ],
+    "formats": [
+      "article"
+    ],
+    "sampleUrl": "https://microsites.probussouthpacific.org/microsites/capalaba/Guest_Speakers",
+    "sampleTitle": "2026 guest speaker programme",
+    "sampleDate": null,
+    "publicChannels": [
+      {
+        "label": "Guest speaker programme",
+        "url": "https://microsites.probussouthpacific.org/microsites/capalaba/Guest_Speakers"
+      },
+      {
+        "label": "Club information",
+        "url": "https://microsites.probussouthpacific.org/microsites/capalaba/About_us"
+      }
+    ],
+    "participationNotes": "Probus South Pacific's Redlands club guide invites prospective visitors to register interest through its linked form. Speaker proposal and publication requirements are not stated on the checked club pages.",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks"
+  },
+  {
+    "id": "victoria-point-probus-club",
+    "name": "Victoria Point Probus Club",
+    "kind": "Probus club",
+    "category": "Probus club",
+    "area": "Victoria Point and Redlands",
+    "description": "Social club based at Victoria Point Bowls and Recreation Club. It describes guest speakers, outings, walking, book and family history groups, with a public activity calendar and enquiry page.",
+    "website": "https://microsites.probussouthpacific.org/microsites/victoriapoint/About_Us",
+    "contactUrl": "https://microsites.probussouthpacific.org/microsites/victoriapoint/Contact_Us",
+    "tags": [
+      "probus",
+      "victoria-point",
+      "community-club",
+      "guest-speakers",
+      "social-activities"
+    ],
+    "notes": "The club marks its newsletters private and confidential for members' use only. They are not listed as public channels here. The undated club profile and calendar include older material; current activity arrangements need confirmation with the club.",
+    "sourceUrls": [
+      "https://microsites.probussouthpacific.org/microsites/victoriapoint/About_Us",
+      "https://microsites.probussouthpacific.org/microsites/victoriapoint/Contact_Us",
+      "https://microsites.probussouthpacific.org/microsites/victoriapoint/Events_Calendar",
+      "https://microsites.probussouthpacific.org/microsites/victoriapoint/VP_NEWS_2024"
+    ],
+    "formats": [
+      "article"
+    ],
+    "sampleUrl": "https://microsites.probussouthpacific.org/microsites/victoriapoint/About_Us",
+    "sampleTitle": "Club activities and interest groups",
+    "sampleDate": null,
+    "publicChannels": [
+      {
+        "label": "Public activity calendar",
+        "url": "https://microsites.probussouthpacific.org/microsites/victoriapoint/Events_Calendar"
+      },
+      {
+        "label": "Club information",
+        "url": "https://microsites.probussouthpacific.org/microsites/victoriapoint/About_Us"
+      }
+    ],
+    "participationNotes": "The club welcomes enquiries from prospective new members. Its published newsletter restriction limits those publications to members' use. Guest speaker proposal requirements are not stated on the checked pages.",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks"
+  },
+  {
+    "id": "redlands-bayside-probus-club",
+    "name": "Probus Club of Redlands-Bayside",
+    "kind": "Probus club",
+    "category": "Probus club",
+    "area": "Cleveland and Redlands",
+    "description": "Cleveland social club based at Redlands RSL. Its Queensland Probus profile describes guest speakers, coffee mornings, dining, games, Wellington Point barbecues and caravan or cabin trips.",
+    "website": "https://microsites.probussouthpacific.org/microsites/redlands-bayside/Contact_Us",
+    "contactUrl": "https://microsites.probussouthpacific.org/microsites/redlands-bayside/Contact_Us",
+    "tags": [
+      "probus",
+      "cleveland",
+      "community-club",
+      "guest-speakers",
+      "social-activities"
+    ],
+    "notes": "The public contact page and Queensland Probus profile verify the club. The microsite links a newsletter index, but its contents and access conditions could not be checked, so it is not presented as a public newsletter channel. The profile is undated.",
+    "sourceUrls": [
+      "https://microsites.probussouthpacific.org/microsites/redlands-bayside/Contact_Us",
+      "https://paqnetwork.com.au/regional-roundup/regional-roundup/167-redlands-bayside-probus-club"
+    ],
+    "formats": [
+      "article"
+    ],
+    "sampleUrl": "https://paqnetwork.com.au/regional-roundup/regional-roundup/167-redlands-bayside-probus-club",
+    "sampleTitle": "Redlands Bayside Probus club activities",
+    "sampleDate": null,
+    "publicChannels": [
+      {
+        "label": "Club activities profile",
+        "url": "https://paqnetwork.com.au/regional-roundup/regional-roundup/167-redlands-bayside-probus-club"
+      },
+      {
+        "label": "Public club contact page",
+        "url": "https://microsites.probussouthpacific.org/microsites/redlands-bayside/Contact_Us"
+      }
+    ],
+    "participationNotes": "The Queensland Probus profile expressly encourages visitors to attend a meeting. Requirements for proposing a guest speaker or submitting club material are not published on the checked pages.",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks"
+  },
+  {
+    "id": "north-redlands-probus-club",
+    "name": "North Redlands Probus Club",
+    "kind": "Probus club",
+    "category": "Probus club",
+    "area": "Wellington Point and northern Redlands",
+    "description": "Social club meeting at Redlands Sporting Club in Wellington Point. Its official profile describes guest speakers, reading, craft, walking, games, outings and trips.",
+    "website": "https://www.paqnetwork.com.au/images/2025/Club_Promos/North_Redlands_Probus_Club.pdf",
+    "contactUrl": "https://www.paqnetwork.com.au/images/2025/Club_Promos/North_Redlands_Probus_Club.pdf",
+    "tags": [
+      "probus",
+      "wellington-point",
+      "community-club",
+      "guest-speakers",
+      "social-activities"
+    ],
+    "notes": "The public PDF identifies the 2025-26 committee and contains the club secretary's enquiry route. It has no exact publication date and says the club website is under construction. The venue also lists the club among its community groups.",
+    "sourceUrls": [
+      "https://www.paqnetwork.com.au/images/2025/Club_Promos/North_Redlands_Probus_Club.pdf",
+      "https://redlandssportingclub.com.au/community-groups/"
+    ],
+    "formats": [
+      "article"
+    ],
+    "sampleUrl": "https://www.paqnetwork.com.au/images/2025/Club_Promos/North_Redlands_Probus_Club.pdf",
+    "sampleTitle": "North Redlands Probus club profile, 2025-26 committee",
+    "sampleDate": null,
+    "publicChannels": [
+      {
+        "label": "Public club profile and enquiries",
+        "url": "https://www.paqnetwork.com.au/images/2025/Club_Promos/North_Redlands_Probus_Club.pdf"
+      },
+      {
+        "label": "Venue community group listing",
+        "url": "https://redlandssportingclub.com.au/community-groups/"
+      }
+    ],
+    "participationNotes": "The club profile welcomes new members and asks prospective visitors to contact its secretary before attending a meeting or activity. Speaker proposal and publication requirements are not stated.",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks"
+  },
+  {
+    "id": "toondah-probus-club",
+    "name": "Probus Club of Toondah",
+    "kind": "Probus club",
+    "category": "Probus club",
+    "area": "Cleveland and Redlands",
+    "description": "Redlands social club whose published profile describes talks, theatre outings, activity groups, meals and trips. Probus South Pacific's 2025 Redlands guide lists its meeting location as Redlands RSL in Cleveland.",
+    "website": "https://probussouthpacific.org/club-news/probus-in-the-redland-city-council/",
+    "contactUrl": "https://probussouthpacific.org/club-news/probus-in-the-redland-city-council/",
+    "tags": [
+      "probus",
+      "toondah",
+      "cleveland",
+      "community-club",
+      "guest-speakers",
+      "social-activities"
+    ],
+    "notes": "The contact link opens the official regional guide and its visitor interest form, not a dedicated Toondah contact form. The older club profile describes activities but gives a different venue; the 28 July 2025 guide supplies the newer Cleveland location. Confirm arrangements with the club.",
+    "sourceUrls": [
+      "https://probussouthpacific.org/club-news/probus-in-the-redland-city-council/",
+      "https://paqnetwork.com.au/images/2022/Club_Snapshots/Toondah_Probus_Club.pdf"
+    ],
+    "formats": [
+      "article"
+    ],
+    "sampleUrl": "https://probussouthpacific.org/club-news/probus-in-the-redland-city-council/",
+    "sampleTitle": "Probus in the Redland City Council club guide",
+    "sampleDate": "2025-07-28",
+    "publicChannels": [
+      {
+        "label": "Official local club guide and visitor interest route",
+        "url": "https://probussouthpacific.org/club-news/probus-in-the-redland-city-council/"
+      },
+      {
+        "label": "Club activity profile (older)",
+        "url": "https://paqnetwork.com.au/images/2022/Club_Snapshots/Toondah_Probus_Club.pdf"
+      }
+    ],
+    "participationNotes": "The regional guide invites prospective visitors to register interest. The club profile welcomes new members; guest speaker proposal and publication requirements are not stated.",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks"
+  },
+  {
+    "id": "straddie-chamber-of-commerce",
+    "name": "Straddie Chamber of Commerce",
+    "kind": "Chamber of commerce",
+    "category": "Chamber of commerce",
+    "area": "Minjerribah / North Stradbroke Island",
+    "description": "Business chamber representing North Stradbroke Island's business community. Its official website publishes event notices, links to registration and offers a business update subscription.",
+    "website": "https://straddiechamber.org/",
+    "contactUrl": "https://straddiechamber.org/",
+    "tags": [
+      "chamber-of-commerce",
+      "business-network",
+      "north-stradbroke-island",
+      "minjerribah",
+      "events"
+    ],
+    "notes": "The homepage lists an annual general meeting held on 18 February 2026 and provides a business update signup. That is an event date, not a verified publication date. Linked event and registration pages could not be read during this check; a separate general enquiry form was not verified.",
+    "sourceUrls": [
+      "https://straddiechamber.org/"
+    ],
+    "formats": [
+      "article"
+    ],
+    "sampleUrl": "https://straddiechamber.org/",
+    "sampleTitle": "2026 annual general meeting notice and chamber updates",
+    "sampleDate": null,
+    "publicChannels": [
+      {
+        "label": "Chamber event notices and update subscription",
+        "url": "https://straddiechamber.org/"
+      },
+      {
+        "label": "Official registration portal",
+        "url": "https://straddiechamber.glueup.com/register/account"
+      }
+    ],
+    "participationNotes": "The official homepage links registration through Glue Up. Current membership eligibility, event access conditions and submission requirements were not verified on the accessible page.",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks"
+  },
+  {
+    "kind": "Indigenous organisation",
+    "category": "Indigenous organisation",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks",
+    "sampleDate": null,
+    "id": "quandamooka-yoolooburrabee-aboriginal-corporation",
+    "name": "Quandamooka Yoolooburrabee Aboriginal Corporation (QYAC)",
+    "area": "Quandamooka Country, including Minjerribah and Moreton Bay",
+    "description": "QYAC manages the recognised native title rights and interests of the Quandamooka People. Its public work includes cultural heritage, caring for Country, arts, education and community publications.",
+    "website": "https://qyac.net.au/",
+    "contactUrl": "https://qyac.net.au/",
+    "formats": [
+      "article",
+      "social",
+      "video"
+    ],
+    "tags": [
+      "indigenous-organisation",
+      "quandamooka",
+      "minjerribah",
+      "country",
+      "culture",
+      "public-reports"
+    ],
+    "sampleUrl": "https://qyac.net.au/media/",
+    "sampleTitle": "Public news, annual reports and media channels",
+    "notes": "The official media page supplies reports, publications and links to QYAC's own social channels. The page is undated, and report periods are not treated as publication dates. The homepage's indexed content supplies its general administration contact; a direct fetch of that homepage timed out during this check.",
+    "participationNotes": "Use the corporation's published administration route for general organisational enquiries. Its native title role concerns the Quandamooka People; the listing does not present QYAC as representing every Indigenous person or organisation in Redlands.",
+    "publicChannels": [
+      {
+        "label": "Public news and reports",
+        "url": "https://qyac.net.au/media/"
+      },
+      {
+        "label": "Official Facebook page",
+        "url": "https://www.facebook.com/QuandamookaYoolooburrabeeAboriginalCorporation"
+      },
+      {
+        "label": "Official Instagram",
+        "url": "https://www.instagram.com/quandamooka/"
+      },
+      {
+        "label": "QYAC video channel",
+        "url": "https://www.youtube.com/channel/UCyQ5qQXFp3YM5qm0DllQSEw"
+      }
+    ],
+    "sourceUrls": [
+      "https://qyac.net.au/",
+      "https://qyac.net.au/media/"
+    ]
+  },
+  {
+    "kind": "Indigenous organisation",
+    "category": "Indigenous organisation",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks",
+    "sampleDate": null,
+    "id": "minjerribah-moorgumpin-elders-in-council",
+    "name": "Minjerribah Moorgumpin Elders-in-Council",
+    "area": "Minjerribah and Moorgumpin, with an office in Dunwich",
+    "description": "Elders-led cultural organisation preserving and teaching the culture, languages and traditions of the Goenpul, Ngugi and Noonuccal peoples. It publishes information about cultural awareness training, on-Country tours, talks and publications.",
+    "website": "https://mmeicac.com.au/",
+    "contactUrl": "https://mmeicac.com.au/index.php/contacts/",
+    "formats": [
+      "article",
+      "social"
+    ],
+    "tags": [
+      "indigenous-organisation",
+      "quandamooka",
+      "minjerribah",
+      "moorgumpin",
+      "culture",
+      "education"
+    ],
+    "sampleUrl": "https://mmeicac.com.au/index.php/services/",
+    "sampleTitle": "Cultural awareness training and on-Country tours and talks",
+    "notes": "The official services and contact pages were readable and verify the organisation's public offerings and Facebook page. The services page is undated. The homepage timed out during checking. The contact route is the organisation's office, not private contact information for individual Elders.",
+    "participationNotes": "The services page provides booking-request routes. Minimum participant numbers vary, and places or activities are confirmed with Elders according to cultural protocols and the programme. Enquiries do not establish a booking or access to private activities.",
+    "publicChannels": [
+      {
+        "label": "Services and booking information",
+        "url": "https://mmeicac.com.au/index.php/services/"
+      },
+      {
+        "label": "Official Facebook page",
+        "url": "https://www.facebook.com/mmeic"
+      },
+      {
+        "label": "Organisation contact page",
+        "url": "https://mmeicac.com.au/index.php/contacts/"
+      }
+    ],
+    "sourceUrls": [
+      "https://mmeicac.com.au/",
+      "https://mmeicac.com.au/index.php/services/",
+      "https://mmeicac.com.au/index.php/contacts/"
+    ]
+  },
+  {
+    "kind": "Indigenous organisation",
+    "category": "Indigenous organisation",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks",
+    "sampleDate": null,
+    "id": "yulu-burri-ba",
+    "name": "Yulu-Burri-Ba Aboriginal Corporation for Community Health",
+    "area": "Minjerribah, Capalaba and Brisbane's Bayside",
+    "description": "Aboriginal community-controlled health organisation providing primary care, social and family wellbeing services. Its public community newsletter archive includes 2026 editions and information about its programmes.",
+    "website": "https://www.ybb.com.au/",
+    "contactUrl": "https://www.ybb.com.au/contact/",
+    "formats": [
+      "newsletter",
+      "article"
+    ],
+    "tags": [
+      "indigenous-organisation",
+      "minjerribah",
+      "capalaba",
+      "community-health",
+      "family-wellbeing",
+      "newsletter"
+    ],
+    "sampleUrl": "https://www.ybb.com.au/resources/newsletters",
+    "sampleTitle": "2026 community newsletter archive",
+    "notes": "The official archive verifies January to March and April to June 2026 editions. The editions have period labels rather than a verified publication day, so no exact sample date is recorded. The organisation's role is health and wellbeing service provision; newsletter availability does not reveal or provide access to clients.",
+    "participationNotes": "The contact page distinguishes clinic appointments from its general contact and feedback form. A public editorial or newsletter-contribution policy was not verified. Any organisational enquiry should use the published contact route and identify its purpose.",
+    "publicChannels": [
+      {
+        "label": "Community newsletter archive",
+        "url": "https://www.ybb.com.au/resources/newsletters"
+      },
+      {
+        "label": "Public service and contact information",
+        "url": "https://www.ybb.com.au/contact/"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.ybb.com.au/",
+      "https://www.ybb.com.au/resources/newsletters",
+      "https://www.ybb.com.au/contact/"
+    ]
+  },
+  {
+    "kind": "Indigenous organisation",
+    "category": "Indigenous organisation",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks",
+    "sampleDate": null,
+    "id": "nsi-aboriginal-islanders-housing-cooperative",
+    "name": "North Stradbroke Island Aboriginal & Islanders Housing Co-operative",
+    "area": "Dunwich and Minjerribah / North Stradbroke Island",
+    "description": "Community organisation providing affordable housing, aged care, home support and day respite on Minjerribah. Its public site explains its services, community activities, governance and membership process.",
+    "website": "https://www.nsihousing.org/",
+    "contactUrl": "https://www.nsihousing.org/contact-us",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "indigenous-organisation",
+      "minjerribah",
+      "dunwich",
+      "housing",
+      "community-services",
+      "aged-care"
+    ],
+    "sampleUrl": "https://www.nsihousing.org/",
+    "sampleTitle": "Housing, home support and day respite services",
+    "notes": "The homepage describes social activities alongside home support and respite. It is undated. Nareeba Moopi Moopi Pa and Minjerriba respite services are programmes of this organisation and are not counted as separate organisations here.",
+    "participationNotes": "The published membership page limits membership to Quandamooka People who meet its criteria, with board review. Housing and care services have their own processes. Use the organisation's contact page for an enquiry rather than assuming open membership or access to residents.",
+    "publicChannels": [
+      {
+        "label": "Public services and activities",
+        "url": "https://www.nsihousing.org/"
+      },
+      {
+        "label": "Membership and tenancy information",
+        "url": "https://www.nsihousing.org/copy-of-affordable-housing"
+      },
+      {
+        "label": "Organisation contact page",
+        "url": "https://www.nsihousing.org/contact-us"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.nsihousing.org/",
+      "https://www.nsihousing.org/contact-us",
+      "https://www.nsihousing.org/copy-of-affordable-housing"
+    ]
+  },
+  {
+    "kind": "Indigenous organisation",
+    "category": "Indigenous organisation",
+    "region": "Redlands",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "community-networks",
+    "sampleDate": null,
+    "id": "cooee-indigenous-family-community-centre",
+    "name": "COOEE Indigenous Family and Community Education Centre",
+    "area": "Cleveland, Redlands and the Bay Islands, extending to Wynnum and nearby areas",
+    "description": "Elders-founded community organisation supporting Aboriginal and Torres Strait Islander families and young people through education, cultural leadership, mentoring and wellbeing programmes. It has a public contact form and programme information.",
+    "website": "https://www.cooeeindigenouselders.com/",
+    "contactUrl": "https://www.cooeeindigenouselders.com/contact",
+    "formats": [
+      "article"
+    ],
+    "tags": [
+      "indigenous-organisation",
+      "cleveland",
+      "bay-islands",
+      "education",
+      "mentoring",
+      "family-wellbeing"
+    ],
+    "sampleUrl": "https://www.cooeeindigenouselders.com/about",
+    "sampleTitle": "COOEE's community purpose and programmes",
+    "notes": "The official site describes COOEE as an Indigenous community initiative founded by Elders, with a Cleveland contact address. The About page is undated; the accessible page and indexed newer text differ, so no claim is made about the present operation or membership of a particular provider network.",
+    "participationNotes": "Use the public organisation contact form to ask about current programmes and relevant participation conditions. The listing identifies COOEE's public role and does not assume access to its families, young people, Elders or private groups.",
+    "publicChannels": [
+      {
+        "label": "Organisation purpose and programmes",
+        "url": "https://www.cooeeindigenouselders.com/about"
+      },
+      {
+        "label": "Public contact form",
+        "url": "https://www.cooeeindigenouselders.com/contact"
+      }
+    ],
+    "sourceUrls": [
+      "https://www.cooeeindigenouselders.com/",
+      "https://www.cooeeindigenouselders.com/about",
+      "https://www.cooeeindigenouselders.com/contact"
+    ]
+  }
+]

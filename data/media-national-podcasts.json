@@ -1,0 +1,316 @@
+[
+  {
+    "id": "karl-stefanovic-show",
+    "name": "The Karl Stefanovic Show",
+    "description": "Karl Stefanovic hosts interviews and panel conversations about Australian politics, public issues, business, sport and culture.",
+    "website": "https://podcasts.apple.com/au/podcast/the-karl-stefanovic-show/id1872352760",
+    "contactUrl": "https://www.sfmanagement.com.au/contact",
+    "tags": [
+      "podcast",
+      "national",
+      "political-interviews",
+      "video"
+    ],
+    "notes": "The creator-owned feed lists current November 2026 episodes. Published guests include David Littleproud on Queensland wind farms, Alexander Downer and Neil Mitchell on public policy and state politics. The sample is a Queensland field interview, not Redland election coverage. SF Management lists Karl and provides an invitations and PR enquiry form. This is his management route, not a verified podcast guest-booking desk.",
+    "sourceUrls": [
+      "https://podcasts.apple.com/au/podcast/the-karl-stefanovic-show/id1872352760",
+      "https://creators.spotify.com/pod/profile/thekarlstefanovicshow/",
+      "https://podcasts.apple.com/au/podcast/wind-farms-are-splitting-country-towns-who-gets-a-say/id1872352760?i=1000797994647",
+      "https://www.sfmanagement.com.au/karl-stefanovic",
+      "https://www.sfmanagement.com.au/contact"
+    ],
+    "formats": [
+      "podcast",
+      "video"
+    ],
+    "sampleUrl": "https://podcasts.apple.com/au/podcast/wind-farms-are-splitting-country-towns-who-gets-a-say/id1872352760?i=1000797994647",
+    "sampleTitle": "Wind Farms Are Splitting Country Towns. Who Gets a Say?",
+    "sampleDate": "2026-10-25",
+    "kind": "podcast",
+    "area": "Australia",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "national-podcasts"
+  },
+  {
+    "id": "topher-field-podcast",
+    "name": "Topher Field / Topher Field Podcast",
+    "description": "Australian political commentator publishing video, interviews and podcast conversations. His interview archive includes John Ruddick, George Christensen and Craig Kelly.",
+    "website": "https://www.topherfield.com/",
+    "contactUrl": "https://www.topherfield.com/contact",
+    "tags": [
+      "podcast",
+      "national",
+      "commentary",
+      "interviews",
+      "archive"
+    ],
+    "notes": "Field describes his work as libertarian political commentary. His current website promotes The Oddcast with Carly Soderstrom. The separate Topher Field Podcast interview feed checked ends in July 2024, so this entry does not claim that interview series is currently publishing or taking guests. The dated John Ruddick example opens the archive feed. No current Redland election coverage verified.",
+    "sourceUrls": [
+      "https://www.topherfield.com/",
+      "https://www.topherfield.com/contact",
+      "https://topherfieldpodcast.podbean.com/"
+    ],
+    "formats": [
+      "podcast",
+      "video",
+      "article"
+    ],
+    "sampleUrl": "https://topherfieldpodcast.podbean.com/",
+    "sampleTitle": "#22 - John Ruddick",
+    "sampleDate": "2024-05-24",
+    "kind": "podcast",
+    "area": "Australia",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "national-podcasts"
+  },
+  {
+    "id": "betoota-talks",
+    "name": "Betoota Talks / The Betoota Advocate",
+    "description": "The Betoota Advocate interview podcast, with politicians, writers, journalists and other guests discussing national politics and culture alongside its satirical publishing.",
+    "website": "https://www.betootaadvocate.com/betoota-podcast/",
+    "contactUrl": "https://www.betootaadvocate.com/betoota-podcast/",
+    "tags": [
+      "podcast",
+      "national",
+      "political-interviews",
+      "satire"
+    ],
+    "notes": "Published through DM Podcasts. The official podcast page provides a guest and sponsorship enquiry route. The feed includes a 2026 interview with former Queensland premier Peter Beattie. The example is the official transcript of Anthony Albanese appearing on the show in February 2025, rather than a current Redland election report. The podcast also includes comedy and weekly news summaries.",
+    "sourceUrls": [
+      "https://www.betootaadvocate.com/betoota-podcast/",
+      "https://podcasts.apple.com/au/podcast/betoota-talks/id1350346878",
+      "https://www.pm.gov.au/media/podcast-interview-betoota-talks"
+    ],
+    "formats": [
+      "podcast"
+    ],
+    "sampleUrl": "https://www.pm.gov.au/media/podcast-interview-betoota-talks",
+    "sampleTitle": "Podcast interview - Betoota Talks: Anthony Albanese",
+    "sampleDate": "2025-02-20",
+    "kind": "podcast",
+    "area": "Australia",
+    "region": "Australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "verification": "outlet-verified",
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "national-podcasts"
+  },
+  {
+    "id": "guardian-australian-politics-podcast",
+    "name": "Australian Politics / Guardian Australia",
+    "kind": "podcast",
+    "area": "Australia",
+    "region": "Australia",
+    "description": "National political interviews from Guardian Australia's Tom McIlroy and reporting team, with politicians, researchers and public figures.",
+    "website": "https://www.theguardian.com/australia-news/series/australian-politics-live",
+    "contactUrl": "https://www.theguardian.com/info/2013/may/26/contact-guardian-australia",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "tags": [
+      "podcast",
+      "national",
+      "political-interviews",
+      "guardian"
+    ],
+    "notes": "Published by Guardian Australia, with 2026 episodes verified. Guest examples include Prime Minister Anthony Albanese and former Goldstein MP Zoe Daniel. The sample is the guest's published transcript of his February interview. No Redland by-election coverage by this show was verified. The contact page is Guardian Australia's general editorial route, not a booking commitment.",
+    "verification": "outlet-verified",
+    "sourceUrls": [
+      "https://podcasts.apple.com/au/podcast/australian-politics/id1109943717",
+      "https://www.theguardian.com/australia-news/series/australian-politics-live",
+      "https://www.theguardian.com/info/2013/may/26/contact-guardian-australia",
+      "https://anthonyalbanese.com.au/media-centre/podcast-interview-the-guardian-s-australian-politics-2026-02-20-1771830035949",
+      "https://podcasts.apple.com/au/podcast/zoe-daniel-on-her-friend-helen-haines-and-the/id1109943717?i=1000797703451"
+    ],
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "national-podcasts",
+    "formats": [
+      "podcast"
+    ],
+    "sampleUrl": "https://anthonyalbanese.com.au/media-centre/podcast-interview-the-guardian-s-australian-politics-2026-02-20-1771830035949",
+    "sampleTitle": "Podcast interview - The Guardian's Australian Politics: Anthony Albanese",
+    "sampleDate": "2026-02-20",
+    "guestExamples": [
+      {
+        "name": "Anthony Albanese",
+        "role": "Prime Minister at the time of the interview",
+        "place": "National government; interview recorded in Melbourne",
+        "url": "https://anthonyalbanese.com.au/media-centre/podcast-interview-the-guardian-s-australian-politics-2026-02-20-1771830035949",
+        "date": "2026-02-20"
+      },
+      {
+        "name": "Zoe Daniel",
+        "role": "Former federal MP for Goldstein",
+        "place": "Victoria",
+        "url": "https://podcasts.apple.com/au/podcast/zoe-daniel-on-her-friend-helen-haines-and-the/id1109943717?i=1000797703451",
+        "date": "2026-10-23"
+      }
+    ]
+  },
+  {
+    "id": "democracy-sausage-podcast",
+    "name": "Democracy Sausage with Mark Kenny",
+    "kind": "podcast",
+    "area": "Australia",
+    "region": "Australia",
+    "description": "ANU political discussion podcast with visiting researchers, journalists and public figures examining federal and state politics.",
+    "website": "https://ausi.anu.edu.au/democracy-sausage-mark-kenny",
+    "contactUrl": "https://ausi.anu.edu.au/contact-us",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "tags": [
+      "podcast",
+      "national",
+      "political-interviews",
+      "research",
+      "state-politics"
+    ],
+    "notes": "Produced by the Australian National University and its Australian Studies Institute. October 2026 episodes verify ongoing publication. The March sample discusses the South Australian election with researchers Josh Sunman and Emily Foley; a later episode features Redbridge's Kos Samaras. This is national and state political analysis, with no Redland by-election episode verified. The contact link belongs to the Institute.",
+    "verification": "outlet-verified",
+    "sourceUrls": [
+      "https://ausi.anu.edu.au/democracy-sausage-mark-kenny",
+      "https://ausi.anu.edu.au/contact-us",
+      "https://ausi.anu.edu.au/news/democracy-sausage-episode-one-nation-watershed",
+      "https://ausi.anu.edu.au/news/democracy-sausage-episode-one-nation-vote-map-government-neglect"
+    ],
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "national-podcasts",
+    "formats": [
+      "podcast"
+    ],
+    "sampleUrl": "https://ausi.anu.edu.au/news/democracy-sausage-episode-one-nation-watershed",
+    "sampleTitle": "Democracy Sausage: One Nation watershed",
+    "sampleDate": "2026-03-26",
+    "guestExamples": [
+      {
+        "name": "Josh Sunman",
+        "role": "Flinders University political researcher",
+        "place": "South Australia",
+        "url": "https://ausi.anu.edu.au/news/democracy-sausage-episode-one-nation-watershed",
+        "date": "2026-03-26"
+      },
+      {
+        "name": "Kos Samaras",
+        "role": "Director of strategy and analytics at Redbridge",
+        "place": "Redbridge Group; Melbourne background discussed in the episode",
+        "url": "https://ausi.anu.edu.au/news/democracy-sausage-episode-one-nation-vote-map-government-neglect",
+        "date": "2026-10-13"
+      }
+    ]
+  },
+  {
+    "id": "politics-with-michelle-grattan",
+    "name": "Politics with Michelle Grattan",
+    "kind": "podcast",
+    "area": "Australia",
+    "region": "Australia",
+    "description": "The Conversation's national interview podcast with politicians, economic institutions, researchers and other policy participants.",
+    "website": "https://podcasts.apple.com/au/podcast/politics-with-michelle-grattan/id703425900",
+    "contactUrl": null,
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "tags": [
+      "podcast",
+      "national",
+      "political-interviews",
+      "public-policy",
+      "the-conversation"
+    ],
+    "notes": "Published by The Conversation, with 2026 interviews verified. Guest examples include RBA deputy governor Andrew Hauser and Goldstein MP Tim Wilson. The sample is the Reserve Bank's transcript of Hauser's interview, with its recording date stated. A dedicated public enquiry route was not verified. No Redland by-election episode was verified.",
+    "verification": "outlet-verified",
+    "sourceUrls": [
+      "https://podcasts.apple.com/au/podcast/politics-with-michelle-grattan/id703425900",
+      "https://www.rba.gov.au/speeches/2026/sp-dg-2026-03-10.html",
+      "https://www.timwilsonmp.com.au/interview_on_politics_with_michelle_grattan_podcast_13_may_2026"
+    ],
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "national-podcasts",
+    "formats": [
+      "podcast"
+    ],
+    "sampleUrl": "https://www.rba.gov.au/speeches/2026/sp-dg-2026-03-10.html",
+    "sampleTitle": "Andrew Hauser interview with Politics with Michelle Grattan",
+    "sampleDate": "2026-03-10",
+    "guestExamples": [
+      {
+        "name": "Andrew Hauser",
+        "role": "Deputy Governor of the Reserve Bank of Australia",
+        "place": "Reserve Bank of Australia",
+        "url": "https://www.rba.gov.au/speeches/2026/sp-dg-2026-03-10.html",
+        "date": "2026-03-10"
+      },
+      {
+        "name": "Tim Wilson",
+        "role": "Federal MP for Goldstein",
+        "place": "Goldstein, Victoria",
+        "url": "https://www.timwilsonmp.com.au/interview_on_politics_with_michelle_grattan_podcast_13_may_2026",
+        "date": "2026-05-13"
+      }
+    ]
+  },
+  {
+    "id": "follow-the-money-australia-institute",
+    "name": "Follow the Money / The Australia Institute",
+    "kind": "podcast",
+    "area": "Australia",
+    "region": "Australia",
+    "description": "The Australia Institute's national policy podcast, hosted by Ebony Bennett and colleagues, with researchers, public figures and elected representatives as guests.",
+    "website": "https://australiainstitute.org.au/news/category/podcasts/follow-the-money/",
+    "contactUrl": "https://australiainstitute.org.au/post/how-the-nt-won-australias-race-to-the-bottom-on-online-gambling-regulation/",
+    "coverageUrl": null,
+    "coverageTitle": null,
+    "coverageDate": null,
+    "tags": [
+      "podcast",
+      "national",
+      "political-interviews",
+      "public-policy",
+      "think-tank"
+    ],
+    "notes": "A think-tank publication combining interviews, commentary and event recordings. September 2026 guest Justine Davis discusses Northern Territory gambling regulation; August guest Andrew Wilkie discusses federal reforms. These are verified guest appearances, not evidence of Redland election coverage. The episode page includes the show's public feedback contact route.",
+    "verification": "outlet-verified",
+    "sourceUrls": [
+      "https://australiainstitute.org.au/news/category/podcasts/follow-the-money/",
+      "https://australiainstitute.org.au/post/how-the-nt-won-australias-race-to-the-bottom-on-online-gambling-regulation/",
+      "https://australiainstitute.org.au/post/appalling-wilkie-slams-governments-response-to-gambling-inquiry/"
+    ],
+    "checkedOn": "2026-11-08",
+    "discoveryGroup": "national-podcasts",
+    "formats": [
+      "podcast"
+    ],
+    "sampleUrl": "https://australiainstitute.org.au/post/how-the-nt-won-australias-race-to-the-bottom-on-online-gambling-regulation/",
+    "sampleTitle": "How the NT won Australia's race-to-the-bottom on online gambling regulation",
+    "sampleDate": "2026-09-30",
+    "guestExamples": [
+      {
+        "name": "Justine Davis",
+        "role": "Independent member for Johnston in the Northern Territory Legislative Assembly",
+        "place": "Northern Territory",
+        "url": "https://australiainstitute.org.au/post/how-the-nt-won-australias-race-to-the-bottom-on-online-gambling-regulation/",
+        "date": "2026-09-30"
+      },
+      {
+        "name": "Andrew Wilkie",
+        "role": "Independent federal MP for Clark",
+        "place": "Clark, Tasmania",
+        "url": "https://australiainstitute.org.au/post/appalling-wilkie-slams-governments-response-to-gambling-inquiry/",
+        "date": "2026-08-12"
+      }
+    ]
+  }
+]
