@@ -22,7 +22,7 @@ All live records remain in `private/operations.json`. CSV exports and backups co
 | `POST /api/backup` | `{}` | `{ "path": "private backup directory" }` |
 | `GET /api/export/:collection` | Session cookie | CSV attachment |
 
-Collections are `contacts`, `enquiries`, `publications`, `tasks` and `expenses`. Record validation and suppression use the same model as the CLI. Updates replace a full record, keeping its ID and creation timestamp. A stale browser can still replace a record changed through the CLI, so reload state before editing across multiple tools. A concurrent store writer returns a conflict rather than ignoring the file lock.
+Collections are `contacts`, `enquiries`, `publications`, `tasks`, `expenses`, `contributions` and `budgets`. Record validation and suppression use the same model as the CLI. Updates replace a full record, keeping its ID and creation timestamp. A stale browser can still replace a record changed through the CLI, so reload state before editing across multiple tools. A concurrent store writer returns a conflict rather than ignoring the file lock.
 
 Sessions expire after eight hours or when the process stops. Reload to establish a new session. The server rejects unexpected Host headers, cross-origin requests, cross-site fetches, missing CSRF tokens, oversized JSON bodies and unsupported request methods. It is a local application boundary, not a replacement for Windows account security. Other software already running as the same local user may have access to the same files.
 

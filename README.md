@@ -22,6 +22,10 @@ Visit **http://127.0.0.1:4183/** on the computer running the server.
 
 Run `npm run ops -- status` to inspect the local private store. See `docs/CONTROL-ROOM-SERVER.md` and `docs/OPERATIONS.md` for details.
 
+## Budget and reporting
+
+Open **Budget and reporting** in the sidebar. It separates contributions, budget options and expenses, including pledges, receipts awaiting review, accepted cash and non-cash value. A reviewed reporting draft contains selected public fields only; it does not publish automatically or submit ECQ returns. See [finance guidance](docs/FINANCE.md).
+
 ## Migration note
 
 Initial sources were separated from the public `redlands-mayoral-campaign` repository on 9 November 2026. No private local records were exported or imported in this GitHub migration. Older public Git commits may retain previously published source files.

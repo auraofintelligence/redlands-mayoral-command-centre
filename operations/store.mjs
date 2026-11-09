@@ -7,7 +7,7 @@ export class OperationsStore {
   constructor(directory) { this.directory = resolve(directory); this.file = join(this.directory, 'operations.json'); }
   async read() {
     try {
-      const state = JSON.parse((await readFile(this.file, 'utf8')).replace(/^\uFEFF/, ''));
+      const state = model.upgrade(JSON.parse((await readFile(this.file, 'utf8')).replace(/^\uFEFF/, '')));
       if (state.version !== 1 || !Number.isSafeInteger(state.revision) || state.revision < 0 || !Array.isArray(state.audit) || !Array.isArray(state.suppression) || !Object.keys(model.fields).every(key => Array.isArray(state[key]))) throw new Error('Unsupported or damaged operations file. Restore a verified backup.');
       return state;
     } catch (error) { if (error.code === 'ENOENT') return model.fresh(); throw error; }

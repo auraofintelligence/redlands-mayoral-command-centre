@@ -8,7 +8,7 @@ The election explorer is the primary interface. Luke can browse media, follow pu
 npm run control
 ```
 
-Open [the control room](http://127.0.0.1:4183/). The public version keeps personal choices in browser-local storage. A browser save is not a Google Drive save or a private local CLI record. The same person using another browser or origin will have separate browser storage.
+Open [the control room](http://127.0.0.1:4183/). This private local app uses the local operations store. The public campaign website does not host it. Any earlier browser-local records remain separate; importing them is an explicit choice, not automatic synchronisation.
 
 The media directory contains public sources. A bookmark records interest, not endorsement, consent, contact or an instruction to send a message. Personal possibilities begin empty. Dates are optional and belong to Luke's choices. Source dates and official election dates describe evidence outside that personal calendar.
 
@@ -66,3 +66,7 @@ node --test tests/operations.test.mjs
 ```
 
 Technical checks verify software behaviour, not election compliance or approval to act. The repository does not file ECQ returns, process donations or certify a nomination. Official requirements should be read from current ECQ sources when relevant to an action Luke chooses.
+
+## Campaign finance
+
+The Budget and reporting view supports `contributions`, `budgets` and the existing `expenses` collection. See [finance guidance](FINANCE.md) for private records and preparation of a reviewed public snapshot. Existing records are preserved; no budget or donation amounts are seeded.

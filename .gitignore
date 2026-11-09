@@ -11,3 +11,5 @@ integrations/google-drive/.clasp.json
 integrations/google-drive/.clasprc.json
 /control-room/public/model.js
 /control-room/public/assets/data/
+
+/control-room/public/finance.js

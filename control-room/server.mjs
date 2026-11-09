@@ -117,7 +117,7 @@ export function createControlRoomServer({root=repositoryRoot,store=new Operation
       return response.end(method==='HEAD'?undefined:content);
     }catch(error){
       if(response.headersSent){response.end();return;}
-      const operational=/Unknown collection|Unknown field|is required|must be|Choose a valid|requires|suppressed|already has|not found|too long|Invalid value|Use a valid|Only Luke|Approval requires|Published records|em dash|Amount must|record object/.test(error.message||'');
+      const operational=/Accepted contributions|Unknown collection|Unknown field|is required|must be|Choose a valid|requires|suppressed|already has|not found|too long|Invalid value|Use a valid|Only Luke|Approval requires|Published records|em dash|Amount must|record object/.test(error.message||'');
       const status=error.status||(/Another writer/.test(error.message||'')?409:operational?400:500);
       json(response,status,{error:status>=500?'The operation could not be completed. Check local storage and try again.':error.message});
     }

@@ -6,11 +6,19 @@ var CampaignModel = (function () {
     enquiries: {title: 'required', contactId: 'text', receivedDate: 'date-required', deadline: 'date', status: ['new', 'acknowledged', 'researching', 'responded', 'closed'], sourceUrl: 'url', notes: 'text'},
     publications: {title: 'required', format: ['web', 'email', 'print', 'audio', 'video', 'social'], status: ['draft', 'review', 'approved', 'published', 'withdrawn'], sourceUrl: 'url', assetPath: 'text', reviewer: 'text', reviewedDate: 'date', authorisation: 'text', publishedUrl: 'url', notes: 'text'},
     tasks: {title: 'required', owner: 'text', dueDate: 'date', status: ['planned', 'active', 'blocked', 'done'], evidenceUrl: 'url', notes: 'text'},
-    expenses: {description: 'required', date: 'date-required', amount: 'money', currency: ['AUD'], category: 'required', payee: 'text', receiptReference: 'text', paymentReference: 'text', status: ['planned', 'incurred', 'paid', 'cancelled'], notes: 'text'}
+    expenses: {description: 'required', date: 'date-required', amount: 'money', currency: ['AUD'], category: 'required', payee: 'text', receiptReference: 'text', paymentReference: 'text', status: ['planned', 'incurred', 'paid', 'cancelled'], notes: 'text', publicApproved: ['no', 'yes'], publicDescription: 'text', publicPayee: 'text'},
+    contributions: {name: 'required', kind: ['donation', 'gift-in-kind', 'personal-funds', 'loan'], date: 'date-required', amount: 'money', currency: ['AUD'], status: ['enquiry', 'pledged', 'received-pending-review', 'accepted', 'returned', 'declined'], address: 'text', eligibility: ['unchecked', 'checked', 'ineligible'], eligibilityEvidence: 'text', publicationAgreement: ['not-recorded', 'agreed'], publicApproved: ['no', 'yes'], publicNote: 'text', receiptReference: 'text', paymentReference: 'text', disclosureStatus: ['not-reviewed', 'not-required', 'required', 'filed'], disclosureReference: 'text', notes: 'text'},
+    budgets: {description: 'required', amount: 'money', category: 'required', status: ['option', 'approved', 'cancelled'], publicApproved: ['no', 'yes'], notes: 'text'}
   };
-  var defaults = {contacts: {channel: 'other', consent: 'unknown', stage: 'exploring'}, enquiries: {status: 'new'}, publications: {format: 'web', status: 'draft'}, tasks: {status: 'planned'}, expenses: {currency: 'AUD', status: 'planned'}};
+  var defaults = {contacts: {channel: 'other', consent: 'unknown', stage: 'exploring'}, enquiries: {status: 'new'}, publications: {format: 'web', status: 'draft'}, tasks: {status: 'planned'}, expenses: {currency: 'AUD', status: 'planned', publicApproved: 'no'}, contributions: {kind: 'donation', currency: 'AUD', status: 'enquiry', eligibility: 'unchecked', publicationAgreement: 'not-recorded', publicApproved: 'no', disclosureStatus: 'not-reviewed'}, budgets: {status: 'option', publicApproved: 'no'}};
   function fail(message) { throw new Error(message); }
-  function fresh() { return {version: 1, revision: 0, contacts: [], enquiries: [], publications: [], tasks: [], expenses: [], suppression: [], audit: []}; }
+  function fresh() { return {version: 1, revision: 0, contacts: [], enquiries: [], publications: [], tasks: [], expenses: [], contributions: [], budgets: [], suppression: [], audit: []}; }
+  function upgrade(state) {
+    if (!state || typeof state !== 'object' || state.version !== 1) return state;
+    var next=Object.assign({},state);
+    ['contributions','budgets'].forEach(function(name){if(next[name]===undefined)next[name]=[];});
+    return next;
+  }
   function collection(name) { if (!Object.prototype.hasOwnProperty.call(fields, name)) fail('Unknown collection.'); return fields[name]; }
   function email(value) { var result = String(value || '').trim().toLowerCase(); if (result && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(result)) fail('Use a valid email address.'); return result; }
   function validDate(value) { if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false; var date = new Date(value + 'T00:00:00Z'); return !isNaN(date.getTime()) && date.toISOString().slice(0,10) === value; }
@@ -37,6 +45,7 @@ var CampaignModel = (function () {
     if (name === 'publications' && ['approved', 'published'].indexOf(out.status) >= 0 && (!out.reviewer || !out.reviewedDate || !out.sourceUrl || !out.authorisation)) fail('Approval requires reviewer, review date, source URL and authorisation.');
     if (name === 'publications' && ['approved', 'published'].indexOf(out.status) >= 0 && out.reviewer !== 'Luke Nathan Hayes') fail('Only Luke Nathan Hayes can approve a publication.');
     if (name === 'publications' && out.status === 'published' && !out.publishedUrl) fail('Published records require a published URL.');
+    if (name === 'contributions' && out.status==='accepted' && (!out.name || out.eligibility!=='checked' || !out.eligibilityEvidence || out.publicationAgreement!=='agreed' || Number(out.amount)<=0)) fail('Accepted contributions require a name, positive amount, recorded eligibility check and agreement to named publication.');
     return out;
   }
   function audit(state, action, name, id, context) { state.audit.push({id: context.id(), at: context.now(), action: action, collection: name, recordId: id}); state.revision += 1; }
@@ -70,6 +79,6 @@ var CampaignModel = (function () {
     var columns = ['id'].concat(Object.keys(collection(name)), ['createdAt', 'updatedAt']);
     return [columns.map(csvCell).join(',')].concat(state[name].map(function (item) { return columns.map(function (column) { return csvCell(item[column]); }).join(','); })).join('\r\n') + '\r\n';
   }
-  return {fields: fields, defaults: defaults, fresh: fresh, validate: validate, save: save, suppress: suppress, exportCsv: exportCsv, csvCell: csvCell, collection: collection};
+  return {upgrade: upgrade, fields: fields, defaults: defaults, fresh: fresh, validate: validate, save: save, suppress: suppress, exportCsv: exportCsv, csvCell: csvCell, collection: collection};
 }());
 if (typeof module !== 'undefined') module.exports = CampaignModel;

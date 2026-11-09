@@ -12,3 +12,5 @@ await writeFile(path.join(out,'assets','data','media.json'),JSON.stringify(media
 for(const file of ['projects','campaign'])await cp(path.join(root,'data',file+'.json'),path.join(out,'assets','data',file+'.json'));
 await cp(path.join(root,'operations','model.cjs'),path.join(out,'model.js'));
 console.log('Built LOCAL-ONLY command centre: '+media.length+' researched directory entries; no personal records bundled.');
+
+await cp(path.join(root,'operations','finance.cjs'),path.join(out,'finance.js'));
