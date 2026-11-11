@@ -192,7 +192,23 @@
     return `<div class="content">${intro('Dates you choose','Only your saved possibilities with a date appear here. External election dates are shown separately as reference.')}<div class="panel">${recordRows('tasks',dated)}</div><div class="panel"><h2>Official reference</h2><p>ECQ announced the Redland mayoral by-election for 12 December 2026, with a full postal ballot. The notice of election and opening of nominations are scheduled for 10 November.</p><p>${link(campaign.electionSource,'Read ECQ’s 5 November announcement')}</p><p class="small muted">These are external dates, not a personal schedule. Nomination closing and ballot-return details should be checked in the official notice.</p></div></div>`;
   }
   function projectsView() {
-    return `<div class="content">${intro('The work you can draw on','Existing projects retain their own context. A library entry does not make a proposal campaign policy.')}<div class="toolbar"><label class="field">Search projects<input id="project-search" type="search" placeholder="Try music, household or resilience"></label></div><p class="small muted" id="project-count"></p><div class="project-grid" id="project-results"></div></div>`;
+    const p4aSources = [
+      ['p4a-xyz-cinema', 'P4A website'],
+      ['p4a-xyz-committees-inquiries', 'P4A committees and inquiries'],
+      ['p4a-membership', 'P4A membership preview']
+    ];
+    const p4aLinks = p4aSources.map(([id, title]) => {
+      const project = projects.find(item => item.id === id);
+      if (!project) return '';
+      const previewNotice = id === 'p4a-membership'
+        ? `<p><strong>PUBLIC INTERACTIVE PREVIEW</strong><br>${esc(project.summary)}</p>`
+        : '';
+      return `<li>${link(project.url, title)}${previewNotice}</li>`;
+    }).join('');
+    const p4aPanel = p4aLinks ? `<section class="panel" aria-labelledby="p4a-sources-title">
+      <h2 id="p4a-sources-title">Explore P4A</h2><ul>${p4aLinks}</ul>
+    </section>` : '';
+    return `<div class="content">${intro('The work you can draw on','Existing projects retain their own context. A library entry does not make a proposal campaign policy.')}${p4aPanel}<div class="toolbar"><label class="field">Search projects<input id="project-search" type="search" placeholder="Try music, household or resilience"></label></div><p class="small muted" id="project-count"></p><div class="project-grid" id="project-results"></div></div>`;
   }
   function filterProjects() {
     const q = $('#project-search').value.toLowerCase(); const matches=projects.filter(p=>[p.title,p.summary,p.category,...p.tags].join(' ').toLowerCase().includes(q));

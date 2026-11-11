@@ -400,8 +400,8 @@
       "membership-preview",
       "recent-work"
     ],
-    "summary": "A fictional browser preview of membership, groups, projects, constitution drafting and contribution records. The public preview accepts no real memberships or payments.",
-    "url": "https://auraofintelligence.github.io/p4a-membership/",
+    "summary": "A fictional browser preview of membership, groups, projects, constitution drafting and contribution records. Fictional people and records. Changes last only until this page reloads. Uses sample information only. No live membership, payments or ID verification.",
+    "url": "https://auraofintelligence.github.io/p4a-membership/#home",
     "repo": "https://github.com/auraofintelligence/p4a-membership",
     "sourcePath": "README.md",
     "sourceCommit": "745ba28d48a55985815bc69effa25d647e1a6954",
